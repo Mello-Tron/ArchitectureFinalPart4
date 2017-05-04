@@ -1,6 +1,0 @@
-set -tmpdir "C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/xst"
-elaborate
--lso C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/xsasdramcntl.lso
--ifn xsasdramcntl.prj
--ifmt mixed
