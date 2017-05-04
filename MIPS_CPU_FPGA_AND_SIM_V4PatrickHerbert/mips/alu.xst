@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst"
+elaborate
+-ifn alu.prj
+-ifmt mixed

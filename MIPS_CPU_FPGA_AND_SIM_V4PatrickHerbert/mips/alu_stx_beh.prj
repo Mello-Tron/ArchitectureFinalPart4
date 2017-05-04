@@ -1,0 +1,2 @@
+vhdl isim_temp "../mips_building_blocks.vhd"
+vhdl isim_temp "../mips_alu.vhd"

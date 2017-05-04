@@ -1,0 +1,1 @@
+vhdtdtfi -prj mips -o "Z:/CS401-1/HW4TestNotFinishedYet/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips/alu.vhi" -module alu -template C:/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../mips_building_blocks.vhd -lib work ../mips_alu.vhd 

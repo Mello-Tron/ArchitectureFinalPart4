@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/tom herbert/Downloads/selected_files_201744_18257/HW4Test/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/tom herbert/Downloads/selected_files_201744_18257/HW4Test/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips/xst"
+elaborate
+-ifn maindec.prj
+-ifmt mixed

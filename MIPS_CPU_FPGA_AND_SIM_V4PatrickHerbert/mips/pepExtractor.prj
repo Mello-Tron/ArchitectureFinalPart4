@@ -1,0 +1,2 @@
+work	"../mips_alu.vhd"
+work	"../mips_building_blocks.vhd"

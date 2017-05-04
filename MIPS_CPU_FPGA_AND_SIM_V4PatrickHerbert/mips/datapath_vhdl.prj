@@ -1,0 +1,3 @@
+vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_building_blocks.vhd"
+vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_alu.vhd"
+vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_datapath.vhd"
