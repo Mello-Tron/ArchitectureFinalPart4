@@ -1,0 +1,5 @@
+vhdl work "common.vhd"
+vhdl work "sdramcntl.vhd"
+vhdl work "xsasdramcntl.vhd"
+vhdl work "vga.vhd"
+vhdl work "vga_sdram_interface.vhd"

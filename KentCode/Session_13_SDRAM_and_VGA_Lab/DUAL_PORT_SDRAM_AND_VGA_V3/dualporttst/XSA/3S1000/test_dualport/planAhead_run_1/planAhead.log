@@ -1,0 +1,89 @@
+INFO: [HD-Application 1] Opened log file C:\Users\kjones\Desktop\DUAL_PORT_VGA_V3\dualporttst\XSA\3S1000\test_dualport\C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file C:\Users\kjones\Desktop\DUAL_PORT_VGA_V3\dualporttst\XSA\3S1000\test_dualport\C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v11.4
+# Build 52232 by hdbuild on Fri Nov  6 19:12:51 PST 2009
+# Start of session at: 3/25/10 10:46:52 AM
+# Process ID: 3088
+#-----------------------------------------------------------
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\ucf.xml'
+Command> source C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/pa.fromHdl.tcl
+# hdi::project new -name test_dualport -dir C:/Users/kjones/Desktop/DUAL_PORT_VGA_V3/dualporttst/XSA/3S1000/test_dualport/planAhead_run_1
+# hdi::project setArch -name test_dualport -arch spartan3
+# hdi::design setOptions -project test_dualport -top test_dualport
+# hdi::param set -name project.paUcfFile -svalue test_dualport.ucf
+# hdi::floorplan new -name floorplan_1 -part xc3s1000ft256-4 -project test_dualport
+INFO: [HD-ArchReader 15] Reading macro library C:/Xilinx/11.1/PlanAhead/./parts/xilinx/spartan3/hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File 'C:/Xilinx/11.1/PlanAhead/./parts/xilinx/spartan3/hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File 'C:/Xilinx/11.1/PlanAhead/./parts/xilinx/spartan3/hd_int_macros.edn'
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/11.1/PlanAhead/parts/xilinx/spartan3/spartan3/xc3s1000/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/11.1/PlanAhead/parts/xilinx/spartan3/spartan3/xc3s1000/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/11.1/PlanAhead/parts/xilinx/spartan3/spartan3/xc3s1000/ft256/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/11.1/PlanAhead/./parts/xilinx/spartan3/IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from C:/Xilinx/11.1/PlanAhead/parts/xilinx/spartan3/spartan3/xc3s1000/ft256/SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/11.1/PlanAhead/./parts/xilinx/spartan3/drc.xml
+# hdi::port import -project test_dualport -vhdl ../../../XS_LIB/common.vhd work -vhdl ../../../XS_LIB/sdramcntl.vhd work -vhdl ../../XSA_LIB/xsasdramcntl.vhd work -vhdl ../../XSA_LIB/vga.vhd work -vhdl ../../XSA_LIB/test_dualport_core.vhd work -vhdl test_dualport.vhd work
+INFO: [HD-RTLIN 0] Removing all analyzed parse trees
+INFO: [HD-RTLIN 0] Removing all libraries
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\11.1\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\11.1\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "../../../XS_LIB/common.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing package <common>.
+INFO: [HD-RTLIN 2] Parsing package body <common>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "../../../XS_LIB/sdramcntl.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing package <sdram>.
+INFO: [HD-RTLIN 2] Parsing entity <sdramCntl>.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <sdramcntl>.
+INFO: [HD-RTLIN 2] Parsing entity <dualport>.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <dualport>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "../../XSA_LIB/xsasdramcntl.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing package <XSASDRAM>.
+INFO: [HD-RTLIN 2] Parsing entity <XSASDRAMCntl>.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <xsasdramcntl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "../../XSA_LIB/vga.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing package <vga_pckg>.
+INFO: [HD-RTLIN 2] Parsing entity <vga>.
+INFO: [HD-RTLIN 2] Parsing architecture <vga_arch> of entity <vga>.
+INFO: [HD-RTLIN 2] Parsing entity <sync>.
+INFO: [HD-RTLIN 2] Parsing architecture <sync_arch> of entity <sync>.
+INFO: [HD-RTLIN 2] Parsing entity <fifo_cc>.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <fifo_cc>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "../../XSA_LIB/test_dualport_core.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing package <test_dualport_core_pckg>.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(111) Cannot find <mem> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+INFO: [HD-RTLIN 2] Parsing entity <test_dualport_core>.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(117) Unit <test_dualport_core> ignored due to previous errors.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <test_dualport_core>.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(174) Entity <test_dualport_core> is not yet compiled.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(175) <natural> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(176) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(177) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(178) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(179) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(180) <std_logic_vector> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(181) <std_logic_vector> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(182) <std_logic_vector> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(183) <std_logic_vector> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(186) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(187) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(188) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(189) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(190) <std_logic> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(191) <std_logic_vector> is not declared.
+ERROR: [HD-RTLIN 3] ../../XSA_LIB/test_dualport_core.vhd(192) <std_logic_vector> is not declared.
+INFO: [HD-RTLIN 2] Sorry, too many errors..
+INFO: [HD-RTLIN 2] Parsing VHDL file "test_dualport.vhd" into library work
+INFO: [HD-RTLIN 2] Parsing entity <test_dualport>.
+INFO: [HD-RTLIN 2] Parsing architecture <arch> of entity <test_dualport>.
+ERROR: [HD-RTLIN 1] ERROR occurred while analyzing and elaborating the design
+#-----------------------------------------------------------
+# End of session at: 3/25/10 10:47:28 AM
+# Process ID: 3088
+#-----------------------------------------------------------

@@ -1,0 +1,38 @@
+V3 22
+FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd 2014/02/17.19:41:14 P.20131013
+EN work/test_kbd 1492703749 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PH unisim/VCOMPONENTS 1370735613 PH work/ps2_kbd_pckg 1492703746
+AR work/test_kbd/arch 1492703750 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd \
+      EN work/test_kbd 1492703749 CP ps2_kbd
+FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd 2014/02/17.20:14:04 P.20131013
+EN work/vgatest 1492703751 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/vgatest/behavioral 1492703752 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd \
+      EN work/vgatest 1492703751
+FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd 2014/02/17.20:13:59 P.20131013
+EN work/VGA_KYBD_LAB 1492703753 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/VGA_KYBD_LAB/Behavioral 1492703754 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd \
+      EN work/VGA_KYBD_LAB 1492703753 CP test_kbd CP vgatest
+FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd 2004/10/24.13:51:04 P.20131013
+PH work/ps2_kbd_pckg 1492703746 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 CD ps2_kbd
+EN work/ps2_kbd 1492703747 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/ps2_kbd/arch 1492703748 \
+      FL //fs1/homedrive/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_009_2017_Spring/Session_14_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd \
+      EN work/ps2_kbd 1492703747
+FL C:/CS401/VGA_KYBD_LAB/keybrd.vhd 2014/02/17.18:41:14 P.20131013
+FL C:/CS401/VGA_KYBD_LAB/vga.vhd 2014/02/17.19:14:04 P.20131013
+FL C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.vhd 2014/02/17.19:13:59 P.20131013
+FL C:/CS401/VGA_KYBD_LAB/XSA_LIB/ps2_kbd.vhd 2004/10/24.12:51:04 P.20131013

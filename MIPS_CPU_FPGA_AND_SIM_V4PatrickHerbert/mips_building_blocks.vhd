@@ -229,3 +229,261 @@ begin
 end process;
 
 end Behavioral;
+
+----------------------------------------------------------------------------------
+-- VGA
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity vgatest is
+port(
+	clk50_in : in std_logic;
+	scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
+	red_out : out std_logic_vector(2 downto 0);
+	green_out : out std_logic_vector(2 downto 0);
+	blue_out : out std_logic_vector(2 downto 0);
+	hs_out : out std_logic;
+	vs_out : out std_logic
+);
+end vgatest;
+
+architecture behavioral of vgatest is
+
+signal clk25              : std_logic;
+signal hcounter : integer range 0 to 800;
+signal vcounter   : integer range 0 to 521;
+signal color: std_logic_vector(2 downto 0);
+begin
+
+-- generate a 25Mhz clock
+process (clk50_in)
+begin
+  if clk50_in'event and clk50_in='1' then
+    clk25 <= not clk25;
+  end if;
+end process;
+
+-- change color every one second
+p1: process (clk25)
+	variable cnt: integer;
+begin
+	if clk25'event and clk25='1' then
+		cnt := cnt + 1;
+		if cnt = 25000000 then
+			color <= color + "001";
+			cnt := 0;
+		end if;
+	end if;
+end process;
+
+p2: process (clk25, hcounter, vcounter)
+	variable x: integer range 0 to 639;
+	variable y: integer range 0 to 479;
+begin
+	-- hcounter counts from 0 to 799
+	-- vcounter counts from 0 to 520
+	-- x coordinate: 0 - 639 (x = hcounter - 144, i.e., hcounter -Tpw-Tbp)
+	-- y coordinate: 0 - 479 (y = vcounter - 31, i.e., vcounter-Tpw-Tbp)
+	x := hcounter - 144;
+	y := vcounter - 31;
+  	if clk25'event and clk25 = '1' then
+ 		-- To draw a pixel in (x0, y0), simply test if the ray trace to it
+		-- and set its color to any value between 1 to 7. The following example simply sets 
+		-- the whole display area to a single-color wash, which is changed every one 
+		-- second. 	
+	 	if ( (( x > 50) and (x < 200)) and ((y > 200) and (y < 300)) ) then
+      	red_out <= scancode( 2 downto 0 );
+      	green_out <= color; 
+      	blue_out <= "000";
+    	else
+			-- if not traced, set it to "black" color
+      	red_out <= "000";
+      	green_out <= "000";
+      	blue_out <= "000";
+    	end if;
+		-- Here is the timing for horizontal synchronization.
+		-- (Refer to p. 24, Xilinx, Spartan-3 Starter Kit Board User Guide)
+	 	-- Pulse width: Tpw = 96 cycles @ 25 MHz
+	 	-- Back porch: Tbp = 48 cycles
+		-- Display time: Tdisp = 640 cycles
+	 	-- Front porch: Tfp = 16 cycles
+		-- Sync pulse time (total cycles) Ts = 800 cycles
+
+    	if hcounter > 0 and hcounter < 97 then
+      	hs_out <= '0';
+    	else
+      	hs_out <= '1';
+    	end if;
+		-- Here is the timing for vertical synchronization.
+		-- (Refer to p. 24, Xilinx, Spartan-3 Starter Kit Board User Guide)
+	 	-- Pulse width: Tpw = 1600 cycles (2 lines) @ 25 MHz
+	 	-- Back porch: Tbp = 23200 cycles (29 lines)
+		-- Display time: Tdisp = 38400 cycles (480 lines)
+	 	-- Front porch: Tfp = 8000 cycles (10 lines)
+		-- Sync pulse time (total cycles) Ts = 416800 cycles (521 lines)
+    	if vcounter > 0 and vcounter < 3 then
+      	vs_out <= '0';
+    	else
+      	vs_out <= '1';
+    	end if;
+	 	-- horizontal counts from 0 to 799
+    	hcounter <= hcounter+1;
+    	if hcounter = 800 then
+      	vcounter <= vcounter+1;
+      	hcounter <= 0;
+    	end if;
+	 	-- vertical counts from 0 to 519
+    	if vcounter = 521 then		    
+      	vcounter <= 0;
+    	end if;
+  end if;
+end process;
+
+end behavioral;
+
+----------------------------------------------------------------------------
+-- KEYBOARD
+----------------------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+package ps2_kbd_pckg is
+  component ps2_kbd
+    generic(
+      FREQ     :     natural := 100_000  -- frequency of the main clock (KHz)
+      );
+    port(
+      clk      : in  std_logic;         -- main clock
+      rst      : in  std_logic;         -- asynchronous reset
+      ps2_clk  : in  std_logic;         -- clock from keyboard
+      ps2_data : in  std_logic;         -- data from keyboard
+      scancode : out std_logic_vector(7 downto 0);  -- key scancode
+      parity   : out std_logic;         -- parity bit for scancode
+      busy     : out std_logic;         -- busy receiving scancode
+      rdy      : out std_logic;         -- scancode ready pulse
+      error    : out std_logic          -- error receiving scancode
+      );
+  end component ps2_kbd;
+end package ps2_kbd_pckg;
+
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+
+entity ps2_kbd is
+  generic(
+    FREQ     :     natural := 100_000   -- frequency of the main clock (KHz)
+    );
+  port(
+    clk      : in  std_logic;           -- main clock
+    rst      : in  std_logic;           -- asynchronous reset
+    ps2_clk  : in  std_logic;           -- clock from keyboard
+    ps2_data : in  std_logic;           -- data from keyboard
+    scancode : out std_logic_vector(7 downto 0);  -- key scancode
+    parity   : out std_logic;           -- parity bit for scancode
+    busy     : out std_logic;           -- busy receiving scancode
+    rdy      : out std_logic;           -- scancode ready pulse
+    error    : out std_logic            -- error receiving scancode
+    );
+end entity ps2_kbd;
+
+
+architecture arch of ps2_kbd is
+
+  constant YES         : std_logic                    := '1';
+  constant NO          : std_logic                    := '0';
+  constant PS2_FREQ    : natural                      := 10;  -- keyboard clock frequency (KHz)
+  constant TIMEOUT     : natural                      := FREQ / PS2_FREQ;  -- ps2_clk quiet timeout
+  constant KEY_RELEASE : std_logic_vector(7 downto 0) := "11110000";  -- scancode sent when key is released
+
+  signal timer_x, timer_r     : natural range 0 to TIMEOUT;  -- counts time since last PS/2 clock edge
+  signal bitcnt_x, bitcnt_r   : natural range 0 to 11;  -- counts number of received scancode bits
+  signal ps2_clk_x, ps2_clk_r : std_logic_vector(5 downto 1);  -- PS/2 clock synchronization / edge detect shift register
+  signal ps2_clk_fall_edge    : std_logic;  -- pulses on falling edge of PS/2 clock
+  signal ps2_clk_rise_edge    : std_logic;  -- pulses on rising edge of PS/2 clock
+  signal ps2_clk_edge         : std_logic;  -- pulses on either edge of PS/2 clock
+  signal ps2_clk_quiet        : std_logic;  -- pulses when no edges on PS/2 clock for TIMEOUT
+  signal sc_x, sc_r           : std_logic_vector(9 downto 0);  -- scancode shift register
+  signal keyrel_x, keyrel_r   : std_logic;  -- this flag is set when the key release scancode is received
+  signal scancode_rdy         : std_logic;  -- indicates when any scancode has been received
+  signal rdy_x, rdy_r         : std_logic;  -- this flag is set when scancode for the pressed key is ready
+  signal error_x, error_r     : std_logic;  -- this flag is set when an error occurs
+
+begin
+
+  -- shift the level on the PS/2 clock into a shift register
+  ps2_clk_x <= ps2_clk_r(4 downto 1) & ps2_clk;
+
+  -- look at the PS/2 clock levels stored in the shift register and find rising or falling edges
+  ps2_clk_fall_edge <= YES when ps2_clk_r(5 downto 2) = "1100" else NO;
+  ps2_clk_rise_edge <= YES when ps2_clk_r(5 downto 2) = "0011" else NO;
+  ps2_clk_edge      <= ps2_clk_fall_edge or ps2_clk_rise_edge;
+
+  -- shift the keyboard scancode into the shift register on the falling edge of the PS/2 clock
+  sc_x <= ps2_data & sc_r(9 downto 1) when ps2_clk_fall_edge = YES else sc_r;
+
+  -- clear the timer right after a PS/2 clock edge and then keep incrementing it until the next edge
+  timer_x <= 0 when ps2_clk_edge = YES else timer_r + 1;
+
+  -- indicate when the PS/2 clock has stopped pulsing and is at a high level.
+  ps2_clk_quiet <= YES when timer_r = TIMEOUT and ps2_clk_r(2) = '1' else NO;
+
+  -- increment the bit counter on each falling edge of the PS/2 clock.
+  -- reset the bit counter if the PS/2 clock stops pulsing or if there was an error receiving the scancode.
+  -- otherwise, keep the bit counter unchanged.
+  bitcnt_x <= bitcnt_r + 1 when ps2_clk_fall_edge = YES              else
+              0            when ps2_clk_quiet = YES or error_r = YES else
+              bitcnt_r;
+
+  -- a scancode has been received if the bit counter is 11 and the PS/2 clock has stopped pulsing
+  scancode_rdy <= YES when bitcnt_r = 11 and ps2_clk_quiet = YES else NO;
+
+  -- look for the scancode sent when the key is released
+  keyrel_x <= YES when sc_r(scancode'range) = KEY_RELEASE and scancode_rdy = YES else
+              NO  when rdy_r = YES or error_r = YES                              else
+              keyrel_r;
+
+  -- the scancode for the pressed key arrives after receiving the key-release scancode 
+  rdy_x <= YES when keyrel_r = YES and scancode_rdy = YES else NO;
+
+  -- indicate an error if the clock is low for too long or if it stops pulsing in the middle of a scancode
+  error_x <= YES when (timer_r = TIMEOUT and ps2_clk_r(2) = '0') or
+             (ps2_clk_quiet = YES and bitcnt_r/=11 and bitcnt_r/=0) else
+             error_r;
+
+  scancode <= sc_r(scancode'range);     -- output scancode
+  parity   <= sc_r(scancode'high+1);    -- output parity bit for the scancode
+  busy     <= YES when bitcnt_r/=0 else NO;  -- output busy signal when receiving a scancode
+  rdy      <= rdy_r;                    -- output scancode ready flag
+  error    <= error_r;                  -- output error flag
+
+  -- update the various registers
+  process(rst, clk)
+  begin
+    if rst = YES then
+      ps2_clk_r <= (others => '1');     -- start by assuming PS/2 clock has been high for a while
+      sc_r      <= (others => '0');     -- clear scancode register
+      keyrel_r  <= NO;                  -- key-release scancode has not been received yet
+      rdy_r     <= NO;                  -- no scancodes received yet
+      timer_r   <= 0;                   -- clear PS/2 clock pulse timer
+      bitcnt_r  <= 0;                   -- clear scancode bit counter
+      error_r   <= NO;                  -- clear any errors
+    elsif rising_edge(clk) then
+      ps2_clk_r <= ps2_clk_x;
+      sc_r      <= sc_x;
+      keyrel_r  <= keyrel_x;
+      rdy_r     <= rdy_x;
+      timer_r   <= timer_x;
+      bitcnt_r  <= bitcnt_x;
+      error_r   <= error_x;
+    end if;
+  end process;
+
+end architecture arch;

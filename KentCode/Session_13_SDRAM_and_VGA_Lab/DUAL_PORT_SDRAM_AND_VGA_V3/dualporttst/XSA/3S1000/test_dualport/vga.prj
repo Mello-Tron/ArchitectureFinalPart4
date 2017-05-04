@@ -1,0 +1,2 @@
+vhdl work "../../../XS_LIB/common.vhd"
+vhdl work "../../XSA_LIB/vga.vhd"

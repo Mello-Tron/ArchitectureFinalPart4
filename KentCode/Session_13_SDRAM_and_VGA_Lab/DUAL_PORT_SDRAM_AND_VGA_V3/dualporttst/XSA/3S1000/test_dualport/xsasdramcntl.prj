@@ -1,0 +1,3 @@
+vhdl work "../../../XS_LIB/common.vhd"
+vhdl work "../../../XS_LIB/sdramcntl.vhd"
+vhdl work "../../XSA_LIB/xsasdramcntl.vhd"

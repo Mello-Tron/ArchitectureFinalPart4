@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-26T19:04:43</DateModified>
+  <DateModified>2017-05-04T10:21:14</DateModified>
   <ModuleName>mips_fpga_interface</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//cs1/2017/pherbert17/CS401-1/FinalProject Part 3/ArchitecturePart3/ArchPart3/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/iseconfig/mips_fpga_interface.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>//cs1/2017/pherbert17/CS401-1/FinalProject Part 3/ArchitecturePart3/ArchPart3/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/iseconfig/mips_fpga_interface.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips\</ImplementationReportsDirectory>
   <DateInitialized>2014-03-09T17:22:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

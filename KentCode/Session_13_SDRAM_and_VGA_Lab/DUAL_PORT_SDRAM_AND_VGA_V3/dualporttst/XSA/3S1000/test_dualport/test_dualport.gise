@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="test_dualport.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_dualport.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="test_dualport.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="test_dualport.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="test_dualport.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="test_dualport.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="test_dualport.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_dualport.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="test_dualport.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="test_dualport.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="test_dualport.ngr"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="test_dualport.ntrc_log"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="test_dualport.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="test_dualport.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="test_dualport.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_dualport.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="test_dualport.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="test_dualport.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="test_dualport.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="test_dualport.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="test_dualport.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="test_dualport.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_dualport.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="test_dualport.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="test_dualport.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_dualport_core.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_dualport_core_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_dualport_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_dualport_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_dualport_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_dualport_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_dualport_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="test_dualport_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_dualport_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_dualport_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="test_dualport_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="test_dualport_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_dualport_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_dualport_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="test_dualport_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="test_dualport_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_dualport_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_dualport_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6433672316341406608" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2981440685269387081" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8671857013235016120" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7493580321282947067" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739766" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="706296631137333377" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739778" xil_pn:in_ck="7174733385480843638" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="6432254057776892987" xil_pn:start_ts="1392739766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.lso"/>
+      <outfile xil_pn:name="test_dualport.ngc"/>
+      <outfile xil_pn:name="test_dualport.ngr"/>
+      <outfile xil_pn:name="test_dualport.ntrc_log"/>
+      <outfile xil_pn:name="test_dualport.prj"/>
+      <outfile xil_pn:name="test_dualport.stx"/>
+      <outfile xil_pn:name="test_dualport.syr"/>
+      <outfile xil_pn:name="test_dualport.xst"/>
+      <outfile xil_pn:name="test_dualport_core.prj"/>
+      <outfile xil_pn:name="test_dualport_core_vhdl.prj"/>
+      <outfile xil_pn:name="test_dualport_vhdl.prj"/>
+      <outfile xil_pn:name="test_dualport_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739388" xil_pn:in_ck="3890445842307295958" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2145144546982526563" xil_pn:start_ts="1392739388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739786" xil_pn:in_ck="6544142375165168230" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5168524437081091243" xil_pn:start_ts="1392739781">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.bld"/>
+      <outfile xil_pn:name="test_dualport.ngd"/>
+      <outfile xil_pn:name="test_dualport_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739791" xil_pn:in_ck="-9011253324612948857" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-7574015227232153444" xil_pn:start_ts="1392739786">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.pcf"/>
+      <outfile xil_pn:name="test_dualport_map.map"/>
+      <outfile xil_pn:name="test_dualport_map.mrp"/>
+      <outfile xil_pn:name="test_dualport_map.ncd"/>
+      <outfile xil_pn:name="test_dualport_map.ngm"/>
+      <outfile xil_pn:name="test_dualport_map.xrpt"/>
+      <outfile xil_pn:name="test_dualport_summary.xml"/>
+      <outfile xil_pn:name="test_dualport_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739812" xil_pn:in_ck="-5921538001670370880" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1392739791">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.ncd"/>
+      <outfile xil_pn:name="test_dualport.pad"/>
+      <outfile xil_pn:name="test_dualport.par"/>
+      <outfile xil_pn:name="test_dualport.ptwx"/>
+      <outfile xil_pn:name="test_dualport.unroutes"/>
+      <outfile xil_pn:name="test_dualport.xpi"/>
+      <outfile xil_pn:name="test_dualport_pad.csv"/>
+      <outfile xil_pn:name="test_dualport_pad.txt"/>
+      <outfile xil_pn:name="test_dualport_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739824" xil_pn:in_ck="3890445842307288333" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="1358112284730781905" xil_pn:start_ts="1392739814">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.bgn"/>
+      <outfile xil_pn:name="test_dualport.bit"/>
+      <outfile xil_pn:name="test_dualport.drc"/>
+      <outfile xil_pn:name="test_dualport.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1392739812" xil_pn:in_ck="-3287613135661722749" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1392739807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="test_dualport.twr"/>
+      <outfile xil_pn:name="test_dualport.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

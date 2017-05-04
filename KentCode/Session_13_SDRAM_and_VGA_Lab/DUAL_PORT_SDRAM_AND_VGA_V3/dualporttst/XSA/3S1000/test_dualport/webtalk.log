@@ -1,0 +1,16 @@
+Release 14.6 - WebTalk (P.68d)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=EC25EDCDAA4845A1A5AA00ACE59D6708
+ProjectIteration=3
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - M:/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/3S1000/test_dualport/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-02-18T08:10:24.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html

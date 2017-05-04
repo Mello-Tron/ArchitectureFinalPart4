@@ -1,0 +1,89 @@
+V3 46
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/3S1000/test_dualport/test_dualport.vhd 2010/03/29.19:36:48 P.68d
+EN work/test_dualport 1392739789 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/3S1000/test_dualport/test_dualport.vhd \
+      PB ieee/std_logic_1164 1370735607 PH work/test_dualport_core_pckg 1392739786 \
+      PH work/vga_pckg 1392739776 PH work/sdram 1392739771
+AR work/test_dualport/arch 1392739790 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/3S1000/test_dualport/test_dualport.vhd \
+      EN work/test_dualport 1392739789 CP test_dualport_core
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/test_dualport_core.vhd 2014/02/18.08:05:25 P.68d
+PH work/test_dualport_core_pckg 1392739786 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/test_dualport_core.vhd \
+      PB ieee/std_logic_1164 1370735607 PH work/sdram 1392739771 \
+      CD test_dualport_core
+EN work/test_dualport_core 1392739787 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/test_dualport_core.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611 PB ieee/std_logic_arith 1370735608 \
+      PB work/common 1392739770 PH work/XSASDRAM 1392739783 PH work/sdram 1392739771 \
+      PH work/vga_pckg 1392739776
+AR work/test_dualport_core/arch 1392739788 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/test_dualport_core.vhd \
+      EN work/test_dualport_core 1392739787 CP vga CP dualport CP xsaSDRAMCntl
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd 2010/03/25.12:10:01 P.68d
+PH work/vga_pckg 1392739776 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      PB ieee/std_logic_1164 1370735607 CD vga
+EN work/vga 1392739777 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PH unisim/VCOMPONENTS 1370735613 \
+      PB work/common 1392739770
+AR work/vga/vga_arch 1392739778 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      EN work/vga 1392739777 CP fifo_cc CP sync
+EN work/sync 1392739779 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611 PB work/common 1392739770
+AR work/sync/sync_arch 1392739780 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      EN work/sync 1392739779
+EN work/fifo_cc 1392739781 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/fifo_cc/arch 1392739782 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/vga.vhd \
+      EN work/fifo_cc 1392739781 CP RAMB4_S16_S16
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/xsasdramcntl.vhd 2010/03/25.10:58:31 P.68d
+PH work/XSASDRAM 1392739783 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/xsasdramcntl.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PH unisim/VCOMPONENTS 1370735613 PB work/common 1392739770 PH work/sdram 1392739771 \
+      CD XSASDRAMCntl
+EN work/XSASDRAMCntl 1392739784 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/xsasdramcntl.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PH unisim/VCOMPONENTS 1370735613 PB work/common 1392739770 PH work/sdram 1392739771
+AR work/XSASDRAMCntl/arch 1392739785 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XSA/XSA_LIB/xsasdramcntl.vhd \
+      EN work/XSASDRAMCntl 1392739784 CP IBUFG CP CLKDLL CP BUFG CP SRL16 \
+      CP sdramCntl
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/common.vhd 2010/03/24.11:01:40 P.68d
+PH work/common 1392739769 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/common.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+PB work/common 1392739770 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/common.vhd \
+      PH work/common 1392739769 PB ieee/std_logic_1164 1370735607 \
+      PB ieee/NUMERIC_STD 1370735611
+FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd 2010/03/25.11:41:26 P.68d
+PH work/sdram 1392739771 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 CD sdramCntl CD dualport
+EN work/sdramCntl 1392739772 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611 PH work/sdram 1392739771 PB work/common 1392739770
+AR work/sdramCntl/arch 1392739773 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd \
+      EN work/sdramCntl 1392739772
+EN work/dualport 1392739774 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd \
+      LB unisim PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611 PB work/common 1392739770
+AR work/dualport/arch 1392739775 \
+      FL //fs1/homedrives/kjones/Classes/Archives_by_Class/CS401_Computer_Architecture/CS401_007_2014_Spring/Session_04_VGA_SDRAM_Lab/DUAL_PORT_SDRAM_AND_VGA_V3/dualporttst/XS_LIB/sdramcntl.vhd \
+      EN work/dualport 1392739774
