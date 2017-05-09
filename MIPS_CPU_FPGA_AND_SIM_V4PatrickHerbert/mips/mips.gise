@@ -117,6 +117,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux2.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux2.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux2.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ps2_kbd.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ps2_kbd.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ps2_kbd.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testbench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="top.cmd_log"/>
@@ -133,6 +136,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vgatest.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="vgatest.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="vgatest.xst"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>

@@ -263,6 +263,7 @@ entity vgatest is
 port(
 	clk50_in : in std_logic;
 	scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
+	readdata2: out STD_LOGIC_VECTOR(31 downto 0);
 	red_out : out std_logic_vector(2 downto 0);
 	green_out : out std_logic_vector(2 downto 0);
 	blue_out : out std_logic_vector(2 downto 0);
@@ -382,6 +383,7 @@ entity ps2_kbd is
     rst      : in  std_logic;           -- asynchronous reset
     ps2_clk  : in  std_logic;           -- clock from keyboard
     ps2_data : in  std_logic;           -- data from keyboard
+	 readdata1: out STD_LOGIC_VECTOR(31 downto 0);
     scancode : out std_logic_vector(7 downto 0);  -- key scancode
     parity   : out std_logic;           -- parity bit for scancode
     busy     : out std_logic;           -- busy receiving scancode

@@ -42,6 +42,7 @@ architecture test of top is
 		 rst      : in  std_logic;           -- asynchronous reset
 		 ps2_clk  : in  std_logic;           -- clock from keyboard
 		 ps2_data : in  std_logic;           -- data from keyboard
+		 readdata1: out STD_LOGIC_VECTOR(31 downto 0);
 		 scancode : out std_logic_vector(7 downto 0);  -- key scancode
 		 parity   : out std_logic;           -- parity bit for scancode
 		 busy     : out std_logic;           -- busy receiving scancode
@@ -54,6 +55,7 @@ architecture test of top is
 	port(
 		clk50_in : in std_logic;
 		scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
+		readdata2: out STD_LOGIC_VECTOR(31 downto 0);
 		red_out : out std_logic_vector(2 downto 0);
 		green_out : out std_logic_vector(2 downto 0);
 		blue_out : out std_logic_vector(2 downto 0);
@@ -78,22 +80,35 @@ architecture test of top is
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in  STD_LOGIC_VECTOR(31 downto 0);
          memwrite:          out STD_LOGIC;
-			wem:               out STD_LOGIC;
+			wem, we1, we2:     out STD_LOGIC;
+			rdsel:             out STD_LOGIC_VECTOR(1 downto 0);
          aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
          readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
+  
+  component mux3 -- three-input multiplexer
+  generic(width: integer);
+  port(d0, d1, d2: in  STD_LOGIC_VECTOR(width-1 downto 0);
+       s:      in  STD_LOGIC_VECTOR(1 downto 0);
+       y:      out STD_LOGIC_VECTOR(width-1 downto 0));
+  end component;
 
   signal instr: STD_LOGIC_VECTOR(31 downto 0);
-  signal wem: STD_LOGIC;
+  signal wem, we1, we2: STD_LOGIC;
+  signal rdsel: STD_LOGIC_VECTOR(1 downto 0);
   signal readdata: STD_LOGIC_VECTOR(31 downto 0);
+  signal readdatam: STD_LOGIC_VECTOR(31 downto 0); --memory
+  signal readdata1: STD_LOGIC_VECTOR(31 downto 0); --keyboard
+  signal readdata2: STD_LOGIC_VECTOR(31 downto 0); --vga
   signal scancode_to_vga: STD_LOGIC_VECTOR(7 downto 0);
 begin
   -- instantiate processor and memories
-  mips1: mips port map(clk, reset, pc, instr, memwrite, wem, dataadr, writedata, readdata);
-  keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data); --need to fix ps2_clk and ps2_data
-  display: vgatest port map(clk50_in, scancode_to_vga); -- need to fix clk50_in and scancode
+  mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, readdata);
+  keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, readdata1); --need to fix ps2_clk and ps2_data
+  display: vgatest port map(clk50_in, scancode_to_vga, readdata2); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
-  dmem1: dmem port map(clk, wem, dataadr, writedata, readdata);
+  dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
+  readmux: mux3 generic map(32) port map(readdatam, readdata1, readdata2, rdsel, readdata); --Pat
 
 end;
 
