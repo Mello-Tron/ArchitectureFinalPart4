@@ -138,6 +138,7 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vgatest.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="vgatest.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="vgatest.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="vgatest.xst"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>

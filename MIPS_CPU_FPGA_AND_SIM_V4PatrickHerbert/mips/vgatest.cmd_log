@@ -1,0 +1,1 @@
+vhdtdtfi -prj mips -o C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/vgatest.vhi -module vgatest -template C:/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../mips_building_blocks.vhd 

@@ -264,6 +264,7 @@ port(
 	clk50_in : in std_logic;
 	scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
 	writedata: in STD_LOGIC_VECTOR(31 downto 0);
+	we2      : in STD_LOGIC;
 	--readdata2: out STD_LOGIC_VECTOR(31 downto 0);
 	red_out : out std_logic_vector(2 downto 0);
 	green_out : out std_logic_vector(2 downto 0);
@@ -312,7 +313,7 @@ begin
 	-- y coordinate: 0 - 479 (y = vcounter - 31, i.e., vcounter-Tpw-Tbp)
 	x := hcounter - 144;
 	y := vcounter - 31;
-  	if clk25'event and clk25 = '1' then
+  	if clk25'event and clk25 = '1' and we2 = '1' then
  		-- To draw a pixel in (x0, y0), simply test if the ray trace to it
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
