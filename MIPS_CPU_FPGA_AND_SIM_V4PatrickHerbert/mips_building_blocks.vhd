@@ -319,7 +319,7 @@ begin
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
 	 	if ( (( x > 50) and (x < 200)) and ((y > 200) and (y < 300)) ) then
-      	red_out <= scancode( 2 downto 0 );
+      	red_out <= writedata( 2 downto 0 );
       	green_out <= color; 
       	blue_out <= "000";
     	else
@@ -385,7 +385,7 @@ entity ps2_kbd is
     rst      : in  std_logic;           -- asynchronous reset
     ps2_clk  : in  std_logic;           -- clock from keyboard
     ps2_data : in  std_logic;           -- data from keyboard
-	 writedata: in STD_LOGIC_VECTOR(31 downto 0);
+	 --writedata: in STD_LOGIC_VECTOR(31 downto 0);
 	 we1:       in STD_LOGIC;
 	 readdata1: out STD_LOGIC_VECTOR(31 downto 0);
     scancode : out std_logic_vector(7 downto 0);  -- key scancode
