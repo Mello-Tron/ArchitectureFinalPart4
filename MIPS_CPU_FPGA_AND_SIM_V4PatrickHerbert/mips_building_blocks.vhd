@@ -461,6 +461,7 @@ begin
              error_r;
 
   scancode <= sc_r(scancode'range);     -- output scancode
+  readdata1 <= X"000000" & sc_r(scancode'range);
   parity   <= sc_r(scancode'high+1);    -- output parity bit for the scancode
   busy     <= YES when bitcnt_r/=0 else NO;  -- output busy signal when receiving a scancode
   rdy      <= rdy_r;                    -- output scancode ready flag
