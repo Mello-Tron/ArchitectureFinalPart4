@@ -1,4 +1,4 @@
-vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_decoder_main.vhd"
-vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_decoder_alu.vhd"
-vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_building_blocks.vhd"
-vhdl work "C:\Users\tom herbert\Documents\GitHub\ArchitecturePart2\ArchPart2\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_controller.vhd"
+vhdl work "C:\Users\pherbert17\Documents\GitHub\ArchitectureFinalPart4\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_decoder_main.vhd"
+vhdl work "C:\Users\pherbert17\Documents\GitHub\ArchitectureFinalPart4\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_decoder_alu.vhd"
+vhdl work "C:\Users\pherbert17\Documents\GitHub\ArchitectureFinalPart4\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_building_blocks.vhd"
+vhdl work "C:\Users\pherbert17\Documents\GitHub\ArchitectureFinalPart4\MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert\mips_controller.vhd"

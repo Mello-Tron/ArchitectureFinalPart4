@@ -1,5 +1,5 @@
 set -tmpdir "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst/projnav.tmp"
 set -xsthdpdir "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst"
 elaborate
--ifn controller.prj
+-ifn mips_address_decoder.prj
 -ifmt mixed

@@ -46,16 +46,19 @@ architecture test of top is
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in  STD_LOGIC_VECTOR(31 downto 0);
          memwrite:          out STD_LOGIC;
+			wem:               out STD_LOGIC;
          aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
          readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
 
-  signal instr, readdata: STD_LOGIC_VECTOR(31 downto 0);
+  signal instr: STD_LOGIC_VECTOR(31 downto 0);
+  signal wem: STD_LOGIC;
+  signal readdata: STD_LOGIC_VECTOR(31 downto 0);
 begin
   -- instantiate processor and memories
-  mips1: mips port map(clk, reset, pc, instr, memwrite, dataadr, writedata, readdata);
+  mips1: mips port map(clk, reset, pc, instr, memwrite, wem, dataadr, writedata, readdata);
   imem1: imem port map(pc(7 downto 2), instr);
-  dmem1: dmem port map(clk, memwrite, dataadr, writedata, readdata);
+  dmem1: dmem port map(clk, wem, dataadr, writedata, readdata);
 
 end;
 

@@ -13,7 +13,8 @@ entity mips is -- single cycle MIPS processor
   port(clk, reset:        in  STD_LOGIC;
        pc:                inout STD_LOGIC_VECTOR(31 downto 0);
        instr:             in  STD_LOGIC_VECTOR(31 downto 0);
-       memwrite:          out STD_LOGIC;
+       memwrite:          inout STD_LOGIC;
+		 wem:               out STD_LOGIC;
        aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
        readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -38,6 +39,8 @@ architecture struct of mips is
          alusrc, regdst:    in  STD_LOGIC;
          regwrite, jump:    in  STD_LOGIC;
          alucontrol:        in  STD_LOGIC_VECTOR(4 downto 0);
+			memwrite:          in  STD_LOGIC;
+			wem:					 out STD_LOGIC;
          zero:              out STD_LOGIC;
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in STD_LOGIC_VECTOR(31 downto 0);
@@ -52,6 +55,6 @@ begin
                             zero, memtoreg, memwrite, pcsrc, alusrc,
 									 regdst, regwrite, jump, alucontrol);
   dp: datapath port map(clk, reset, memtoreg, pcsrc, alusrc, regdst,
-                        regwrite, jump, alucontrol, zero, pc, instr,
+                        regwrite, jump, alucontrol, memwrite, wem, zero, pc, instr,
 								aluout, writedata, readdata);
 end;

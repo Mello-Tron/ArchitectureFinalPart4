@@ -8,6 +8,8 @@ entity datapath is  -- MIPS datapath
        alusrc, regdst:    in  STD_LOGIC;
        regwrite, jump:    in  STD_LOGIC;
        alucontrol:        in  STD_LOGIC_VECTOR(4 downto 0);
+		 memwrite:          in STD_LOGIC;
+		 wem:               out STD_LOGIC;
        zero:              out STD_LOGIC;
        pc:                inout STD_LOGIC_VECTOR(31 downto 0);
        instr:             in  STD_LOGIC_VECTOR(31 downto 0);
@@ -56,6 +58,12 @@ architecture struct of datapath is
          s:      in  STD_LOGIC;
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
+  component addressdec
+	 port(memwrite      :  in  STD_LOGIC;
+			address       :  in STD_LOGIC_VECTOR(4 downto 0);
+			wem, we1, we2 :  out STD_LOGIC;
+			rdsel         :  out STD_LOGIC_VECTOR(1 downto 0));
+  end component;
   signal writereg: STD_LOGIC_VECTOR(4 downto 0);
   signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR(31 downto 0);
   signal signimm, signimmsh: STD_LOGIC_VECTOR(31 downto 0);
@@ -77,6 +85,9 @@ begin
                                       regdst, writereg);
   resmux: mux2 generic map(32) port map(aluout, readdata, memtoreg, result); --Pat
   se: signext port map(instr(15 downto 0), signimm);
+
+  -- I/O logic
+  mainaddressdec : addressdec port map(memwrite, instr(25 downto 21));
 
   -- ALU logic
   srcbmux: mux2 generic map(32) port map(writedata, signimm, alusrc, srcb);
