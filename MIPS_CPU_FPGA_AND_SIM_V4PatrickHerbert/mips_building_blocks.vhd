@@ -264,7 +264,7 @@ port(
 	clk50_in : in std_logic;
 	scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
 	writedata: in STD_LOGIC_VECTOR(31 downto 0);
-	readdata2: out STD_LOGIC_VECTOR(31 downto 0);
+	--readdata2: out STD_LOGIC_VECTOR(31 downto 0);
 	red_out : out std_logic_vector(2 downto 0);
 	green_out : out std_logic_vector(2 downto 0);
 	blue_out : out std_logic_vector(2 downto 0);

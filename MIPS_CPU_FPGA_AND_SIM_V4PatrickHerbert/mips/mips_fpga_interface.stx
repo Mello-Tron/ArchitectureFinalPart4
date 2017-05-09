@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -24,6 +24,7 @@ Architecture behave of Entity sl2 is up to date.
 Architecture behave of Entity signext is up to date.
 Architecture asynchronous of Entity flopr is up to date.
 Architecture behave of Entity mux2 is up to date.
+Architecture behavioral of Entity mux3 is up to date.
 Architecture behave of Entity mux2cont is up to date.
 Architecture behavioral of Entity shiftleft is up to date.
 Architecture behavioral of Entity shiftright is up to date.
@@ -49,16 +50,15 @@ Architecture behave of Entity imem is up to date.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" in Library work.
 Architecture test of Entity top is up to date.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd" in Library work.
-Entity <mips_fpga_interface> compiled.
-Entity <mips_fpga_interface> (Architecture <test_fpga>) compiled.
+Architecture test_fpga of Entity mips_fpga_interface is up to date.
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.29 secs
  
 --> 
 
-Total memory usage is 269892 kilobytes
+Total memory usage is 269904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

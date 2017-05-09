@@ -10,7 +10,7 @@ entity datapath is  -- MIPS datapath
        alucontrol:        in  STD_LOGIC_VECTOR(4 downto 0);
 		 memwrite:          in STD_LOGIC;
 		 wem, we1, we2:     out STD_LOGIC;
-		 rdsel:             out STD_LOGIC_VECTOR(1 downto 0);
+		 rdsel:             out STD_LOGIC;
        zero:              out STD_LOGIC;
        pc:                inout STD_LOGIC_VECTOR(31 downto 0);
        instr:             in  STD_LOGIC_VECTOR(31 downto 0);
@@ -63,7 +63,7 @@ architecture struct of datapath is
 	 port(memwrite      :  in  STD_LOGIC;
 			address       :  in STD_LOGIC_VECTOR(4 downto 0);
 			wem, we1, we2 :  out STD_LOGIC;
-			rdsel         :  out STD_LOGIC_VECTOR(1 downto 0));
+			rdsel         :  out STD_LOGIC);
   end component;
   signal writereg: STD_LOGIC_VECTOR(4 downto 0);
   signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR(31 downto 0);

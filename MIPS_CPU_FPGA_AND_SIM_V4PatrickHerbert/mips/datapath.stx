@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -18,18 +18,30 @@ Total CPU time to Xst completion: 0.08 secs
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" in Library work.
-Architecture behave of Entity regfile is up to date.
-Architecture behave of Entity adder is up to date.
-Architecture behave of Entity sl2 is up to date.
-Architecture behave of Entity signext is up to date.
-Architecture asynchronous of Entity flopr is up to date.
-Architecture behave of Entity mux2 is up to date.
-Architecture behavioral of Entity mux3 is up to date.
-Architecture behave of Entity mux2cont is up to date.
-Architecture behavioral of Entity shiftleft is up to date.
-Architecture behavioral of Entity shiftright is up to date.
-Architecture behavioral of Entity vgatest is up to date.
-Architecture arch of Entity ps2_kbd is up to date.
+Entity <regfile> compiled.
+Entity <adder> compiled.
+Entity <sl2> compiled.
+Entity <signext> compiled.
+Entity <flopr> compiled.
+Entity <mux2> compiled.
+Entity <mux3> compiled.
+Entity <mux2cont> compiled.
+Entity <shiftleft> compiled.
+Entity <shiftright> compiled.
+Entity <regfile> (Architecture <behave>) compiled.
+Entity <adder> (Architecture <behave>) compiled.
+Entity <sl2> (Architecture <behave>) compiled.
+Entity <signext> (Architecture <behave>) compiled.
+Entity <flopr> (Architecture <asynchronous>) compiled.
+Entity <mux2> (Architecture <behave>) compiled.
+Entity <mux3> (Architecture <behavioral>) compiled.
+Entity <mux2cont> (Architecture <behave>) compiled.
+Entity <shiftleft> (Architecture <behavioral>) compiled.
+Entity <shiftright> (Architecture <behavioral>) compiled.
+Entity <vgatest> compiled.
+Entity <vgatest> (Architecture <behavioral>) compiled.
+Entity <ps2_kbd> compiled.
+Entity <ps2_kbd> (Architecture <arch>) compiled.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd" in Library work.
 Architecture behavioral of Entity addressdec is up to date.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd" in Library work.
@@ -39,12 +51,12 @@ Entity <datapath> compiled.
 Entity <datapath> (Architecture <struct>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> 
 
-Total memory usage is 269896 kilobytes
+Total memory usage is 269880 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

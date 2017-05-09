@@ -15,7 +15,7 @@ entity mips is -- single cycle MIPS processor
        instr:             in  STD_LOGIC_VECTOR(31 downto 0);
        memwrite:          inout STD_LOGIC;
 		 wem, we1, we2:     out STD_LOGIC;
-		 rdsel:             out STD_LOGIC_VECTOR(1 downto 0);
+		 rdsel:             out STD_LOGIC;
        aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
        readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -42,7 +42,7 @@ architecture struct of mips is
          alucontrol:        in  STD_LOGIC_VECTOR(4 downto 0);
 			memwrite:          in  STD_LOGIC;
 			wem, we1, we2:		 out STD_LOGIC;
-			rdsel:             out STD_LOGIC_VECTOR(1 downto 0);
+			rdsel:             out STD_LOGIC;
          zero:              out STD_LOGIC;
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in STD_LOGIC_VECTOR(31 downto 0);

@@ -57,7 +57,7 @@ architecture test of top is
 		clk50_in : in std_logic;
 		scancode  : in std_logic_vector(7 downto 0);   -- scancode from keyboard to VGA
 		writedata: in STD_LOGIC_VECTOR(31 downto 0);
-		readdata2: out STD_LOGIC_VECTOR(31 downto 0);
+		--readdata2: out STD_LOGIC_VECTOR(31 downto 0);
 		red_out : out std_logic_vector(2 downto 0);
 		green_out : out std_logic_vector(2 downto 0);
 		blue_out : out std_logic_vector(2 downto 0);
@@ -83,34 +83,34 @@ architecture test of top is
          instr:             in  STD_LOGIC_VECTOR(31 downto 0);
          memwrite:          out STD_LOGIC;
 			wem, we1, we2:     out STD_LOGIC;
-			rdsel:             out STD_LOGIC_VECTOR(1 downto 0);
+			rdsel:             out STD_LOGIC;
          aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
          readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
   
-  component mux3 -- three-input multiplexer
-  generic(width: integer);
-  port(d0, d1, d2: in  STD_LOGIC_VECTOR(width-1 downto 0);
-       s:      in  STD_LOGIC_VECTOR(1 downto 0);
-       y:      out STD_LOGIC_VECTOR(width-1 downto 0));
+  component mux2 generic(width: integer);
+    port(d0, d1: in  STD_LOGIC_VECTOR(width-1 downto 0);
+         s:      in  STD_LOGIC;
+         y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
 
   signal instr: STD_LOGIC_VECTOR(31 downto 0);
   signal wem, we1, we2: STD_LOGIC;
-  signal rdsel: STD_LOGIC_VECTOR(1 downto 0);
+  signal rdsel: STD_LOGIC;
   signal readdata: STD_LOGIC_VECTOR(31 downto 0);
   signal readdatam: STD_LOGIC_VECTOR(31 downto 0); --memory
   signal readdata1: STD_LOGIC_VECTOR(31 downto 0); --keyboard
-  signal readdata2: STD_LOGIC_VECTOR(31 downto 0); --vga
+  --signal readdata2: STD_LOGIC_VECTOR(31 downto 0); --vga
   signal scancode_to_vga: STD_LOGIC_VECTOR(7 downto 0);
 begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, readdata);
   keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, writedata, readdata1); --need to fix ps2_clk and ps2_data
-  display: vgatest port map(clk50_in, scancode_to_vga, writedata, readdata2); -- need to fix clk50_in and scancode
+  display: vgatest port map(clk50_in, scancode_to_vga, writedata); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
-  readmux: mux3 generic map(32) port map(readdatam, readdata1, readdata2, rdsel, readdata); --Pat
+  readmux: mux2 generic map(32) port map(readdatam, readdata1, rdsel, readdata);
+  --readmux: mux3 generic map(32) port map(readdatam, readdata1, readdata2, rdsel, readdata);
 
 end;
 
