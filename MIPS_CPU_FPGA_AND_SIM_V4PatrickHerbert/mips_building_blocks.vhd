@@ -351,31 +351,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-package ps2_kbd_pckg is
-  component ps2_kbd
-    generic(
-      FREQ     :     natural := 100_000  -- frequency of the main clock (KHz)
-      );
-    port(
-      clk      : in  std_logic;         -- main clock
-      rst      : in  std_logic;         -- asynchronous reset
-      ps2_clk  : in  std_logic;         -- clock from keyboard
-      ps2_data : in  std_logic;         -- data from keyboard
-      scancode : out std_logic_vector(7 downto 0);  -- key scancode
-      parity   : out std_logic;         -- parity bit for scancode
-      busy     : out std_logic;         -- busy receiving scancode
-      rdy      : out std_logic;         -- scancode ready pulse
-      error    : out std_logic          -- error receiving scancode
-      );
-  end component ps2_kbd;
-end package ps2_kbd_pckg;
-
-
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-
 
 entity ps2_kbd is
   generic(
