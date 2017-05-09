@@ -14,8 +14,8 @@ AR controller struct C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4
 AR flopr asynchronous C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl22 1494350072
 EN shiftleft NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl37 1494350066
 EN maindec NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd sub00/vhpl00 1494350086
-EN mux2cont NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl35 1494350065
 AR mips struct C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd sub00/vhpl15 1494350095
+EN mux2cont NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl35 1494350065
 EN shiftright NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl39 1494350067
 EN testbench NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_top.vhd sub00/vhpl30 1394402431
 AR zerodetect behave C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl19 1394402410
@@ -28,14 +28,14 @@ AR sl2 behave C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_C
 AR vgatest behavioral C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl44 1494350079
 AR top test C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd sub00/vhpl32 1494350101
 EN zerodetect NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl10 1394402403
-EN addressdec NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd sub00/vhpl41 1494350082
+EN addressdec NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd sub00/vhpl41 1494350365
 PH ps2_kbd_pckg NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl45 1494288936
 EN mips NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd sub00/vhpl06 1494350094
-AR addressdec behavioral C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd sub00/vhpl42 1494350083
+AR addressdec behavioral C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd sub00/vhpl42 1494350366
 AR shiftright behavioral C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl40 1494350077
 EN vgatest NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl43 1494350078
-EN ps2_kbd NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl46 1494350080
 AR mux3 behavioral C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl49 1494350074
+EN ps2_kbd NULL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl46 1494350080
 AR signext behave C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd sub00/vhpl21 1494350071
 AR datapath struct C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd sub00/vhpl29 1494350093
 AR aludec behave C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd sub00/vhpl03 1494350089

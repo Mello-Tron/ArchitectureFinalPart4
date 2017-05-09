@@ -16,11 +16,16 @@ architecture Behavioral of addressdec is
 begin
 	process(address) begin
 		 case address is
-			when "11110" => addresscontrols <= "01001"; -- I/O Device 1
-			when "11111" => addresscontrols <= "00110"; -- I/O Device 2
+			when "01110" => addresscontrols <= "01001"; -- I/O Device 1 Keyboard (using register $t6)
+			when "01111" => addresscontrols <= "00110"; -- I/O Device 2 VGA (using register $t7)
 			when others  => addresscontrols <= "10000"; -- use data memory
 		 end case;
 	  end process;
+
+  wem <= addresscontrols(4);
+  we1 <= addresscontrols(3);
+  we2 <= addresscontrols(2);
+  rdsel <= addresscontrols(1 downto 0);
 
 end Behavioral;
 
