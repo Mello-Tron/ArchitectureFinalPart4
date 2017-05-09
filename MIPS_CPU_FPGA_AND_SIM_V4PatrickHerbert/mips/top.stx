@@ -48,21 +48,17 @@ Architecture behave of Entity dmem is up to date.
 Architecture behave of Entity imem is up to date.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" in Library work.
 Entity <top> compiled.
-ERROR:HDLParsers:3312 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" Line 92. Undefined symbol 'clk50_in'.
-ERROR:HDLParsers:1209 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" Line 92. clk50_in: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" Line 92. Undefined symbol 'scancode'.
-ERROR:HDLParsers:1209 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" Line 92. scancode: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3324 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" Line 92. IN mode Formal clk50_in of vgatest with no default value must be associated with an actual value.
+Entity <top> (Architecture <test>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.28 secs
  
 --> 
 
-Total memory usage is 269884 kilobytes
+Total memory usage is 269844 kilobytes
 
-Number of errors   :    5 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

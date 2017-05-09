@@ -86,12 +86,12 @@ architecture test of top is
   signal instr: STD_LOGIC_VECTOR(31 downto 0);
   signal wem: STD_LOGIC;
   signal readdata: STD_LOGIC_VECTOR(31 downto 0);
-  signal scancode_bus: STD_LOGIC_VECTOR(7 downto 0);
+  signal scancode_to_vga: STD_LOGIC_VECTOR(7 downto 0);
 begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, wem, dataadr, writedata, readdata);
   keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data); --need to fix ps2_clk and ps2_data
-  display: vgatest port map(clk50_in, scancode_bus); -- need to fix clk50_in and scancode
+  display: vgatest port map(clk50_in, scancode_to_vga); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdata);
 

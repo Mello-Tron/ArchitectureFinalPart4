@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/tom herbert/Downloads/selected_files_201744_18257/HW4 Test/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/tom herbert/Downloads/selected_files_201744_18257/HW4 Test/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips/xst"
+set -tmpdir "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/xst"
 elaborate
 -ifn mux2.prj
 -ifmt mixed

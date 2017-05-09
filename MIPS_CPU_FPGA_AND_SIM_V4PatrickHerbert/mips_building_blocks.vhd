@@ -54,6 +54,15 @@ end;
 
 library IEEE; 
 use IEEE.STD_LOGIC_1164.all;
+entity mux3 is -- three-input multiplexer
+  generic(width: integer);
+  port(d0, d1, d2: in  STD_LOGIC_VECTOR(width-1 downto 0);
+       s:      in  STD_LOGIC_VECTOR(1 downto 0);
+       y:      out STD_LOGIC_VECTOR(width-1 downto 0));
+end;
+
+library IEEE; 
+use IEEE.STD_LOGIC_1164.all;
 entity mux2cont is -- two-input multiplexer
   port(d0, d1: in  STD_LOGIC;
        s:      in  STD_LOGIC;
@@ -136,6 +145,18 @@ architecture behave of mux2 is
 begin
   y <= d0 when s = '0' else d1;
 end;
+
+architecture Behavioral of mux3 is
+begin
+ process(s)
+ begin
+	case(s) is
+	when "00" => y <= d0;
+	when "01" => y <= d1;
+	when others => y <= d2;
+	end case;
+ end process;
+end Behavioral;
 
 architecture behave of mux2cont is
 begin
