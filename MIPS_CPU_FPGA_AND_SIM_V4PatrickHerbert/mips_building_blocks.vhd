@@ -385,6 +385,7 @@ entity ps2_kbd is
     ps2_clk  : in  std_logic;           -- clock from keyboard
     ps2_data : in  std_logic;           -- data from keyboard
 	 writedata: in STD_LOGIC_VECTOR(31 downto 0);
+	 we1:       in STD_LOGIC;
 	 readdata1: out STD_LOGIC_VECTOR(31 downto 0);
     scancode : out std_logic_vector(7 downto 0);  -- key scancode
     parity   : out std_logic;           -- parity bit for scancode
@@ -467,7 +468,7 @@ begin
   -- update the various registers
   process(rst, clk)
   begin
-    if rst = YES then
+    if rst = YES OR we1 = '0' then
       ps2_clk_r <= (others => '1');     -- start by assuming PS/2 clock has been high for a while
       sc_r      <= (others => '0');     -- clear scancode register
       keyrel_r  <= NO;                  -- key-release scancode has not been received yet

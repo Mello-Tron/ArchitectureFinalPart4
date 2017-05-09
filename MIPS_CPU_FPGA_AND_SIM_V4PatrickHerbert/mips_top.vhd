@@ -43,6 +43,7 @@ architecture test of top is
 		 ps2_clk  : in  std_logic;           -- clock from keyboard
 		 ps2_data : in  std_logic;           -- data from keyboard
 		 writedata: in STD_LOGIC_VECTOR(31 downto 0);
+		 we1      : in STD_LOGIC;
 		 readdata1: out STD_LOGIC_VECTOR(31 downto 0);
 		 scancode : out std_logic_vector(7 downto 0);  -- key scancode
 		 parity   : out std_logic;           -- parity bit for scancode
@@ -105,7 +106,7 @@ architecture test of top is
 begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, readdata);
-  keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, writedata, readdata1); --need to fix ps2_clk and ps2_data
+  keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, writedata, we1, readdata1); --need to fix ps2_clk and ps2_data
   display: vgatest port map(clk50_in, scancode_to_vga, writedata); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
