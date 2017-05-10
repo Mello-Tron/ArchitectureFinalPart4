@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: mips_fpga_interface.prj
 
@@ -203,16 +203,16 @@ Analyzing Entity <mips_fpga_interface> in library <work> (Architecture <test_fpg
 Entity <mips_fpga_interface> analyzed. Unit <mips_fpga_interface> generated.
 
 Analyzing Entity <top> in library <work> (Architecture <test>).
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'scancode' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'parity' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'busy' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'rdy' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'error' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'red_out' of component 'vgatest'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'green_out' of component 'vgatest'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'blue_out' of component 'vgatest'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'hs_out' of component 'vgatest'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'vs_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'scancode' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'busy' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'rdy' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'error' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 116: Unconnected output port 'red_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 116: Unconnected output port 'green_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 116: Unconnected output port 'blue_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 116: Unconnected output port 'hs_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 116: Unconnected output port 'vs_out' of component 'vgatest'.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <mips> in library <work> (Architecture <struct>).
@@ -479,6 +479,11 @@ Unit <mips> synthesized.
 
 Synthesizing Unit <top>.
     Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd".
+WARNING:Xst:1305 - Output <blue_out> is never assigned. Tied to value 000.
+WARNING:Xst:1305 - Output <red_out> is never assigned. Tied to value 000.
+WARNING:Xst:1305 - Output <vs_out> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <green_out> is never assigned. Tied to value 000.
+WARNING:Xst:1305 - Output <hs_out> is never assigned. Tied to value 0.
 WARNING:Xst:653 - Signal <scancode_to_vga> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <top> synthesized.
 
@@ -486,10 +491,10 @@ Unit <top> synthesized.
 Synthesizing Unit <mips_fpga_interface>.
     Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd".
     Found 32-bit up counter for signal <cnt>.
-    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 54.
+    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 64.
     Found 1-bit register for signal <mips_clk_input>.
-    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 48.
-    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 52.
+    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 58.
+    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 62.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
@@ -2944,8 +2949,6 @@ WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_28> of sequential type is unc
 WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_29> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_30> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_31> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_6> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_7> of sequential type is unconnected in block <mips_fpga_interface>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -2957,8 +2960,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 37
- Flip-Flops                                            : 37
+# Registers                                            : 39
+ Flip-Flops                                            : 39
 
 =========================================================================
 
@@ -2984,27 +2987,27 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 12
+# IOs                              : 23
 
 Cell Usage :
-# BELS                             : 253
+# BELS                             : 267
 #      GND                         : 1
 #      INV                         : 12
-#      LUT1                        : 73
+#      LUT1                        : 75
 #      LUT2                        : 3
-#      LUT3                        : 1
-#      LUT4                        : 8
-#      MUXCY                       : 91
+#      LUT3                        : 2
+#      LUT4                        : 15
+#      MUXCY                       : 93
 #      VCC                         : 1
-#      XORCY                       : 63
-# FlipFlops/Latches                : 37
-#      FDC                         : 4
+#      XORCY                       : 65
+# FlipFlops/Latches                : 39
+#      FDC                         : 6
 #      FDR                         : 33
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 19
 #      IBUF                        : 1
-#      OBUF                        : 7
+#      OBUF                        : 18
 =========================================================================
 
 Device utilization summary:
@@ -3012,11 +3015,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       65  out of   7680     0%  
- Number of Slice Flip Flops:             37  out of  15360     0%  
- Number of 4 input LUTs:                 97  out of  15360     0%  
- Number of IOs:                          12
- Number of bonded IOBs:                   9  out of    173     5%  
+ Number of Slices:                       69  out of   7680     0%  
+ Number of Slice Flip Flops:             39  out of  15360     0%  
+ Number of 4 input LUTs:                107  out of  15360     0%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  20  out of    173    11%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -3041,7 +3044,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)            | Load  |
 -----------------------------------+----------------------------------+-------+
 clk                                | BUFGP                            | 33    |
-mips_clk_input                     | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 4     |
+mips_clk_input                     | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 6     |
 -----------------------------------+----------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -3050,7 +3053,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+----------------------------------+-------+
 Control Signal                     | Buffer(FF name)                  | Load  |
 -----------------------------------+----------------------------------+-------+
-reset(reset1_INV_0:O)              | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 4     |
+reset(reset1_INV_0:O)              | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 6     |
 -----------------------------------+----------------------------------+-------+
 
 Timing Summary:
@@ -3059,7 +3062,7 @@ Speed Grade: -5
 
    Minimum period: 10.881ns (Maximum Frequency: 91.904MHz)
    Minimum input arrival time before clock: 4.727ns
-   Maximum output required time after clock: 6.280ns
+   Maximum output required time after clock: 9.316ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -3123,28 +3126,31 @@ Delay:               10.881ns (Levels of Logic = 34)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mips_clk_input'
-  Clock period: 3.598ns (frequency: 277.936MHz)
-  Total number of paths / destination ports: 10 / 4
+  Clock period: 5.249ns (frequency: 190.522MHz)
+  Total number of paths / destination ports: 57 / 6
 -------------------------------------------------------------------------
-Delay:               3.598ns (Levels of Logic = 4)
+Delay:               5.249ns (Levels of Logic = 7)
   Source:            mips_cpu/mips1/dp/pcreg/q_3 (FF)
-  Destination:       mips_cpu/mips1/dp/pcreg/q_5 (FF)
+  Destination:       mips_cpu/mips1/dp/pcreg/q_7 (FF)
   Source Clock:      mips_clk_input rising
   Destination Clock: mips_clk_input rising
 
-  Data Path: mips_cpu/mips1/dp/pcreg/q_3 to mips_cpu/mips1/dp/pcreg/q_5
+  Data Path: mips_cpu/mips1/dp/pcreg/q_3 to mips_cpu/mips1/dp/pcreg/q_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   1.040  mips_cpu/mips1/dp/pcreg/q_3 (mips_cpu/mips1/dp/pcreg/q_3)
+     FDC:C->Q              9   0.626   1.250  mips_cpu/mips1/dp/pcreg/q_3 (mips_cpu/mips1/dp/pcreg/q_3)
      LUT1:I0->O            1   0.479   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<3>_rt (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<3>_rt)
      MUXCY:S->O            1   0.435   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<3> (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<3>)
-     MUXCY:CI->O           0   0.056   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<4> (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<4>)
-     XORCY:CI->O           1   0.786   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_xor<5> (mips_cpu/mips1/dp/pcnext<5>)
-     FDC:D                     0.176          mips_cpu/mips1/dp/pcreg/q_5
+     MUXCY:CI->O           1   0.056   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<4> (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<5> (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<5>)
+     MUXCY:CI->O           0   0.056   0.000  mips_cpu/mips1/dp/pcadd1/Madd_y_cy<6> (mips_cpu/mips1/dp/pcadd1/Madd_y_cy<6>)
+     XORCY:CI->O           1   0.786   0.851  mips_cpu/mips1/dp/pcadd1/Madd_y_xor<7> (mips_cpu/mips1/dp/pcplus4<7>)
+     LUT4:I1->O            1   0.479   0.000  mips_cpu/mips1/dp/pcmux/y<7>1 (mips_cpu/mips1/dp/pcnext<7>)
+     FDC:D                     0.176          mips_cpu/mips1/dp/pcreg/q_7
     ----------------------------------------
-    Total                      3.598ns (2.557ns logic, 1.040ns route)
-                                       (71.1% logic, 28.9% route)
+    Total                      5.249ns (3.148ns logic, 2.101ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -3168,34 +3174,36 @@ Offset:              4.727ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mips_clk_input'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 10 / 5
 -------------------------------------------------------------------------
-Offset:              6.280ns (Levels of Logic = 1)
-  Source:            mips_cpu/mips1/dp/pcreg/q_5 (FF)
-  Destination:       led<5> (PAD)
+Offset:              9.316ns (Levels of Logic = 3)
+  Source:            mips_cpu/mips1/dp/pcreg/q_4 (FF)
+  Destination:       led<6> (PAD)
   Source Clock:      mips_clk_input rising
 
-  Data Path: mips_cpu/mips1/dp/pcreg/q_5 to led<5>
+  Data Path: mips_cpu/mips1/dp/pcreg/q_4 to led<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  mips_cpu/mips1/dp/pcreg/q_5 (mips_cpu/mips1/dp/pcreg/q_5)
-     OBUF:I->O                 4.909          led_5_OBUF (led<5>)
+     FDC:C->Q              3   0.626   1.066  mips_cpu/mips1/dp/pcreg/q_4 (mips_cpu/mips1/dp/pcreg/q_4)
+     LUT4:I0->O            7   0.479   1.076  mips_cpu/instr<21>11 (N11)
+     LUT3:I1->O            1   0.479   0.681  led<6>1 (led_6_OBUF)
+     OBUF:I->O                 4.909          led_6_OBUF (led<6>)
     ----------------------------------------
-    Total                      6.280ns (5.535ns logic, 0.745ns route)
-                                       (88.1% logic, 11.9% route)
+    Total                      9.316ns (6.493ns logic, 2.823ns route)
+                                       (69.7% logic, 30.3% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 17.05 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.66 secs
  
 --> 
 
-Total memory usage is 377136 kilobytes
+Total memory usage is 373256 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2326 (   0 filtered)
+Number of warnings : 2329 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

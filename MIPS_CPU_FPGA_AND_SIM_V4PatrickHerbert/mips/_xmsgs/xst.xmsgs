@@ -5,53 +5,53 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">scancode</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">scancode</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">parity</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">parity</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">error</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">error</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">red_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">116</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">red_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">green_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">116</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">green_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">blue_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">116</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">blue_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">hs_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">116</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">hs_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">vs_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd</arg>&quot; line <arg fmt="%d" index="2">116</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">vs_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatest</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">247</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">247</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">471</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd</arg>&quot; line <arg fmt="%d" index="2">471</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;we1&gt;</arg>
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">blue_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">vgatest</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blue_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">vgatest</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">writedata&lt;31:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">writedata&lt;31:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">scancode</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">scancode</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; is used but never assigned. Tied to default value.
@@ -69,7 +69,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">a&lt;31:30&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">memwrite</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">memwrite</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">instr&lt;31:26&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -78,10 +78,25 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">alushiftselect</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">scancode_to_vga</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">blue_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">display</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips_cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">red_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">vs_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">green_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">hs_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">scancode_to_vga</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">display</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips_cpu</arg>&gt;.
 It will be removed from the design.
 </msg>
 
@@ -97,304 +112,304 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mips_cpu/mips1/dp/pcreg/q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/bitcnt_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/ps2_clk_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/rdy_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/rdy_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/error_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/error_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/timer_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/keyrel_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/keyrel_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/keyboard/sc_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hcounter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vcounter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/color_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hs_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/hs_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vs_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/vs_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/green_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/red_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/clk25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/display/clk25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/mem_35_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
@@ -6995,12 +7010,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/mips1/dp/pcreg/q_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/mips1/dp/pcreg/q_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/mips1/dp/pcreg/q_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

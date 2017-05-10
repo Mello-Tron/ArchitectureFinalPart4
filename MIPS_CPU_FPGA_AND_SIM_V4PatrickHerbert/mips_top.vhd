@@ -22,6 +22,11 @@ entity top is -- top-level design for testing
        ps2_clk   : in  std_logic;           -- keyboard clock
 		 ps2_data  : in  std_logic;           -- keyboard data
 		 clk50_in : in std_logic;
+		 red_out : out std_logic_vector(2 downto 0);
+		 green_out : out std_logic_vector(2 downto 0);
+		 blue_out : out std_logic_vector(2 downto 0);
+		 hs_out : out std_logic;
+		 vs_out : out std_logic;
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );

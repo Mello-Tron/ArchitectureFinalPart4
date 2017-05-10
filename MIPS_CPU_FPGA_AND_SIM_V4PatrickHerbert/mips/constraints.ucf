@@ -9,13 +9,13 @@ net      rst_n           loc=E11;       # active-low pushbutton
 #net      clk50_in        loc=P8;        # 50 MHZ Clock
 
 # LEDS
-#net      led<0>    loc=M6;  
-#net      led<1>    loc=M11; 
-#net      led<2>    loc=N6;  
-#net      led<3>    loc=R7;  
-#net      led<4>    loc=P10; 
-#net      led<5>    loc=T7;  
-#net      led<6>    loc=R10; 
+net      led<0>    loc=M6;  
+net      led<1>    loc=M11; 
+net      led<2>    loc=N6;  
+net      led<3>    loc=R7;  
+net      led<4>    loc=P10; 
+net      led<5>    loc=T7;  
+net      led<6>    loc=R10; 
 
 # XSA Board FPGA pin assignment constraints
 
@@ -25,13 +25,13 @@ net ps2_clk       loc=B16; # PS2 KEYBOARD CLOCK
 net ps2_data      loc=E13; # PS3 SERIAL DATA
 
 # PINS FOR THE LED DISPLAY ON THE FPGA BOARD
-net s<0>          loc=M6;   #      
-net s<1>          loc=M11;  #    |-S6-|  
-net s<2>          loc=N6;   #    S5  S4   
-net s<3>          loc=R7;   #    |-S3-|  
-net s<4>          loc=P10;  #    S2  S1  
-net s<5>          loc=T7;   #    |-S0-|
-net s<6>          loc=R10;  #
+#net s<0>          loc=M6;   #      
+#net s<1>          loc=M11;  #    |-S6-|  
+#net s<2>          loc=N6;   #    S5  S4   
+#net s<3>          loc=R7;   #    |-S3-|  
+#net s<4>          loc=P10;  #    S2  S1  
+#net s<5>          loc=T7;   #    |-S0-|
+#net s<6>          loc=R10;  #
 
 # VGA OUTPUT/INPUT PINS
 net clk50_in      loc=P8;  # CLKB 50 MHZ INPUT FROM XSA BOARD FOR VGA
