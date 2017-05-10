@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: mips_fpga_interface.prj
 
@@ -104,34 +104,39 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" in Library work.
 Architecture behave of Entity regfile is up to date.
 Architecture behave of Entity adder is up to date.
 Architecture behave of Entity sl2 is up to date.
 Architecture behave of Entity signext is up to date.
 Architecture asynchronous of Entity flopr is up to date.
 Architecture behave of Entity mux2 is up to date.
+Architecture behavioral of Entity mux3 is up to date.
 Architecture behave of Entity mux2cont is up to date.
 Architecture behavioral of Entity shiftleft is up to date.
 Architecture behavioral of Entity shiftright is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd" in Library work.
+Architecture behavioral of Entity vgatest is up to date.
+Architecture arch of Entity ps2_kbd is up to date.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd" in Library work.
+Architecture behavioral of Entity addressdec is up to date.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd" in Library work.
 Architecture behave of Entity alu is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd" in Library work.
 Architecture behave of Entity maindec is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd" in Library work.
 Architecture behave of Entity aludec is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd" in Library work.
 Architecture struct of Entity controller is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd" in Library work.
 Architecture struct of Entity datapath is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd" in Library work.
 Architecture struct of Entity mips is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd" in Library work.
 Architecture behave of Entity dmem is up to date.
 Architecture behave of Entity imem is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" in Library work.
 Architecture test of Entity top is up to date.
-Compiling vhdl file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd" in Library work.
+Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd" in Library work.
 Architecture test_fpga of Entity mips_fpga_interface is up to date.
 
 =========================================================================
@@ -143,9 +148,17 @@ Analyzing hierarchy for entity <top> in library <work> (architecture <test>).
 
 Analyzing hierarchy for entity <mips> in library <work> (architecture <struct>).
 
+Analyzing hierarchy for entity <ps2_kbd> in library <work> (architecture <arch>) with generics.
+	FREQ = 100000
+
+Analyzing hierarchy for entity <vgatest> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <imem> in library <work> (architecture <behave>).
 
 Analyzing hierarchy for entity <dmem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 32
 
 Analyzing hierarchy for entity <controller> in library <work> (architecture <struct>).
 
@@ -174,6 +187,8 @@ Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) 
 
 Analyzing hierarchy for entity <signext> in library <work> (architecture <behave>).
 
+Analyzing hierarchy for entity <addressdec> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <alu> in library <work> (architecture <behave>).
 
 Analyzing hierarchy for entity <ShiftLeft> in library <work> (architecture <behavioral>).
@@ -188,6 +203,16 @@ Analyzing Entity <mips_fpga_interface> in library <work> (Architecture <test_fpg
 Entity <mips_fpga_interface> analyzed. Unit <mips_fpga_interface> generated.
 
 Analyzing Entity <top> in library <work> (Architecture <test>).
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'scancode' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'busy' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'rdy' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 110: Unconnected output port 'error' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'red_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'green_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'blue_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'hs_out' of component 'vgatest'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 111: Unconnected output port 'vs_out' of component 'vgatest'.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <mips> in library <work> (Architecture <struct>).
@@ -218,10 +243,6 @@ Entity <adder> analyzed. Unit <adder> generated.
 Analyzing Entity <sl2> in library <work> (Architecture <behave>).
 Entity <sl2> analyzed. Unit <sl2> generated.
 
-Analyzing generic Entity <mux2.1> in library <work> (Architecture <behave>).
-	width = 32
-Entity <mux2.1> analyzed. Unit <mux2.1> generated.
-
 Analyzing Entity <regfile> in library <work> (Architecture <behave>).
 Entity <regfile> analyzed. Unit <regfile> generated.
 
@@ -232,22 +253,39 @@ Entity <mux2.2> analyzed. Unit <mux2.2> generated.
 Analyzing Entity <signext> in library <work> (Architecture <behave>).
 Entity <signext> analyzed. Unit <signext> generated.
 
+Analyzing Entity <addressdec> in library <work> (Architecture <behavioral>).
+Entity <addressdec> analyzed. Unit <addressdec> generated.
+
 Analyzing Entity <alu> in library <work> (Architecture <behave>).
 Entity <alu> analyzed. Unit <alu> generated.
 
 Analyzing Entity <ShiftLeft> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 182: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 203: Mux is complete : default of case is discarded
 Entity <ShiftLeft> analyzed. Unit <ShiftLeft> generated.
 
 Analyzing Entity <ShiftRight> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 226: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 247: Mux is complete : default of case is discarded
 Entity <ShiftRight> analyzed. Unit <ShiftRight> generated.
+
+Analyzing generic Entity <ps2_kbd> in library <work> (Architecture <arch>).
+	FREQ = 100000
+WARNING:Xst:819 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 471: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <we1>
+Entity <ps2_kbd> analyzed. Unit <ps2_kbd> generated.
+
+Analyzing Entity <vgatest> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <blue_out> in unit <vgatest> has a constant value of 000 during circuit operation. The register is replaced by logic.
+Entity <vgatest> analyzed. Unit <vgatest> generated.
 
 Analyzing Entity <imem> in library <work> (Architecture <behave>).
 Entity <imem> analyzed. Unit <imem> generated.
 
 Analyzing Entity <dmem> in library <work> (Architecture <behave>).
 Entity <dmem> analyzed. Unit <dmem> generated.
+
+Analyzing generic Entity <mux2.1> in library <work> (Architecture <behave>).
+	width = 32
+Entity <mux2.1> analyzed. Unit <mux2.1> generated.
 
 
 =========================================================================
@@ -256,8 +294,57 @@ Entity <dmem> analyzed. Unit <dmem> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <ps2_kbd>.
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Found 4-bit up counter for signal <bitcnt_r>.
+    Found 1-bit register for signal <error_r>.
+    Found 1-bit register for signal <keyrel_r>.
+    Found 5-bit register for signal <ps2_clk_r>.
+    Found 1-bit register for signal <rdy_r>.
+    Found 10-bit register for signal <sc_r>.
+    Found 14-bit register for signal <timer_r>.
+    Found 14-bit adder for signal <timer_x$addsub0000> created at line 435.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ps2_kbd> synthesized.
+
+
+Synthesizing Unit <vgatest>.
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+WARNING:Xst:647 - Input <writedata<31:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scancode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <red_out>.
+    Found 1-bit register for signal <vs_out>.
+    Found 3-bit register for signal <green_out>.
+    Found 1-bit register for signal <hs_out>.
+    Found 1-bit register for signal <clk25>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit adder for signal <cnt$addsub0000> created at line 298.
+    Found 3-bit up counter for signal <color>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 10-bit comparator greater for signal <hs_out$cmp_gt0000> created at line 339.
+    Found 10-bit comparator less for signal <hs_out$cmp_lt0000> created at line 339.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0000> created at line 321.
+    Found 9-bit comparator greater for signal <red_out$cmp_gt0001> created at line 321.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0000> created at line 321.
+    Found 9-bit comparator less for signal <red_out$cmp_lt0001> created at line 321.
+    Found 10-bit subtractor for signal <red_out$sub0000> created at line 314.
+    Found 9-bit subtractor for signal <red_out$sub0001> created at line 315.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 10-bit comparator greater for signal <vs_out$cmp_gt0000> created at line 351.
+    Found 10-bit comparator less for signal <vs_out$cmp_lt0000> created at line 351.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <vgatest> synthesized.
+
+
 Synthesizing Unit <imem>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd".
 WARNING:Xst:1781 - Signal <mem> is used but never assigned. Tied to default value.
     Found 64x32-bit ROM for signal <rd>.
     Summary:
@@ -266,7 +353,7 @@ Unit <imem> synthesized.
 
 
 Synthesizing Unit <dmem>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd".
 WARNING:Xst:647 - Input <a<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <a<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit 64-to-1 multiplexer for signal <rd>.
@@ -278,23 +365,31 @@ INFO:Xst:738 - HDL ADVISOR - 2048 flip-flops were inferred for signal <mem>. You
 Unit <dmem> synthesized.
 
 
+Synthesizing Unit <mux2_1>.
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+Unit <mux2_1> synthesized.
+
+
 Synthesizing Unit <maindec>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd".
 Unit <maindec> synthesized.
 
 
 Synthesizing Unit <aludec>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd".
+    Found 5-bit 8-to-1 multiplexer for signal <alucontrol>.
+    Summary:
+	inferred   5 Multiplexer(s).
 Unit <aludec> synthesized.
 
 
 Synthesizing Unit <mux2cont>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
 Unit <mux2cont> synthesized.
 
 
 Synthesizing Unit <flopr>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
     Found 32-bit register for signal <q>.
     Summary:
 	inferred  32 D-type flip-flop(s).
@@ -302,7 +397,7 @@ Unit <flopr> synthesized.
 
 
 Synthesizing Unit <adder>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
     Found 32-bit adder for signal <y>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -310,18 +405,13 @@ Unit <adder> synthesized.
 
 
 Synthesizing Unit <sl2>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
 WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <sl2> synthesized.
 
 
-Synthesizing Unit <mux2_1>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
-Unit <mux2_1> synthesized.
-
-
 Synthesizing Unit <regfile>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
     Found 32x32-bit dual-port RAM <Mram_mem> for signal <mem>.
     Found 32x32-bit dual-port RAM <Mram_mem_ren> for signal <mem>.
     Summary:
@@ -330,17 +420,23 @@ Unit <regfile> synthesized.
 
 
 Synthesizing Unit <mux2_2>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
 Unit <mux2_2> synthesized.
 
 
 Synthesizing Unit <signext>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
 Unit <signext> synthesized.
 
 
+Synthesizing Unit <addressdec>.
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd".
+WARNING:Xst:647 - Input <memwrite> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <addressdec> synthesized.
+
+
 Synthesizing Unit <ShiftLeft>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
     Found 32-bit shifter logical left for signal <c>.
     Summary:
 	inferred   1 Combinational logic shifter(s).
@@ -348,7 +444,7 @@ Unit <ShiftLeft> synthesized.
 
 
 Synthesizing Unit <ShiftRight>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
     Found 32-bit shifter logical right for signal <c>.
     Summary:
 	inferred   1 Combinational logic shifter(s).
@@ -356,12 +452,12 @@ Unit <ShiftRight> synthesized.
 
 
 Synthesizing Unit <controller>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd".
 Unit <controller> synthesized.
 
 
 Synthesizing Unit <alu>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd".
     Found 32-bit xor2 for signal <result$xor0000> created at line 34.
     Found 32-bit adder carry in for signal <sum>.
     Summary:
@@ -370,29 +466,30 @@ Unit <alu> synthesized.
 
 
 Synthesizing Unit <datapath>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd".
 WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <datapath> synthesized.
 
 
 Synthesizing Unit <mips>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd".
 WARNING:Xst:1780 - Signal <alushiftselect> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <mips> synthesized.
 
 
 Synthesizing Unit <top>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd".
+WARNING:Xst:653 - Signal <scancode_to_vga> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <top> synthesized.
 
 
 Synthesizing Unit <mips_fpga_interface>.
-    Related source file is "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd".
+    Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd".
     Found 32-bit up counter for signal <cnt>.
-    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 48.
+    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 54.
     Found 1-bit register for signal <mips_clk_input>.
-    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 42.
-    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 46.
+    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 48.
+    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 52.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
@@ -409,19 +506,34 @@ Macro Statistics
  32x32-bit dual-port RAM                               : 2
 # ROMs                                                 : 1
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
+# Adders/Subtractors                                   : 8
+ 10-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 32-bit adder                                          : 4
  32-bit adder carry in                                 : 1
-# Counters                                             : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 66
- 1-bit register                                        : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 77
+ 1-bit register                                        : 7
+ 10-bit register                                       : 1
+ 14-bit register                                       : 1
+ 3-bit register                                        : 2
  32-bit register                                       : 65
-# Comparators                                          : 2
+ 5-bit register                                        : 1
+# Comparators                                          : 10
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 3
  32-bit comparator greatequal                          : 1
  32-bit comparator less                                : 1
-# Multiplexers                                         : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 2
  32-bit 64-to-1 multiplexer                            : 1
+ 5-bit 8-to-1 multiplexer                              : 1
 # Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
  32-bit shifter logical right                          : 1
@@ -434,6 +546,8 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <display> is unconnected in block <mips_cpu>.
+   It will be removed from the design.
 
 Synthesizing (advanced) Unit <regfile>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -478,18 +592,29 @@ Macro Statistics
  32x32-bit dual-port distributed RAM                   : 2
 # ROMs                                                 : 1
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
+# Adders/Subtractors                                   : 8
+ 10-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 32-bit adder                                          : 4
  32-bit adder carry in                                 : 1
-# Counters                                             : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 2081
- Flip-Flops                                            : 2081
-# Comparators                                          : 2
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 2122
+ Flip-Flops                                            : 2122
+# Comparators                                          : 10
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 3
  32-bit comparator greatequal                          : 1
  32-bit comparator less                                : 1
-# Multiplexers                                         : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 2
  32-bit 64-to-1 multiplexer                            : 1
+ 5-bit 8-to-1 multiplexer                              : 1
 # Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
  32-bit shifter logical right                          : 1
@@ -504,6 +629,10 @@ Macro Statistics
 
 Optimizing unit <mips_fpga_interface> ...
 
+Optimizing unit <ps2_kbd> ...
+
+Optimizing unit <vgatest> ...
+
 Optimizing unit <dmem> ...
 
 Optimizing unit <flopr> ...
@@ -515,6 +644,106 @@ Optimizing unit <alu> ...
 Optimizing unit <datapath> ...
 WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_0> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_1> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/ps2_clk_r_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/ps2_clk_r_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/ps2_clk_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/ps2_clk_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/ps2_clk_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/rdy_r> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/error_r> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/keyrel_r> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/keyboard/sc_r_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hcounter_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/cnt_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vcounter_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/color_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/color_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/color_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/hs_out> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/vs_out> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/green_out_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/green_out_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/green_out_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/red_out_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/red_out_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/red_out_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/display/clk25> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_31> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_30> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_29> of sequential type is unconnected in block <mips_fpga_interface>.
@@ -2755,7 +2984,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 9
+# IOs                              : 12
 
 Cell Usage :
 # BELS                             : 253
@@ -2786,7 +3015,7 @@ Selected Device : 3s1000ft256-5
  Number of Slices:                       65  out of   7680     0%  
  Number of Slice Flip Flops:             37  out of  15360     0%  
  Number of 4 input LUTs:                 97  out of  15360     0%  
- Number of IOs:                           9
+ Number of IOs:                          12
  Number of bonded IOBs:                   9  out of    173     5%  
  Number of GCLKs:                         1  out of      8    12%  
 
@@ -2959,14 +3188,14 @@ Offset:              6.280ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.38 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.05 secs
  
 --> 
 
-Total memory usage is 305648 kilobytes
+Total memory usage is 377136 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2210 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings : 2326 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 
