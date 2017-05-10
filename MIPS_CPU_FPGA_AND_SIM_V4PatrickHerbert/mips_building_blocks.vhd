@@ -313,7 +313,7 @@ begin
 	-- y coordinate: 0 - 479 (y = vcounter - 31, i.e., vcounter-Tpw-Tbp)
 	x := hcounter - 144;
 	y := vcounter - 31;
-  	if clk25'event and clk25 = '1' and we2 = '1' then
+  	if clk25'event and clk25 = '1' then
  		-- To draw a pixel in (x0, y0), simply test if the ray trace to it
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
@@ -470,7 +470,7 @@ begin
   -- update the various registers
   process(rst, clk)
   begin
-    if rst = YES OR we1 = '0' then
+    if rst = YES then
       ps2_clk_r <= (others => '1');     -- start by assuming PS/2 clock has been high for a while
       sc_r      <= (others => '0');     -- clear scancode register
       keyrel_r  <= NO;                  -- key-release scancode has not been received yet

@@ -108,12 +108,12 @@ architecture test of top is
   signal readdatam: STD_LOGIC_VECTOR(31 downto 0); --memory
   signal readdata1: STD_LOGIC_VECTOR(31 downto 0); --keyboard
   --signal readdata2: STD_LOGIC_VECTOR(31 downto 0); --vga
-  signal scancode_to_vga: STD_LOGIC_VECTOR(7 downto 0);
+  --signal scancode_to_vga: STD_LOGIC_VECTOR(7 downto 0);
 begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, readdata);
   keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, we1, readdata1); --need to fix ps2_clk and ps2_data
-  display: vgatest port map(clk50_in, scancode_to_vga, writedata, we2); -- need to fix clk50_in and scancode
+  display: vgatest port map(clk50_in, readdata(7 downto 0), writedata, we2, red_out, green_out, blue_out, hs_out, vs_out); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
   readmux: mux2 generic map(32) port map(readdatam, readdata1, rdsel, readdata);
