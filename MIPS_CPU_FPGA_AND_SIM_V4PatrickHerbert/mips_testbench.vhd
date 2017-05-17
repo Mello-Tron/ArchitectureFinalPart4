@@ -13,48 +13,57 @@ entity testbench is
 end;
 
 architecture test_simulation of testbench is
-  component alu is -- Arithmetic/Logic unit with add/sub, AND, OR, set less than
-  port(a, b:       in  STD_LOGIC_VECTOR(31 downto 0); --Pat
-       alucontrol: in  STD_LOGIC_VECTOR(4 downto 0);
-		 shamt: in STD_LOGIC_VECTOR(4 downto 0); --Pat
-       result:     inout STD_LOGIC_VECTOR(31 downto 0);
-       zero:       out STD_LOGIC);
-	end component;
-	
-	signal a, b, result : STD_LOGIC_VECTOR(31 downto 0);
-	signal alucontrol, shamt : STD_LOGIC_VECTOR(4 downto 0);
+  component top
+  port(clk, reset:         in     STD_LOGIC;
+       ps2_clk   : in  std_logic;           -- keyboard clock
+		 ps2_data  : in  std_logic;           -- keyboard data
+		 clk50_in : in std_logic;
+		 s         : out std_logic_vector(6 downto 0);  -- LED display
+		 red_out : out std_logic_vector(2 downto 0);
+		 green_out : out std_logic_vector(2 downto 0);
+		 blue_out : out std_logic_vector(2 downto 0);
+		 hs_out : out std_logic;
+		 vs_out : out std_logic;
+       writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
+       memwrite:           inout STD_LOGIC;
+		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
+  end component;
+  signal writedata, dataadr, pc: STD_LOGIC_VECTOR(31 downto 0);
+  signal clk, clk50_in, reset, memwrite: STD_LOGIC;
+  signal ps2_clk, ps2_data : STD_LOGIC;
+  signal s : STD_LOGIC_VECTOR(6 downto 0);
+  signal red_out, green_out, blue_out : STD_LOGIC_VECTOR(2 downto 0);
+  signal hs_out, vs_out : STD_LOGIC;
 begin
 
   -- instantiate device to be tested
-  myalu: alu port map(a, b, alucontrol, shamt, result);
+  dut: top port map(clk, reset, ps2_clk, ps2_data, clk50_in, s, red_out, green_out, blue_out, hs_out, vs_out, writedata, dataadr, memwrite, pc);
 
-  --AND result should be 1
-  a <= X"00000001" after 5 ns;
-  b <= X"00000001" after 5 ns;
-  alucontrol <= "00000" after 5 ns;
-  
-  --NAND result should be 0
-  a <= X"00000001" after 15 ns;
-  b <= X"00000001" after 15 ns;
-  alucontrol <= "00001" after 15 ns;
-  
-  --OR result should be 1
-  a <= X"00000000" after 30 ns;
-  b <= X"00000001" after 30 ns;
-  alucontrol <= "00010" after 30 ns;
-  
-  --SLL result should be X"00000002"
-  a <= X"00000001" after 45 ns;
-  shamt <= "00001" after 45 ns;
-  alucontrol <= "00011" after 45 ns;
-  
-  --...finish the rest...
-  
-  assert (alucontrol = "00000" and result = X"00000001") --and
-  or (alucontrol = "00001" and result = X"00000000") --nand
-  or (alucontrol = "00010" and result = X"00000001") --or
-  or (alucontrol = "00011" and result = X"00000002") --sll
-  report "There is an error"
-  severity error;
+  -- Generate clock with 10 ns period
+  process begin
+    clk <= '1';
+    wait for 5 ns; 
+    clk <= '0';
+    wait for 5 ns;
+  end process;
+
+  -- Generate reset for first two clock cycles
+  process begin
+    reset <= '1';
+    wait for 22 ns;
+    reset <= '0';
+    wait;
+  end process;
+
+  -- check that 7 gets written to address 84 at end of program
+  process (clk) begin
+    if (clk'event and clk = '0' and memwrite = '1') then
+      if ( to_integer(unsigned(writedata)) = 1) then 
+        report "Simulation succeeded";
+	  else 
+        report "Simulation failed";
+      end if;
+    end if;
+  end process;
   
 end test_simulation;

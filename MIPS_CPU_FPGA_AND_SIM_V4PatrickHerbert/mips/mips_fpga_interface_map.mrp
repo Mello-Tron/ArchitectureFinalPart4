@@ -10,25 +10,23 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue May 16 16:57:46 2017
+Mapped Date    : Tue May 16 17:59:27 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:         2,163 out of  15,360   14%
-  Number of 4 input LUTs:             1,576 out of  15,360   10%
+  Number of Slice Flip Flops:            70 out of  15,360    1%
+  Number of 4 input LUTs:                90 out of  15,360    1%
 Logic Distribution:
-  Number of occupied Slices:          1,880 out of   7,680   24%
-    Number of Slices containing only related logic:   1,880 out of   1,880 100%
-    Number of Slices containing unrelated logic:          0 out of   1,880   0%
+  Number of occupied Slices:             80 out of   7,680    1%
+    Number of Slices containing only related logic:      80 out of      80 100%
+    Number of Slices containing unrelated logic:          0 out of      80   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,674 out of  15,360   10%
-    Number used as logic:             1,448
-    Number used as a route-thru:         98
-    Number used for Dual Port RAMs:     128
-      (Two LUTs used per Dual Port RAM)
+  Total Number of 4 input LUTs:         121 out of  15,360    1%
+    Number used as logic:                90
+    Number used as a route-thru:         31
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -36,11 +34,11 @@ Logic Distribution:
   Number of bonded IOBs:                 23 out of     173   13%
   Number of BUFGMUXs:                     3 out of       8   37%
 
-Average Fanout of Non-Clock Nets:                3.36
+Average Fanout of Non-Clock Nets:                2.87
 
-Peak Memory Usage:  311 MB
-Total REAL time to MAP completion:  3 secs 
-Total CPU time to MAP completion:   2 secs 
+Peak Memory Usage:  279 MB
+Total REAL time to MAP completion:  0 secs 
+Total CPU time to MAP completion:   0 secs 
 
 NOTES:
 
@@ -84,16 +82,7 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network mips_cpu/mips1/dp/rf/Mram_mem_ren61/SPO has no
-   load.
-INFO:LIT:395 - The above info message is repeated 63 more times for the
-   following (max. 5 shown):
-   mips_cpu/mips1/dp/rf/Mram_mem_ren63/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem_ren59/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem_ren55/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem_ren57/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem_ren53/SPO
-   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:243 - Logical network rst_n_IBUF has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -101,7 +90,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   3 block(s) optimized away
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -110,7 +99,6 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
-MUXCY 		mips_cpu/mips1/dp/mainalu/Madd_sum_cy<0>
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

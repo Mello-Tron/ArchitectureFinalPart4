@@ -1,2 +1,0 @@
-vhdl work "../mips_building_blocks.vhd"
-vhdl work "../mips_alu.vhd"

@@ -1,10 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/alu_isim_beh.exe -prj C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/alu_beh.prj work.alu 
+Running: C:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/testbench_isim_beh.exe -prj C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/testbench_beh.prj work.testbench 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_building_blocks.vhd" into library work
-Parsing VHDL file "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_alu.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_building_blocks.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_decoder_main.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_decoder_alu.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_alu.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_datapath.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_controller.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_mem.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_top.vhd" into library work
+Parsing VHDL file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/../mips_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -12,11 +21,33 @@ Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package numeric_std
+Compiling package textio
+Compiling architecture behave of entity maindec [maindec_default]
+Compiling architecture behave of entity aludec [aludec_default]
+Compiling architecture behave of entity mux2cont [mux2cont_default]
+Compiling architecture struct of entity controller [controller_default]
+Compiling architecture asynchronous of entity flopr [\flopr(32)\]
+Compiling architecture behave of entity adder [adder_default]
+Compiling architecture behave of entity sl2 [sl2_default]
+Compiling architecture behave of entity mux2 [\mux2(32)\]
+Compiling architecture behave of entity regfile [regfile_default]
+Compiling architecture behave of entity mux2 [\mux2(5)\]
+Compiling architecture behave of entity signext [signext_default]
+Compiling architecture behavioral of entity addressdec [addressdec_default]
 Compiling architecture behavioral of entity ShiftLeft [shiftleft_default]
 Compiling architecture behavioral of entity ShiftRight [shiftright_default]
-Compiling architecture behave of entity alu
+Compiling architecture behave of entity alu [alu_default]
+Compiling architecture struct of entity datapath [datapath_default]
+Compiling architecture struct of entity mips [mips_default]
+Compiling architecture arch of entity ps2_kbd [\ps2_kbd(100000)\]
+Compiling architecture behavioral of entity vgatest [vgatest_default]
+Compiling architecture behave of entity imem [imem_default]
+Compiling architecture behave of entity dmem [dmem_default]
+Compiling architecture test of entity top [\top(100000)\]
+Compiling architecture test_simulation of entity testbench
 Time Resolution for simulation is 1ps.
-Compiled 10 VHDL Units
-Built simulation executable C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/alu_isim_beh.exe
-Fuse Memory Usage: 37456 KB
-Fuse CPU Usage: 421 ms
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 51 VHDL Units
+Built simulation executable C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/testbench_isim_beh.exe
+Fuse Memory Usage: 38896 KB
+Fuse CPU Usage: 1124 ms

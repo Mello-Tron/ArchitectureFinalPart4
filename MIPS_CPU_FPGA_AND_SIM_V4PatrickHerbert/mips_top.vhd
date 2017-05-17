@@ -121,6 +121,7 @@ architecture test of top is
   signal s_x       : std_logic_vector(6 downto 0);  -- next state of LED segments
   signal kbd_error : std_logic;         -- error receiving scancode from keyboard
   signal scancode  : std_logic_vector(7 downto 0);
+  signal scancodeExtended : STD_LOGIC_VECTOR(31 downto 0);
   
   -- LED segment activation patterns for various numbers and letters
   constant DIG_1    : std_logic_vector(6 downto 0) := "0010010";
@@ -155,11 +156,13 @@ begin
       error    => kbd_error             -- indicates an error in receiving a scancode from the keyboard
       );
   
-  display: vgatest port map(clk50_in, readdata(7 downto 0), writedata, we2, red_out, green_out, blue_out, hs_out, vs_out); -- need to fix clk50_in and scancode
+  display: vgatest port map(clk50_in, readdata(7 downto 0), scancodeExtended, we2, red_out, green_out, blue_out, hs_out, vs_out); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
   readmux: mux2 generic map(32) port map(readdatam, readdata1, rdsel, readdata);
   --readmux: mux3 generic map(32) port map(readdatam, readdata1, readdata2, rdsel, readdata);
+  
+  scancodeExtended <= X"000000" & scancode;
   
   -- this maps the scancode received from the keyboard into a pattern on the 7-segment display
   s_x <= DIG_1 when scancode = "00010110" else

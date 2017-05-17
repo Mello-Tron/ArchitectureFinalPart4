@@ -318,9 +318,9 @@ begin
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
-	 	if ( (( x > 50) and (x < 200)) and ((y > 200) and (y < 300)) ) then
+	 	if ( (( x > 50) and (x < 200)) and ((y > 100) and (y < 300)) ) then
       	red_out <= writedata( 2 downto 0 );
-      	green_out <= color; 
+      	green_out <= "010"; 
       	blue_out <= "000";
     	else
 			-- if not traced, set it to "black" color
@@ -462,6 +462,7 @@ begin
              error_r;
 
   scancode <= sc_r(scancode'range);     -- output scancode
+  
   readdata1 <= X"000000" & sc_r(scancode'range);
   parity   <= sc_r(scancode'high+1);    -- output parity bit for the scancode
   busy     <= YES when bitcnt_r/=0 else NO;  -- output busy signal when receiving a scancode
