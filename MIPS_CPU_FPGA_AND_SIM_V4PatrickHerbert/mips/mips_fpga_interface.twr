@@ -37,816 +37,447 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 414004 paths analyzed, 715 endpoints analyzed, 198 failing endpoints
- 198 timing errors detected. (198 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  14.631ns.
+ 413892 paths analyzed, 715 endpoints analyzed, 204 failing endpoints
+ 204 timing errors detected. (204 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  14.852ns.
 --------------------------------------------------------------------------------
 
-Paths for end point mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F (SLICE_X36Y33.BY), 35043 paths
+Paths for end point mips_cpu/dmem1/mem_8_7 (SLICE_X42Y9.CE), 1373 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.631ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               mips_cpu/mips1/dp/pcreg/q_7 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F (RAM)
+Slack (setup path):     -4.852ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mips_cpu/mips1/dp/pcreg/q_3_1 (FF)
+  Destination:          mips_cpu/dmem1/mem_8_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.627ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.004ns (0.530 - 0.534)
+  Data Path Delay:      14.658ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.194ns (0.538 - 0.732)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_3_1 to mips_cpu/dmem1/mem_8_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
-                                                       mips_cpu/mips1/dp/pcreg/q_7
-    SLICE_X41Y30.G1      net (fanout=4)        0.631   mips_cpu/mips1/dp/pcreg/q<7>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
-                                                       mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X38Y22.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q_3_1
+                                                       mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.G1      net (fanout=15)       1.326   mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_7
     -------------------------------------------------  ---------------------------
-    Total                                     14.627ns (7.341ns logic, 7.286ns route)
-                                                       (50.2% logic, 49.8% route)
+    Total                                     14.658ns (5.255ns logic, 9.403ns route)
+                                                       (35.9% logic, 64.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.488ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               mips_cpu/mips1/dp/pcreg/q_4 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F (RAM)
-  Requirement:          10.000ns
-  Data Path Delay:      14.479ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.009ns (0.530 - 0.539)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_4 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X40Y31.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<5>
-                                                       mips_cpu/mips1/dp/pcreg/q_4
-    SLICE_X41Y30.G2      net (fanout=4)        0.483   mips_cpu/mips1/dp/pcreg/q<4>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
-                                                       mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
-                                                       mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
-    -------------------------------------------------  ---------------------------
-    Total                                     14.479ns (7.341ns logic, 7.138ns route)
-                                                       (50.7% logic, 49.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     -4.450ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -4.728ns (requirement - (data path - clock path skew + uncertainty))
   Source:               mips_cpu/mips1/dp/pcreg/q_6 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F (RAM)
+  Destination:          mips_cpu/dmem1/mem_8_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.446ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.004ns (0.530 - 0.534)
+  Data Path Delay:      14.609ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.119ns (0.538 - 0.657)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/dmem1/mem_8_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X35Y25.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
                                                        mips_cpu/mips1/dp/pcreg/q_6
-    SLICE_X41Y30.G3      net (fanout=4)        0.450   mips_cpu/mips1/dp/pcreg/q<6>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
+    SLICE_X37Y24.G1      net (fanout=4)        0.697   mips_cpu/mips1/dp/pcreg/q<6>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
                                                        mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_7
     -------------------------------------------------  ---------------------------
-    Total                                     14.446ns (7.341ns logic, 7.105ns route)
-                                                       (50.8% logic, 49.2% route)
+    Total                                     14.609ns (5.734ns logic, 8.875ns route)
+                                                       (39.2% logic, 60.8% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F (SLICE_X40Y33.BY), 35043 paths
---------------------------------------------------------------------------------
-Slack (setup path):     -4.630ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -4.537ns (requirement - (data path - clock path skew + uncertainty))
   Source:               mips_cpu/mips1/dp/pcreg/q_7 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F (RAM)
+  Destination:          mips_cpu/dmem1/mem_8_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.630ns (Levels of Logic = 19)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      14.418ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.119ns (0.538 - 0.657)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/dmem1/mem_8_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X35Y25.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
                                                        mips_cpu/mips1/dp/pcreg/q_7
-    SLICE_X41Y30.G1      net (fanout=4)        0.631   mips_cpu/mips1/dp/pcreg/q<7>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
+    SLICE_X37Y24.G2      net (fanout=4)        0.506   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
                                                        mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X40Y33.BY      net (fanout=3)        0.579   s_0_OBUF
-    SLICE_X40Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N5
-                                                       mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_7
     -------------------------------------------------  ---------------------------
-    Total                                     14.630ns (7.341ns logic, 7.289ns route)
-                                                       (50.2% logic, 49.8% route)
+    Total                                     14.418ns (5.734ns logic, 8.684ns route)
+                                                       (39.8% logic, 60.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.487ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               mips_cpu/mips1/dp/pcreg/q_4 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F (RAM)
+
+Paths for end point mips_cpu/dmem1/mem_8_0 (SLICE_X42Y9.CE), 1373 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -4.852ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mips_cpu/mips1/dp/pcreg/q_3_1 (FF)
+  Destination:          mips_cpu/dmem1/mem_8_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.482ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.005ns (0.206 - 0.211)
+  Data Path Delay:      14.658ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.194ns (0.538 - 0.732)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_4 to mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_3_1 to mips_cpu/dmem1/mem_8_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y31.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<5>
-                                                       mips_cpu/mips1/dp/pcreg/q_4
-    SLICE_X41Y30.G2      net (fanout=4)        0.483   mips_cpu/mips1/dp/pcreg/q<4>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
-                                                       mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X38Y22.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q_3_1
+                                                       mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.G1      net (fanout=15)       1.326   mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X40Y33.BY      net (fanout=3)        0.579   s_0_OBUF
-    SLICE_X40Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N5
-                                                       mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_0
     -------------------------------------------------  ---------------------------
-    Total                                     14.482ns (7.341ns logic, 7.141ns route)
-                                                       (50.7% logic, 49.3% route)
+    Total                                     14.658ns (5.255ns logic, 9.403ns route)
+                                                       (35.9% logic, 64.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.449ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -4.728ns (requirement - (data path - clock path skew + uncertainty))
   Source:               mips_cpu/mips1/dp/pcreg/q_6 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F (RAM)
+  Destination:          mips_cpu/dmem1/mem_8_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.449ns (Levels of Logic = 19)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      14.609ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.119ns (0.538 - 0.657)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/dmem1/mem_8_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X35Y25.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
                                                        mips_cpu/mips1/dp/pcreg/q_6
-    SLICE_X41Y30.G3      net (fanout=4)        0.450   mips_cpu/mips1/dp/pcreg/q<6>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
+    SLICE_X37Y24.G1      net (fanout=4)        0.697   mips_cpu/mips1/dp/pcreg/q<6>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
                                                        mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X40Y33.BY      net (fanout=3)        0.579   s_0_OBUF
-    SLICE_X40Y33.CLK     Tds                   0.452   mips_cpu/mips1/dp/rf/N5
-                                                       mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_0
     -------------------------------------------------  ---------------------------
-    Total                                     14.449ns (7.341ns logic, 7.108ns route)
-                                                       (50.8% logic, 49.2% route)
+    Total                                     14.609ns (5.734ns logic, 8.875ns route)
+                                                       (39.2% logic, 60.8% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G (SLICE_X36Y33.BY), 35043 paths
---------------------------------------------------------------------------------
-Slack (setup path):     -4.561ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -4.537ns (requirement - (data path - clock path skew + uncertainty))
   Source:               mips_cpu/mips1/dp/pcreg/q_7 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G (RAM)
+  Destination:          mips_cpu/dmem1/mem_8_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.557ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.004ns (0.530 - 0.534)
+  Data Path Delay:      14.418ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.119ns (0.538 - 0.657)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/dmem1/mem_8_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X35Y25.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
                                                        mips_cpu/mips1/dp/pcreg/q_7
-    SLICE_X41Y30.G1      net (fanout=4)        0.631   mips_cpu/mips1/dp/pcreg/q<7>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
+    SLICE_X37Y24.G2      net (fanout=4)        0.506   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
                                                        mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.382   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X42Y6.G1       net (fanout=67)       1.549   mips_cpu/dataadr<7>
+    SLICE_X42Y6.Y        Tilo                  0.529   mips_cpu/dmem1/mem_29_not0001
+                                                       mips_cpu/dmem1/mem_8_not000111
+    SLICE_X42Y9.CE       net (fanout=1)        1.144   mips_cpu/dmem1/mem_8_not0001
+    SLICE_X42Y9.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_8_7
+                                                       mips_cpu/dmem1/mem_8_0
     -------------------------------------------------  ---------------------------
-    Total                                     14.557ns (7.271ns logic, 7.286ns route)
-                                                       (49.9% logic, 50.1% route)
+    Total                                     14.418ns (5.734ns logic, 8.684ns route)
+                                                       (39.8% logic, 60.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.418ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               mips_cpu/mips1/dp/pcreg/q_4 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G (RAM)
+
+Paths for end point mips_cpu/dmem1/mem_18_7 (SLICE_X35Y6.CE), 1373 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -4.808ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mips_cpu/mips1/dp/pcreg/q_3_1 (FF)
+  Destination:          mips_cpu/dmem1/mem_18_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.409ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.009ns (0.530 - 0.539)
+  Data Path Delay:      14.608ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.200ns (0.410 - 0.610)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_4 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_3_1 to mips_cpu/dmem1/mem_18_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y31.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<5>
-                                                       mips_cpu/mips1/dp/pcreg/q_4
-    SLICE_X41Y30.G2      net (fanout=4)        0.483   mips_cpu/mips1/dp/pcreg/q<4>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
-                                                       mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X38Y22.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q_3_1
+                                                       mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.G1      net (fanout=15)       1.326   mips_cpu/mips1/dp/pcreg/q_3_1
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.382   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X34Y7.F3       net (fanout=67)       1.452   mips_cpu/dataadr<7>
+    SLICE_X34Y7.X        Tilo                  0.529   mips_cpu/dmem1/mem_18_not0001
+                                                       mips_cpu/dmem1/mem_18_not000121
+    SLICE_X35Y6.CE       net (fanout=1)        1.191   mips_cpu/dmem1/mem_18_not0001
+    SLICE_X35Y6.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_18_7
+                                                       mips_cpu/dmem1/mem_18_7
     -------------------------------------------------  ---------------------------
-    Total                                     14.409ns (7.271ns logic, 7.138ns route)
-                                                       (50.5% logic, 49.5% route)
+    Total                                     14.608ns (5.255ns logic, 9.353ns route)
+                                                       (36.0% logic, 64.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     -4.380ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -4.684ns (requirement - (data path - clock path skew + uncertainty))
   Source:               mips_cpu/mips1/dp/pcreg/q_6 (FF)
-  Destination:          mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G (RAM)
+  Destination:          mips_cpu/dmem1/mem_18_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      14.376ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.004ns (0.530 - 0.534)
+  Data Path Delay:      14.559ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.125ns (0.410 - 0.535)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_6 to mips_cpu/dmem1/mem_18_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y32.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X35Y25.YQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
                                                        mips_cpu/mips1/dp/pcreg/q_6
-    SLICE_X41Y30.G3      net (fanout=4)        0.450   mips_cpu/mips1/dp/pcreg/q<6>
-    SLICE_X41Y30.Y       Tilo                  0.479   mips_cpu/instr<21>21
+    SLICE_X37Y24.G1      net (fanout=4)        0.697   mips_cpu/mips1/dp/pcreg/q<6>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
                                                        mips_cpu/instr<21>11_1
-    SLICE_X40Y30.F2      net (fanout=6)        0.197   mips_cpu/instr<21>11
-    SLICE_X40Y30.X       Tilo                  0.529   mips_cpu/instr<21>
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
                                                        mips_cpu/instr<21>2
-    SLICE_X38Y32.F1      net (fanout=27)       1.557   mips_cpu/instr<21>
-    SLICE_X38Y32.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N45
-                                                       mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F
-    SLICE_X43Y39.G4      net (fanout=2)        1.224   mips_cpu/mips1/dp/rf/N45
-    SLICE_X43Y39.Y       Tilo                  0.479   mips_cpu/writedata<1>
-                                                       mips_cpu/mips1/dp/rf/rd1<10>1
-    SLICE_X42Y28.G1      net (fanout=1)        0.897   mips_cpu/mips1/dp/srca<10>
-    SLICE_X42Y28.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<9>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>
-    SLICE_X42Y29.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>
-    SLICE_X42Y30.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>
-    SLICE_X42Y31.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>
-    SLICE_X42Y32.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>
-    SLICE_X42Y33.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>
-    SLICE_X42Y34.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>
-    SLICE_X42Y35.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>
-    SLICE_X42Y36.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>
-    SLICE_X42Y37.COUT    Tbyp                  0.104   mips_cpu/mips1/dp/mainalu/sum<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>
-    SLICE_X42Y38.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<29>
-                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29>
-    SLICE_X41Y35.F4      net (fanout=2)        1.554   mips_cpu/mips1/dp/mainalu/sum<29>
-    SLICE_X41Y35.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>128
-                                                       mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.F4      net (fanout=1)        0.323   mips_cpu/mips1/dp/resmux/y<0>128
-    SLICE_X39Y34.X       Tilo                  0.479   mips_cpu/mips1/dp/resmux/y<0>143
-                                                       mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.G3      net (fanout=1)        0.327   mips_cpu/mips1/dp/resmux/y<0>143
-    SLICE_X39Y33.X       Tif5x                 0.793   s_0_OBUF
-                                                       mips_cpu/mips1/dp/resmux/y<0>210_F
-                                                       mips_cpu/mips1/dp/resmux/y<0>210
-    SLICE_X36Y33.BY      net (fanout=3)        0.576   s_0_OBUF
-    SLICE_X36Y33.CLK     Tds                   0.382   mips_cpu/mips1/dp/rf/N135
-                                                       mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X34Y7.F3       net (fanout=67)       1.452   mips_cpu/dataadr<7>
+    SLICE_X34Y7.X        Tilo                  0.529   mips_cpu/dmem1/mem_18_not0001
+                                                       mips_cpu/dmem1/mem_18_not000121
+    SLICE_X35Y6.CE       net (fanout=1)        1.191   mips_cpu/dmem1/mem_18_not0001
+    SLICE_X35Y6.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_18_7
+                                                       mips_cpu/dmem1/mem_18_7
     -------------------------------------------------  ---------------------------
-    Total                                     14.376ns (7.271ns logic, 7.105ns route)
-                                                       (50.6% logic, 49.4% route)
+    Total                                     14.559ns (5.734ns logic, 8.825ns route)
+                                                       (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -4.493ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mips_cpu/mips1/dp/pcreg/q_7 (FF)
+  Destination:          mips_cpu/dmem1/mem_18_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      14.368ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.125ns (0.410 - 0.535)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/dmem1/mem_18_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X35Y25.XQ      Tcko                  0.626   mips_cpu/mips1/dp/pcreg/q<7>
+                                                       mips_cpu/mips1/dp/pcreg/q_7
+    SLICE_X37Y24.G2      net (fanout=4)        0.506   mips_cpu/mips1/dp/pcreg/q<7>
+    SLICE_X37Y24.Y       Tilo                  0.479   mips_cpu/instr<21>21
+                                                       mips_cpu/instr<21>11_1
+    SLICE_X37Y25.G3      net (fanout=15)       0.101   mips_cpu/instr<21>11
+    SLICE_X37Y25.Y       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/instr<21>2
+    SLICE_X38Y21.F1      net (fanout=27)       1.506   mips_cpu/instr<21>
+    SLICE_X38Y21.X       Tilo                  0.529   mips_cpu/mips1/dp/rf/N29
+                                                       mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F
+    SLICE_X37Y25.F3      net (fanout=2)        1.951   mips_cpu/mips1/dp/rf/N29
+    SLICE_X37Y25.X       Tilo                  0.479   mips_cpu/mips1/dp/srca<6>
+                                                       mips_cpu/mips1/dp/rf/rd1<6>1
+    SLICE_X39Y22.G2      net (fanout=1)        0.408   mips_cpu/mips1/dp/srca<6>
+    SLICE_X39Y22.COUT    Topcyg                0.774   mips_cpu/mips1/dp/mainalu/sum<5>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.CIN     net (fanout=1)        0.000   mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>
+    SLICE_X39Y23.X       Tcinx                 0.786   mips_cpu/mips1/dp/mainalu/sum<7>
+                                                       mips_cpu/mips1/dp/mainalu/Madd_sum_xor<7>
+    SLICE_X40Y17.G3      net (fanout=2)        1.519   mips_cpu/mips1/dp/mainalu/sum<7>
+    SLICE_X40Y17.Y       Tilo                  0.529   mips_cpu/mips1/dp/resmux/y<0>12
+                                                       mips_cpu/mips1/dp/mainalu/result<7>
+    SLICE_X34Y7.F3       net (fanout=67)       1.452   mips_cpu/dataadr<7>
+    SLICE_X34Y7.X        Tilo                  0.529   mips_cpu/dmem1/mem_18_not0001
+                                                       mips_cpu/dmem1/mem_18_not000121
+    SLICE_X35Y6.CE       net (fanout=1)        1.191   mips_cpu/dmem1/mem_18_not0001
+    SLICE_X35Y6.CLK      Tceck                 0.524   mips_cpu/dmem1/mem_18_7
+                                                       mips_cpu/dmem1/mem_18_7
+    -------------------------------------------------  ---------------------------
+    Total                                     14.368ns (5.734ns logic, 8.634ns route)
+                                                       (39.9% logic, 60.1% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point mips_cpu/keyboard/ps2_clk_r_2 (SLICE_X71Y65.BX), 1 path
+Paths for end point mips_cpu/keyboard/ps2_clk_r_2 (SLICE_X71Y55.BX), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.702ns (requirement - (clock path skew + uncertainty - data path))
   Source:               mips_cpu/keyboard/ps2_clk_r_1 (FF)
@@ -862,10 +493,10 @@ Slack (hold path):      0.702ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X71Y65.YQ      Tcko                  0.501   mips_cpu/keyboard/ps2_clk_r<2>
+    SLICE_X71Y55.YQ      Tcko                  0.501   mips_cpu/keyboard/ps2_clk_r<2>
                                                        mips_cpu/keyboard/ps2_clk_r_1
-    SLICE_X71Y65.BX      net (fanout=1)        0.447   mips_cpu/keyboard/ps2_clk_r<1>
-    SLICE_X71Y65.CLK     Tckdi       (-Th)     0.246   mips_cpu/keyboard/ps2_clk_r<2>
+    SLICE_X71Y55.BX      net (fanout=1)        0.447   mips_cpu/keyboard/ps2_clk_r<1>
+    SLICE_X71Y55.CLK     Tckdi       (-Th)     0.246   mips_cpu/keyboard/ps2_clk_r<2>
                                                        mips_cpu/keyboard/ps2_clk_r_2
     -------------------------------------------------  ---------------------------
     Total                                      0.702ns (0.255ns logic, 0.447ns route)
@@ -873,7 +504,34 @@ Slack (hold path):      0.702ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point mips_cpu/keyboard/sc_r_8 (SLICE_X64Y57.BY), 1 path
+Paths for end point mips_cpu/keyboard/sc_r_5 (SLICE_X43Y20.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.719ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mips_cpu/keyboard/sc_r_6 (FF)
+  Destination:          mips_cpu/keyboard/sc_r_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.719ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mips_cpu/keyboard/sc_r_6 to mips_cpu/keyboard/sc_r_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y21.YQ      Tcko                  0.501   mips_cpu/keyboard/sc_r<7>
+                                                       mips_cpu/keyboard/sc_r_6
+    SLICE_X43Y20.BX      net (fanout=2)        0.464   mips_cpu/keyboard/sc_r<6>
+    SLICE_X43Y20.CLK     Tckdi       (-Th)     0.246   mips_cpu/keyboard/sc_r<5>
+                                                       mips_cpu/keyboard/sc_r_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.719ns (0.255ns logic, 0.464ns route)
+                                                       (35.5% logic, 64.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mips_cpu/keyboard/sc_r_8 (SLICE_X66Y48.BY), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.763ns (requirement - (clock path skew + uncertainty - data path))
   Source:               mips_cpu/keyboard/sc_r_9 (FF)
@@ -889,41 +547,14 @@ Slack (hold path):      0.763ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X64Y57.XQ      Tcko                  0.501   mips_cpu/keyboard/sc_r<9>
+    SLICE_X66Y48.XQ      Tcko                  0.501   mips_cpu/keyboard/sc_r<9>
                                                        mips_cpu/keyboard/sc_r_9
-    SLICE_X64Y57.BY      net (fanout=1)        0.467   mips_cpu/keyboard/sc_r<9>
-    SLICE_X64Y57.CLK     Tckdi       (-Th)     0.205   mips_cpu/keyboard/sc_r<9>
+    SLICE_X66Y48.BY      net (fanout=1)        0.467   mips_cpu/keyboard/sc_r<9>
+    SLICE_X66Y48.CLK     Tckdi       (-Th)     0.205   mips_cpu/keyboard/sc_r<9>
                                                        mips_cpu/keyboard/sc_r_8
     -------------------------------------------------  ---------------------------
     Total                                      0.763ns (0.296ns logic, 0.467ns route)
                                                        (38.8% logic, 61.2% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point mips_cpu/keyboard/sc_r_2 (SLICE_X42Y23.BY), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.779ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               mips_cpu/keyboard/sc_r_3 (FF)
-  Destination:          mips_cpu/keyboard/sc_r_2 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.779ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 10.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: mips_cpu/keyboard/sc_r_3 to mips_cpu/keyboard/sc_r_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X42Y23.XQ      Tcko                  0.501   mips_cpu/keyboard/sc_r<3>
-                                                       mips_cpu/keyboard/sc_r_3
-    SLICE_X42Y23.BY      net (fanout=2)        0.483   mips_cpu/keyboard/sc_r<3>
-    SLICE_X42Y23.CLK     Tckdi       (-Th)     0.205   mips_cpu/keyboard/sc_r<3>
-                                                       mips_cpu/keyboard/sc_r_2
-    -------------------------------------------------  ---------------------------
-    Total                                      0.779ns (0.296ns logic, 0.483ns route)
-                                                       (38.0% logic, 62.0% route)
 
 --------------------------------------------------------------------------------
 
@@ -935,7 +566,7 @@ Slack: 8.316ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.842ns (Twpl)
   Physical resource: mips_cpu/mips1/dp/rf/N155/CLK
   Logical resource: mips_cpu/mips1/dp/rf/Mram_mem_ren11.SLICEM_F/WS
-  Location pin: SLICE_X38Y36.CLK
+  Location pin: SLICE_X36Y9.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 8.316ns (period - (min high pulse limit / (high pulse / period)))
@@ -944,7 +575,7 @@ Slack: 8.316ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.842ns (Twph)
   Physical resource: mips_cpu/mips1/dp/rf/N155/CLK
   Logical resource: mips_cpu/mips1/dp/rf/Mram_mem_ren11.SLICEM_F/WS
-  Location pin: SLICE_X38Y36.CLK
+  Location pin: SLICE_X36Y9.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 8.316ns (period - min period limit)
@@ -952,7 +583,7 @@ Slack: 8.316ns (period - min period limit)
   Min period limit: 1.684ns (593.824MHz) (Tcp)
   Physical resource: mips_cpu/mips1/dp/rf/N155/CLK
   Logical resource: mips_cpu/mips1/dp/rf/Mram_mem_ren11.SLICEM_F/WS
-  Location pin: SLICE_X38Y36.CLK
+  Location pin: SLICE_X36Y9.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -969,25 +600,25 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   14.631|         |         |         |
+clk            |   14.852|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 198  Score: 422770  (Setup/Max: 422770, Hold: 0)
+Timing errors: 204  Score: 666886  (Setup/Max: 666886, Hold: 0)
 
-Constraints cover 414004 paths, 0 nets, and 1976 connections
+Constraints cover 413892 paths, 0 nets, and 1973 connections
 
 Design statistics:
-   Minimum period:  14.631ns{1}   (Maximum frequency:  68.348MHz)
+   Minimum period:  14.852ns{1}   (Maximum frequency:  67.331MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed May 17 15:30:05 2017 
+Analysis completed Wed May 17 16:32:22 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

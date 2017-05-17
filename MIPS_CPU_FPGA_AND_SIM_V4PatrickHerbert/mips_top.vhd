@@ -92,7 +92,7 @@ architecture test of top is
     port(clk, reset:        in  STD_LOGIC;
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in  STD_LOGIC_VECTOR(31 downto 0);
-         memwrite:          out STD_LOGIC;
+         memwrite:          inout STD_LOGIC;
 			wem, we1, we2:     out STD_LOGIC;
 			rdsel:             out STD_LOGIC;
          aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
