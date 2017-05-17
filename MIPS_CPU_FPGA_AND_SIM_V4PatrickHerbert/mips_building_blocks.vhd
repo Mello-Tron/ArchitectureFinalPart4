@@ -306,6 +306,7 @@ end process;
 p2: process (clk25, hcounter, vcounter)
 	variable x: integer range 0 to 639;
 	variable y: integer range 0 to 479;
+	constant z : integer := 5;
 begin
 	-- hcounter counts from 0 to 799
 	-- vcounter counts from 0 to 520
@@ -318,8 +319,83 @@ begin
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
-	 	if ( (( x > 50) and (x < 200)) and ((y > 100) and (y < 300)) ) then
+		
+		--NUMBER 1
+	 	if (x > (30+(z*2))) and (x <= (30+(z*3))) and y > 30 and y <= ((30 + (z*5))) then
       	red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 2
+		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > 30 and y <= (30 + z)) or
+			(x > (30 + (z*6)) and x <= (30 + (z*7)) and y > 30 and y <= (30 + (z*3))) or
+			(x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*2)) and y <= (30 + (z*3))) or
+			(x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*2)) and y <= (30 + (z*5))) or
+			(x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*4)) and y <= (30 + (z*5)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 3
+		else if ((x > (30 + (z*8)) and x <= (30 + (z*11)) and y > 30 and y <= (30 + z)) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*2)) and y <= (30 + (z*3))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*4)) and y <= (30 + (z*5))) or
+				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > 30 and y <= (30 + (z*5)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 4
+		else if ( (x > 30 and x <= (30 + z) and y > (30 + (z*6)) and y <= (30 + (z*9))) or
+				  (x > (30 + (z*2)) and x <= (30 + (z*3)) and y > (30 + (z*6)) and y <= (30 + (z*11))) or
+				  (x > 30 and x <= (30 + (z*3)) and y > (30 + (z*8)) and y <= (30 + (z*9)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 5
+		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*6)) and y <= (30 + (z*7))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*6)) and y <= (30 + (z*9))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*8)) and y <= (30 + (z*9))) or
+				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*8)) and y <= (30 + (z*11))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*10)) and y <= (30 + (z*11)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 6
+		else if ( (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*6)) and y <= (30 + (z*7))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*9)) and y > (30 + (z*6)) and y <= (30 + (z*11))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*8)) and y <= (30 + (z*9))) or
+				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > (30 + (z*8)) and y <= (30 + (z*11))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*10)) and y <= (30 + (z*11)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 7
+		else if ( (x > 30 and x <= (30 + (z*3)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
+				  (x > (30 + (z*2)) and x <= (30 + (z*3)) and y > (30 + (z*12)) and y <= (30 + (z*17)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 8
+		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*12)) and y <= (30 + (z*17))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*14)) and y <= (30 + (z*15))) or
+				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*12)) and y <= (30 + (z*17))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*16)) and y <= (30 + (z*17)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 9
+		else if ( (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*9)) and y > (30 + (z*12)) and y <= (30 + (z*15))) or
+				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*14)) and y <= (30 + (z*15))) or
+				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > (30 + (z*12)) and y <= (30 + (z*17)))) then
+			red_out <= writedata( 2 downto 0 );
+      	green_out <= "010"; 
+      	blue_out <= "000";
+		--NUMBER 0
+		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*18)) and y <= (30 + (z*19))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*18)) and y <= (30 + (z*23))) or
+				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*18)) and y <= (30 + (z*23))) or
+				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*22)) and y <= (30 + (z*23)))) then
+			red_out <= writedata( 2 downto 0 );
       	green_out <= "010"; 
       	blue_out <= "000";
     	else
@@ -327,7 +403,10 @@ begin
       	red_out <= "000";
       	green_out <= "000";
       	blue_out <= "000";
-    	end if;
+    	end if;end if;end if;
+		end if;end if;end if;
+		end if;end if;end if;
+		end if;
 		-- Here is the timing for horizontal synchronization.
 		-- (Refer to p. 24, Xilinx, Spartan-3 Starter Kit Board User Guide)
 	 	-- Pulse width: Tpw = 96 cycles @ 25 MHz
