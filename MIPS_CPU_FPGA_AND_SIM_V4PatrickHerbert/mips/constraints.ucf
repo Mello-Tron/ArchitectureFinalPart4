@@ -1,40 +1,43 @@
 NET      "clk"           TNM_NET="clk"; 
 TIMESPEC "TS_clk"=PERIOD "clk"          10 ns HIGH 50 %; 
 
-# Pushbutton Pin
-net      rst_n           loc=E11;       # active-low pushbutton
+NET "ps2_clk" CLOCK_DEDICATED_ROUTE = FALSE;
 
 # Clock Pins
 #net      clk             loc=T9;        # main clock
 #net      clk50_in        loc=P8;        # 50 MHZ Clock
 
 # LEDS
-net      led<0>    loc=M6;  
-net      led<1>    loc=M11; 
-net      led<2>    loc=N6;  
-net      led<3>    loc=R7;  
-net      led<4>    loc=P10; 
-net      led<5>    loc=T7;  
-net      led<6>    loc=R10; 
+#net      led<0>    loc=M6;  
+#net      led<1>    loc=M11; 
+#net      led<2>    loc=N6;  
+#net      led<3>    loc=R7;  
+#net      led<4>    loc=P10; 
+#net      led<5>    loc=T7;  
+#net      led<6>    loc=R10; 
 
 # XSA Board FPGA pin assignment constraints
+net clk           loc=T9;  # CLKA INPUT FROM XSA BOARD
+# Pushbutton Pin
+net rst_n           loc=E11;       # active-low pushbutton
 
 # PINS FOR THE PS2 KEYBOARD SERIAL INTERFACE
-net clk           loc=T9;  # CLKA INPUT FROM XSA BOARD
 net ps2_clk       loc=B16; # PS2 KEYBOARD CLOCK
 net ps2_data      loc=E13; # PS3 SERIAL DATA
 
+#VGA clock
+net clk50_in      loc=P8;  # CLKB 50 MHZ INPUT FROM XSA BOARD FOR VGA
+
 # PINS FOR THE LED DISPLAY ON THE FPGA BOARD
-#net s<0>          loc=M6;   #      
-#net s<1>          loc=M11;  #    |-S6-|  
-#net s<2>          loc=N6;   #    S5  S4   
-#net s<3>          loc=R7;   #    |-S3-|  
-#net s<4>          loc=P10;  #    S2  S1  
-#net s<5>          loc=T7;   #    |-S0-|
-#net s<6>          loc=R10;  #
+net s<0>          loc=M6;   #      
+net s<1>          loc=M11;  #    |-S6-|  
+net s<2>          loc=N6;   #    S5  S4   
+net s<3>          loc=R7;   #    |-S3-|  
+net s<4>          loc=P10;  #    S2  S1  
+net s<5>          loc=T7;   #    |-S0-|
+net s<6>          loc=R10;  #
 
 # VGA OUTPUT/INPUT PINS
-net clk50_in      loc=P8;  # CLKB 50 MHZ INPUT FROM XSA BOARD FOR VGA
 net red_out<0>    loc=C8;  # VGA RED Out
 net red_out<1>    loc=D6;
 net red_out<2>    loc=B1;

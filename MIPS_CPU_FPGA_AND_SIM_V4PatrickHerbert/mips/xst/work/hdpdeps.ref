@@ -9,161 +9,161 @@ FL "//cs1/2017/pherbert17/CS401-1/HW4TestNotFinishedYet/MIPS_CPU_FPGA_AND_SIM_V4
 FL "//cs1/2017/pherbert17/CS401-1/HW4TestNotFinishedYet/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips_fpga_interface.vhd" 2017/04/05.22:58:48 P.20131013
 FL "//cs1/2017/pherbert17/CS401-1/HW4TestNotFinishedYet/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips_mem.vhd" 2017/04/05.22:58:48 P.20131013
 FL "//cs1/2017/pherbert17/CS401-1/HW4TestNotFinishedYet/MIPS_CPU_FPGA_AND_SIM_V4 Patrick Herbert/mips_top.vhd" 2017/04/05.22:58:48 P.20131013
-FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd 2017/05/10.15:31:31 P.20131013
-EN work/mips 1494459032 \
+FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd 2017/05/16.16:20:26 P.20131013
+EN work/mips 1494979076 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/mips/struct 1494459033 \
+AR work/mips/struct 1494979077 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd \
-      EN work/mips 1494459032 CP controller CP datapath
+      EN work/mips 1494979076 CP controller CP datapath
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd 2017/05/10.15:31:31 P.20131013
-EN work/addressdec 1494459020 \
+EN work/addressdec 1494979064 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/addressdec/Behavioral 1494459021 \
+AR work/addressdec/Behavioral 1494979065 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips/mips_address_decoder.vhd \
-      EN work/addressdec 1494459020
+      EN work/addressdec 1494979064
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd 2017/05/10.15:31:32 P.20131013
-EN work/alu 1494459022 \
+EN work/alu 1494979066 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/alu/behave 1494459023 \
+AR work/alu/behave 1494979067 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd \
-      EN work/alu 1494459022 CP Shiftleft CP ShiftRight
-FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd 2017/05/10.16:33:10 P.20131013
-EN work/regfile 1494459193 \
+      EN work/alu 1494979066 CP Shiftleft CP ShiftRight
+FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd 2017/05/16.16:20:26 P.20131013
+EN work/regfile 1494979040 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/NUMERIC_STD 1381692181
-EN work/adder 1494459194 \
+EN work/adder 1494979041 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-EN work/sl2 1494459195 \
+EN work/sl2 1494979042 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176
-EN work/signext 1494459196 \
+EN work/signext 1494979043 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176
-EN work/flopr 1494459197 \
+EN work/flopr 1494979044 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-EN work/mux2 1494459198 \
+EN work/mux2 1494979045 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176
-EN work/mux3 1494459199 \
+EN work/mux3 1494979046 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176
-EN work/mux2cont 1494459200 \
+EN work/mux2cont 1494979047 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176
-EN work/ShiftLeft 1494459201 \
+EN work/ShiftLeft 1494979048 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-EN work/ShiftRight 1494459202 \
+EN work/ShiftRight 1494979049 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/regfile/behave 1494459203 \
+AR work/regfile/behave 1494979050 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/regfile 1494459193
-AR work/adder/behave 1494459204 \
+      EN work/regfile 1494979040
+AR work/adder/behave 1494979051 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/adder 1494459194
-AR work/sl2/behave 1494459205 \
+      EN work/adder 1494979041
+AR work/sl2/behave 1494979052 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/sl2 1494459195
-AR work/signext/behave 1494459206 \
+      EN work/sl2 1494979042
+AR work/signext/behave 1494979053 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/signext 1494459196
-AR work/flopr/asynchronous 1494459207 \
+      EN work/signext 1494979043
+AR work/flopr/asynchronous 1494979054 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/flopr 1494459197
-AR work/mux2/behave 1494459208 \
+      EN work/flopr 1494979044
+AR work/mux2/behave 1494979055 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/mux2 1494459198
-AR work/mux3/Behavioral 1494459209 \
+      EN work/mux2 1494979045
+AR work/mux3/Behavioral 1494979056 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/mux3 1494459199
-AR work/mux2cont/behave 1494459210 \
+      EN work/mux3 1494979046
+AR work/mux2cont/behave 1494979057 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/mux2cont 1494459200
-AR work/ShiftLeft/Behavioral 1494459211 \
+      EN work/mux2cont 1494979047
+AR work/ShiftLeft/Behavioral 1494979058 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/ShiftLeft 1494459201
-AR work/ShiftRight/Behavioral 1494459212 \
+      EN work/ShiftLeft 1494979048
+AR work/ShiftRight/Behavioral 1494979059 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/ShiftRight 1494459202
-EN work/vgatest 1494459213 \
+      EN work/ShiftRight 1494979049
+EN work/vgatest 1494979060 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/vgatest/behavioral 1494459214 \
+AR work/vgatest/behavioral 1494979061 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/vgatest 1494459213
-EN work/ps2_kbd 1494459215 \
+      EN work/vgatest 1494979060
+EN work/ps2_kbd 1494979062 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/ps2_kbd/arch 1494459216 \
+AR work/ps2_kbd/arch 1494979063 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd \
-      EN work/ps2_kbd 1494459215
+      EN work/ps2_kbd 1494979062
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd 2017/05/10.15:31:32 P.20131013
-EN work/controller 1494459028 \
+EN work/controller 1494979072 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/controller/struct 1494459029 \
+AR work/controller/struct 1494979073 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_controller.vhd \
-      EN work/controller 1494459028 CP maindec CP aludec CP mux2cont
+      EN work/controller 1494979072 CP maindec CP aludec CP mux2cont
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd 2017/05/10.15:31:32 P.20131013
-EN work/datapath 1494459030 \
+EN work/datapath 1494979074 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/datapath/struct 1494459031 \
+AR work/datapath/struct 1494979075 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_datapath.vhd \
-      EN work/datapath 1494459030 CP flopr CP adder CP sl2 CP mux2 CP regfile \
+      EN work/datapath 1494979074 CP flopr CP adder CP sl2 CP mux2 CP regfile \
       CP signext CP addressdec CP alu
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd 2017/05/10.15:31:32 P.20131013
-EN work/aludec 1494459026 \
+EN work/aludec 1494979070 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/aludec/behave 1494459027 \
+AR work/aludec/behave 1494979071 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_alu.vhd \
-      EN work/aludec 1494459026
+      EN work/aludec 1494979070
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd 2017/05/10.15:31:32 P.20131013
-EN work/maindec 1494459024 \
+EN work/maindec 1494979068 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/maindec/behave 1494459025 \
+AR work/maindec/behave 1494979069 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_decoder_main.vhd \
-      EN work/maindec 1494459024
-FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd 2017/05/10.16:14:29 P.20131013
-EN work/mips_fpga_interface 1494459040 \
+      EN work/maindec 1494979068
+FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd 2017/05/16.16:57:18 P.20131013
+EN work/mips_fpga_interface 1494979084 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/NUMERIC_STD 1381692181
-AR work/mips_fpga_interface/test_fpga 1494459041 \
+AR work/mips_fpga_interface/test_fpga 1494979085 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd \
-      EN work/mips_fpga_interface 1494459040 CP top
+      EN work/mips_fpga_interface 1494979084 CP top
 FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd 2017/05/10.15:31:32 P.20131013
-EN work/dmem 1494459034 \
+EN work/dmem 1494979078 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd \
       PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
-AR work/dmem/behave 1494459035 \
+AR work/dmem/behave 1494979079 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd \
-      EN work/dmem 1494459034
-EN work/imem 1494459036 \
+      EN work/dmem 1494979078
+EN work/imem 1494979080 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd \
       PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
-AR work/imem/behave 1494459037 \
+AR work/imem/behave 1494979081 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_mem.vhd \
-      EN work/imem 1494459036
-FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd 2017/05/10.16:29:47 P.20131013
-EN work/top 1494459038 \
+      EN work/imem 1494979080
+FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd 2017/05/16.16:57:18 P.20131013
+EN work/top 1494979082 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/top/test 1494459039 \
+AR work/top/test 1494979083 \
       FL C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd \
-      EN work/top 1494459038 CP mips CP ps2_kbd CP vgatest CP imem CP dmem CP mux2
+      EN work/top 1494979082 CP mips CP ps2_kbd CP vgatest CP imem CP dmem CP mux2
 FL "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips.vhd" 2017/04/20.21:33:23 P.20131013
 FL "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_alu.vhd" 2017/04/20.21:28:43 P.20131013
 FL "C:/Users/tom herbert/Documents/GitHub/ArchitecturePart2/ArchPart2/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" 2017/04/20.21:08:50 P.20131013

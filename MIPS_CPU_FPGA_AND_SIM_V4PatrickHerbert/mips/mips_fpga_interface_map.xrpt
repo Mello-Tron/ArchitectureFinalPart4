@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Wed May 10 16:30:24 2017">
+  <application stringID="Map" timeStamp="Tue May 16 16:57:50 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -69,18 +69,17 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="318552"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="318612"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="3 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="15360" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="2168"/>
-        <item AVAILABLE="15360" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1708">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="155"/>
+        <item AVAILABLE="15360" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="2163"/>
+        <item AVAILABLE="15360" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1674">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="98"/>
           <item dataType="int" stringID="MAP_NUM_DP_RAM" value="128"/>
-          <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="1"/>
         </item>
-        <item AVAILABLE="7680" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="1901">
+        <item AVAILABLE="7680" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="1880">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
@@ -99,7 +98,7 @@
         <item AVAILABLE="0" dataType="int" stringID="MAP_NUM_BONDED_DIFFS" value="0"/>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
-        <item AVAILABLE="8" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="4"/>
+        <item AVAILABLE="8" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="3"/>
       </section>
       <section stringID="MAP_MACRO_RPM_REPORTING">
         <item dataType="int" stringID="MAP_HARD_MACROS" value="0"/>
@@ -186,74 +185,18 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
           </row>
           <row stringID="row" value="10">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;0>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="11">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;1>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="12">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;2>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="13">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;3>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="14">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;4>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="15">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;5>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="16">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="led&lt;6>"/>
-            <item stringID="Type" value="IOB"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
-          </row>
-          <row stringID="row" value="17">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="ps2_clk"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
           </row>
-          <row stringID="row" value="18">
+          <row stringID="row" value="11">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="ps2_data"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
           </row>
-          <row stringID="row" value="19">
+          <row stringID="row" value="12">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red_out&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -261,7 +204,7 @@
             <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="20">
+          <row stringID="row" value="13">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red_out&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -269,7 +212,7 @@
             <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="21">
+          <row stringID="row" value="14">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="red_out&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -277,11 +220,67 @@
             <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="22">
+          <row stringID="row" value="15">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="rst_n"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+          </row>
+          <row stringID="row" value="16">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;0>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="17">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;1>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="18">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;2>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="19">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;3>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="20">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;4>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="21">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;5>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+          </row>
+          <row stringID="row" value="22">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="s&lt;6>"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
           </row>
           <row stringID="row" value="23">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="vs_out"/>
@@ -295,7 +294,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="95"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="72"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

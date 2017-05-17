@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: mips_fpga_interface.prj
 
@@ -135,16 +135,19 @@ Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4
 Architecture behave of Entity dmem is up to date.
 Architecture behave of Entity imem is up to date.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" in Library work.
-Architecture test of Entity top is up to date.
+Entity <top> compiled.
+Entity <top> (Architecture <test>) compiled.
 Compiling vhdl file "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd" in Library work.
-Architecture test_fpga of Entity mips_fpga_interface is up to date.
+Entity <mips_fpga_interface> compiled.
+Entity <mips_fpga_interface> (Architecture <test_fpga>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <mips_fpga_interface> in library <work> (architecture <test_fpga>).
 
-Analyzing hierarchy for entity <top> in library <work> (architecture <test>).
+Analyzing hierarchy for entity <top> in library <work> (architecture <test>) with generics.
+	FREQ = 100000
 
 Analyzing hierarchy for entity <mips> in library <work> (architecture <struct>).
 
@@ -202,12 +205,10 @@ Analyzing hierarchy for entity <ShiftRight> in library <work> (architecture <beh
 Analyzing Entity <mips_fpga_interface> in library <work> (Architecture <test_fpga>).
 Entity <mips_fpga_interface> analyzed. Unit <mips_fpga_interface> generated.
 
-Analyzing Entity <top> in library <work> (Architecture <test>).
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'scancode' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'parity' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'busy' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'rdy' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 115: Unconnected output port 'error' of component 'ps2_kbd'.
+Analyzing generic Entity <top> in library <work> (Architecture <test>).
+	FREQ = 100000
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 142: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd" line 142: Unconnected output port 'busy' of component 'ps2_kbd'.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <mips> in library <work> (Architecture <struct>).
@@ -264,8 +265,6 @@ Entity <ShiftRight> analyzed. Unit <ShiftRight> generated.
 
 Analyzing generic Entity <ps2_kbd> in library <work> (Architecture <arch>).
 	FREQ = 100000
-WARNING:Xst:819 - "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd" line 471: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <we1>
 Entity <ps2_kbd> analyzed. Unit <ps2_kbd> generated.
 
 Analyzing Entity <vgatest> in library <work> (Architecture <behavioral>).
@@ -291,6 +290,8 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <ps2_kbd>.
     Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_building_blocks.vhd".
+WARNING:Xst:647 - Input <we1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <s_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 4-bit up counter for signal <bitcnt_r>.
     Found 1-bit register for signal <error_r>.
     Found 1-bit register for signal <keyrel_r>.
@@ -298,7 +299,7 @@ Synthesizing Unit <ps2_kbd>.
     Found 1-bit register for signal <rdy_r>.
     Found 10-bit register for signal <sc_r>.
     Found 14-bit register for signal <timer_r>.
-    Found 14-bit adder for signal <timer_x$addsub0000> created at line 435.
+    Found 14-bit adder for signal <timer_x$addsub0000> created at line 436.
     Summary:
 	inferred   1 Counter(s).
 	inferred  32 D-type flip-flop(s).
@@ -475,21 +476,15 @@ Unit <mips> synthesized.
 
 Synthesizing Unit <top>.
     Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_top.vhd".
+    Found 7-bit register for signal <s>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
 Unit <top> synthesized.
 
 
 Synthesizing Unit <mips_fpga_interface>.
     Related source file is "C:/Users/pherbert17/Documents/GitHub/ArchitectureFinalPart4/MIPS_CPU_FPGA_AND_SIM_V4PatrickHerbert/mips_fpga_interface.vhd".
-    Found 32-bit up counter for signal <cnt>.
-    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 64.
-    Found 1-bit register for signal <mips_clk_input>.
-    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 58.
-    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 62.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
+WARNING:Xst:1780 - Signal <mips_clk_input> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <mips_fpga_interface> synthesized.
 
 
@@ -501,29 +496,28 @@ Macro Statistics
  32x32-bit dual-port RAM                               : 2
 # ROMs                                                 : 1
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 7
  10-bit subtractor                                     : 1
  14-bit adder                                          : 1
- 32-bit adder                                          : 4
+ 32-bit adder                                          : 3
  32-bit adder carry in                                 : 1
  9-bit subtractor                                      : 1
-# Counters                                             : 6
+# Counters                                             : 5
  10-bit up counter                                     : 2
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 1
 # Registers                                            : 77
- 1-bit register                                        : 7
+ 1-bit register                                        : 6
  10-bit register                                       : 1
  14-bit register                                       : 1
  3-bit register                                        : 2
  32-bit register                                       : 65
  5-bit register                                        : 1
-# Comparators                                          : 10
+ 7-bit register                                        : 1
+# Comparators                                          : 8
  10-bit comparator greater                             : 3
  10-bit comparator less                                : 3
- 32-bit comparator greatequal                          : 1
- 32-bit comparator less                                : 1
  9-bit comparator greater                              : 1
  9-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -585,24 +579,22 @@ Macro Statistics
  32x32-bit dual-port distributed RAM                   : 2
 # ROMs                                                 : 1
  64x32-bit ROM                                         : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 7
  10-bit subtractor                                     : 1
  14-bit adder                                          : 1
- 32-bit adder                                          : 4
+ 32-bit adder                                          : 3
  32-bit adder carry in                                 : 1
  9-bit subtractor                                      : 1
-# Counters                                             : 6
+# Counters                                             : 5
  10-bit up counter                                     : 2
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 2122
- Flip-Flops                                            : 2122
-# Comparators                                          : 10
+# Registers                                            : 2128
+ Flip-Flops                                            : 2128
+# Comparators                                          : 8
  10-bit comparator greater                             : 3
  10-bit comparator less                                : 3
- 32-bit comparator greatequal                          : 1
- 32-bit comparator less                                : 1
  9-bit comparator greater                              : 1
  9-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -635,137 +627,113 @@ Optimizing unit <regfile> ...
 Optimizing unit <alu> ...
 
 Optimizing unit <datapath> ...
-WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_0> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_1> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/bitcnt_r_0> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/rdy_r> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/error_r> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_13> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_12> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_11> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_10> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_9> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_8> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_7> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_6> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_5> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_4> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_3> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_2> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_1> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/timer_r_0> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/keyboard/keyrel_r> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_8> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_9> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_10> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_11> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_12> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_13> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_14> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_15> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_16> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_17> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_18> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_19> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_20> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_21> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_22> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_23> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_24> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_25> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_26> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_27> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_28> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_29> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_30> of sequential type is unconnected in block <mips_fpga_interface>.
+
+Optimizing unit <top> ...
 WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_31> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem2> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem6> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem4> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem8> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem12> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem10> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem14> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem18> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem16> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem20> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem24> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem22> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem26> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem30> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem28> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem32> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem36> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem34> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem38> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem42> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem40> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem44> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem48> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem46> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem50> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem54> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem52> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem56> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem60> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem58> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem62> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem64> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren2> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren6> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren4> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren8> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren12> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren10> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren14> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren18> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren16> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren20> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren24> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren22> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren26> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren30> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren28> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren32> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren36> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren34> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren38> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren42> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren40> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren44> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren48> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren46> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren50> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren54> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren52> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren56> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren60> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren58> of sequential type is unconnected in block <mips_fpga_interface>.
-WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren62> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_0> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren64> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren62> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren58> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren60> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren56> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren52> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren54> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren50> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren46> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren48> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren44> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren40> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren42> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren38> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren34> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren36> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren32> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem64> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem62> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem58> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem60> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem56> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem52> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem54> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem50> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem46> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem48> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem44> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem40> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem42> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem38> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem34> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem36> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem32> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem2> of sequential type is unconnected in block <mips_fpga_interface>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block mips_fpga_interface, actual ratio is 26.
+FlipFlop mips_cpu/mips1/dp/pcreg/q_2 has been replicated 1 time(s)
 FlipFlop mips_cpu/mips1/dp/pcreg/q_3 has been replicated 1 time(s)
 
 Final Macro Processing ...
-
-Processing Unit <mips_fpga_interface> :
-	Found 7-bit shift register for signal <mips_cpu/keyboard/sc_r_0>.
-Unit <mips_fpga_interface> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2160
- Flip-Flops                                            : 2160
-# Shift Registers                                      : 1
- 7-bit shift register                                  : 1
+# Registers                                            : 2163
+ Flip-Flops                                            : 2163
 
 =========================================================================
 
@@ -794,39 +762,36 @@ Design Statistics
 # IOs                              : 23
 
 Cell Usage :
-# BELS                             : 2932
+# BELS                             : 2804
 #      GND                         : 1
-#      INV                         : 17
-#      LUT1                        : 155
-#      LUT2                        : 15
+#      INV                         : 8
+#      LUT1                        : 98
+#      LUT2                        : 29
 #      LUT2_D                      : 4
-#      LUT2_L                      : 2
-#      LUT3                        : 149
-#      LUT3_D                      : 3
-#      LUT3_L                      : 12
-#      LUT4                        : 1201
+#      LUT3                        : 136
+#      LUT3_D                      : 2
+#      LUT3_L                      : 10
+#      LUT4                        : 1236
 #      LUT4_D                      : 11
-#      LUT4_L                      : 10
-#      MUXCY                       : 212
-#      MUXF5                       : 530
+#      LUT4_L                      : 9
+#      MUXCY                       : 137
+#      MUXF5                       : 538
 #      MUXF6                       : 256
 #      MUXF7                       : 128
-#      MUXF8                       : 44
+#      MUXF8                       : 64
 #      VCC                         : 1
-#      XORCY                       : 181
-# FlipFlops/Latches                : 2168
-#      FDC                         : 7
-#      FDCE                        : 10
-#      FDE                         : 2052
+#      XORCY                       : 136
+# FlipFlops/Latches                : 2163
+#      FDC                         : 23
+#      FDCE                        : 16
+#      FDE                         : 2058
 #      FDP                         : 5
-#      FDR                         : 84
+#      FDR                         : 51
 #      FDRE                        : 10
 # RAMS                             : 64
 #      RAM16X1D                    : 64
-# Shift Registers                  : 1
-#      SRL16E                      : 1
-# Clock Buffers                    : 4
-#      BUFG                        : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 1
 #      BUFGP                       : 2
 # IO Buffers                       : 21
 #      IBUF                        : 3
@@ -838,15 +803,14 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1986  out of   7680    25%  
- Number of Slice Flip Flops:           2168  out of  15360    14%  
- Number of 4 input LUTs:               1708  out of  15360    11%  
-    Number used as logic:              1579
-    Number used as Shift registers:       1
+ Number of Slices:                     1953  out of   7680    25%  
+ Number of Slice Flip Flops:           2163  out of  15360    14%  
+ Number of 4 input LUTs:               1671  out of  15360    10%  
+    Number used as logic:              1543
     Number used as RAMs:                128
  Number of IOs:                          23
  Number of bonded IOBs:                  23  out of    173    13%  
- Number of GCLKs:                         4  out of      8    50%  
+ Number of GCLKs:                         3  out of      8    37%  
 
 ---------------------------
 Partition Resource Summary:
@@ -869,28 +833,27 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 33    |
-mips_clk_input1                    | BUFG                   | 2136  |
-mips_cpu/display/clk251            | BUFG                   | 63    |
+clk                                | BUFGP                  | 2163  |
 clk50_in                           | BUFGP                  | 1     |
+mips_cpu/display/clk251            | BUFG                   | 63    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------+------------------------------------+-------+
-Control Signal                                                 | Buffer(FF name)                    | Load  |
----------------------------------------------------------------+------------------------------------+-------+
-mips_cpu/keyboard/sc_r_or0000(mips_cpu/keyboard/sc_r_or00001:O)| NONE(mips_cpu/keyboard/ps2_clk_r_1)| 15    |
-reset(reset1_INV_0:O)                                          | NONE(mips_cpu/mips1/dp/pcreg/q_2)  | 7     |
----------------------------------------------------------------+------------------------------------+-------+
+------------------------------------------------------+-----------------------------------+-------+
+Control Signal                                        | Buffer(FF name)                   | Load  |
+------------------------------------------------------+-----------------------------------+-------+
+mips_cpu/keyboard/error_r(mips_cpu/keyboard/error_r:Q)| NONE(mips_cpu/keyboard/bitcnt_r_0)| 36    |
+reset(reset1_INV_0:O)                                 | NONE(mips_cpu/mips1/dp/pcreg/q_2) | 8     |
+------------------------------------------------------+-----------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 16.252ns (Maximum Frequency: 61.530MHz)
-   Minimum input arrival time before clock: 4.611ns
-   Maximum output required time after clock: 9.983ns
+   Minimum period: 16.240ns (Maximum Frequency: 61.575MHz)
+   Minimum input arrival time before clock: 1.572ns
+   Maximum output required time after clock: 6.216ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -899,93 +862,59 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 11.006ns (frequency: 90.860MHz)
-  Total number of paths / destination ports: 17265 / 65
+  Clock period: 16.240ns (frequency: 61.575MHz)
+  Total number of paths / destination ports: 3985044 / 4711
 -------------------------------------------------------------------------
-Delay:               11.006ns (Levels of Logic = 34)
-  Source:            cnt_1 (FF)
-  Destination:       cnt_0 (FF)
+Delay:               16.240ns (Levels of Logic = 14)
+  Source:            mips_cpu/mips1/dp/pcreg/q_7 (FF)
+  Destination:       mips_cpu/mips1/dp/rf/Mram_mem_ren1 (RAM)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: cnt_1 to cnt_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.626   1.040  cnt_1 (cnt_1)
-     LUT1:I0->O            1   0.479   0.000  Madd_mips_clk_input_add0000_cy<1>_rt (Madd_mips_clk_input_add0000_cy<1>_rt)
-     MUXCY:S->O            1   0.435   0.000  Madd_mips_clk_input_add0000_cy<1> (Madd_mips_clk_input_add0000_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<2> (Madd_mips_clk_input_add0000_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<3> (Madd_mips_clk_input_add0000_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<4> (Madd_mips_clk_input_add0000_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<5> (Madd_mips_clk_input_add0000_cy<5>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<6> (Madd_mips_clk_input_add0000_cy<6>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<7> (Madd_mips_clk_input_add0000_cy<7>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<8> (Madd_mips_clk_input_add0000_cy<8>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<9> (Madd_mips_clk_input_add0000_cy<9>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<10> (Madd_mips_clk_input_add0000_cy<10>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<11> (Madd_mips_clk_input_add0000_cy<11>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<12> (Madd_mips_clk_input_add0000_cy<12>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<13> (Madd_mips_clk_input_add0000_cy<13>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<14> (Madd_mips_clk_input_add0000_cy<14>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<15> (Madd_mips_clk_input_add0000_cy<15>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<16> (Madd_mips_clk_input_add0000_cy<16>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<17> (Madd_mips_clk_input_add0000_cy<17>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<18> (Madd_mips_clk_input_add0000_cy<18>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<19> (Madd_mips_clk_input_add0000_cy<19>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<20> (Madd_mips_clk_input_add0000_cy<20>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<21> (Madd_mips_clk_input_add0000_cy<21>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<22> (Madd_mips_clk_input_add0000_cy<22>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<23> (Madd_mips_clk_input_add0000_cy<23>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<24> (Madd_mips_clk_input_add0000_cy<24>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<25> (Madd_mips_clk_input_add0000_cy<25>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<26> (Madd_mips_clk_input_add0000_cy<26>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<27> (Madd_mips_clk_input_add0000_cy<27>)
-     MUXCY:CI->O           1   0.056   0.000  Madd_mips_clk_input_add0000_cy<28> (Madd_mips_clk_input_add0000_cy<28>)
-     XORCY:CI->O           2   0.786   1.040  Madd_mips_clk_input_add0000_xor<29> (mips_clk_input_add0000<29>)
-     LUT2:I0->O            1   0.479   0.000  Mcompar_cnt_cmp_ge0000_lut<11> (Mcompar_cnt_cmp_ge0000_lut<11>)
-     MUXCY:S->O            1   0.435   0.000  Mcompar_cnt_cmp_ge0000_cy<11> (Mcompar_cnt_cmp_ge0000_cy<11>)
-     MUXCY:CI->O           1   0.265   0.976  Mcompar_cnt_cmp_ge0000_cy<12> (cnt_cmp_ge0000)
-     LUT2:I0->O           32   0.479   1.575  cnt_or00001 (cnt_or0000)
-     FDR:R                     0.892          cnt_0
-    ----------------------------------------
-    Total                     11.006ns (6.374ns logic, 4.632ns route)
-                                       (57.9% logic, 42.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'mips_clk_input1'
-  Clock period: 16.252ns (frequency: 61.530MHz)
-  Total number of paths / destination ports: 3988658 / 4673
--------------------------------------------------------------------------
-Delay:               16.252ns (Levels of Logic = 14)
-  Source:            mips_cpu/mips1/dp/pcreg/q_7 (FF)
-  Destination:       mips_cpu/mips1/dp/rf/Mram_mem1 (RAM)
-  Source Clock:      mips_clk_input1 rising
-  Destination Clock: mips_clk_input1 rising
-
-  Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/rf/Mram_mem1
+  Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/rf/Mram_mem_ren1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              5   0.626   1.078  mips_cpu/mips1/dp/pcreg/q_7 (mips_cpu/mips1/dp/pcreg/q_7)
-     LUT4_D:I0->O          5   0.479   0.842  mips_cpu/instr<21>11_1 (mips_cpu/instr<21>11)
-     LUT3:I2->O            2   0.479   0.745  led<6>1_1 (led<6>1)
+     LUT4_D:I0->O          3   0.479   0.830  mips_cpu/instr<21>11_1 (mips_cpu/instr<21>11)
+     LUT3:I2->O            2   0.479   0.745  mips_cpu/instr<21>21_1 (mips_cpu/instr<21>21)
      RAM16X1D:DPRA0->DPO    2   0.479   0.804  mips_cpu/mips1/dp/rf/Mram_mem3 (mips_cpu/mips1/dp/rf/N9)
      LUT3:I2->O            0   0.479   0.000  mips_cpu/mips1/dp/rf/rd1<1>1 (mips_cpu/mips1/dp/srca<1>)
      MUXCY:DI->O           1   0.774   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<1> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<1>)
      XORCY:CI->O        1030   0.786   3.877  mips_cpu/mips1/dp/mainalu/Madd_sum_xor<2> (mips_cpu/mips1/dp/mainalu/sum<2>)
-     LUT4:I3->O            1   0.479   0.000  mips_cpu/dmem1/Mmux_rd_104 (mips_cpu/dmem1/Mmux_rd_104)
-     MUXF5:I1->O           1   0.314   0.000  mips_cpu/dmem1/Mmux_rd_9_f5_2 (mips_cpu/dmem1/Mmux_rd_9_f53)
-     MUXF6:I1->O           1   0.298   0.000  mips_cpu/dmem1/Mmux_rd_8_f6_1 (mips_cpu/dmem1/Mmux_rd_8_f62)
-     MUXF7:I1->O           1   0.298   0.000  mips_cpu/dmem1/Mmux_rd_7_f7_0 (mips_cpu/dmem1/Mmux_rd_7_f71)
-     MUXF8:I1->O           1   0.298   0.740  mips_cpu/dmem1/Mmux_rd_6_f8 (mips_cpu/dmem1/Mmux_rd_6_f8)
+     LUT4:I3->O            1   0.479   0.000  mips_cpu/dmem1/Mmux_rd_13 (mips_cpu/dmem1/Mmux_rd_13)
+     MUXF5:I0->O           1   0.314   0.000  mips_cpu/dmem1/Mmux_rd_11_f5 (mips_cpu/dmem1/Mmux_rd_11_f5)
+     MUXF6:I0->O           1   0.298   0.000  mips_cpu/dmem1/Mmux_rd_9_f6 (mips_cpu/dmem1/Mmux_rd_9_f6)
+     MUXF7:I0->O           1   0.298   0.000  mips_cpu/dmem1/Mmux_rd_7_f7 (mips_cpu/dmem1/Mmux_rd_7_f7)
+     MUXF8:I0->O           1   0.298   0.740  mips_cpu/dmem1/Mmux_rd_5_f8 (mips_cpu/dmem1/Mmux_rd_5_f8)
      LUT4:I2->O            1   0.479   0.704  mips_cpu/mips1/dp/resmux/y<0>15 (mips_cpu/mips1/dp/resmux/y<0>15)
-     LUT4:I3->O            1   0.479   0.000  mips_cpu/mips1/dp/resmux/y<0>210_G (N54)
+     LUT4:I3->O            1   0.479   0.000  mips_cpu/mips1/dp/resmux/y<0>210_G (N75)
      MUXF5:I1->O           2   0.314   0.000  mips_cpu/mips1/dp/resmux/y<0>210 (mips_cpu/mips1/dp/result<0>)
      RAM16X1D:D                0.401          mips_cpu/mips1/dp/rf/Mram_mem1
     ----------------------------------------
-    Total                     16.252ns (7.462ns logic, 8.790ns route)
+    Total                     16.240ns (7.462ns logic, 8.778ns route)
                                        (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50_in'
+  Clock period: 2.263ns (frequency: 441.803MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.263ns (Levels of Logic = 0)
+  Source:            mips_cpu/display/clk25 (FF)
+  Destination:       mips_cpu/display/clk25 (FF)
+  Source Clock:      clk50_in rising
+  Destination Clock: clk50_in rising
+
+  Data Path: mips_cpu/display/clk25 to mips_cpu/display/clk25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   0.745  mips_cpu/display/clk25 (mips_cpu/display/clk251)
+     FDR:R                     0.892          mips_cpu/display/clk25
+    ----------------------------------------
+    Total                      2.263ns (1.518ns logic, 0.745ns route)
+                                       (67.1% logic, 32.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mips_cpu/display/clk251'
@@ -994,11 +923,11 @@ Timing constraint: Default period analysis for Clock 'mips_cpu/display/clk251'
 -------------------------------------------------------------------------
 Delay:               9.538ns (Levels of Logic = 34)
   Source:            mips_cpu/display/cnt_1 (FF)
-  Destination:       mips_cpu/display/cnt_31 (FF)
+  Destination:       mips_cpu/display/cnt_0 (FF)
   Source Clock:      mips_cpu/display/clk251 rising
   Destination Clock: mips_cpu/display/clk251 rising
 
-  Data Path: mips_cpu/display/cnt_1 to mips_cpu/display/cnt_31
+  Data Path: mips_cpu/display/cnt_1 to mips_cpu/display/cnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1043,61 +972,20 @@ Delay:               9.538ns (Levels of Logic = 34)
                                        (62.2% logic, 37.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk50_in'
-  Clock period: 2.263ns (frequency: 441.803MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.263ns (Levels of Logic = 0)
-  Source:            mips_cpu/display/clk25 (FF)
-  Destination:       mips_cpu/display/clk25 (FF)
-  Source Clock:      clk50_in rising
-  Destination Clock: clk50_in rising
-
-  Data Path: mips_cpu/display/clk25 to mips_cpu/display/clk25
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.626   0.745  mips_cpu/display/clk25 (mips_cpu/display/clk251)
-     FDR:R                     0.892          mips_cpu/display/clk25
-    ----------------------------------------
-    Total                      2.263ns (1.518ns logic, 0.745ns route)
-                                       (67.1% logic, 32.9% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 33 / 33
--------------------------------------------------------------------------
-Offset:              4.611ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       cnt_0 (FF)
-  Destination Clock: clk rising
-
-  Data Path: rst_n to cnt_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   0.715   0.949  rst_n_IBUF (rst_n_IBUF)
-     LUT2:I1->O           32   0.479   1.575  cnt_or00001 (cnt_or0000)
-     FDR:R                     0.892          cnt_0
-    ----------------------------------------
-    Total                      4.611ns (2.086ns logic, 2.525ns route)
-                                       (45.2% logic, 54.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'mips_clk_input1'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              1.572ns (Levels of Logic = 1)
-  Source:            ps2_clk (PAD)
-  Destination:       mips_cpu/keyboard/ps2_clk_r_1 (FF)
-  Destination Clock: mips_clk_input1 rising
+  Source:            ps2_data (PAD)
+  Destination:       mips_cpu/keyboard/sc_r_9 (FF)
+  Destination Clock: clk rising
 
-  Data Path: ps2_clk to mips_cpu/keyboard/ps2_clk_r_1
+  Data Path: ps2_data to mips_cpu/keyboard/sc_r_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.715   0.681  ps2_clk_IBUF (ps2_clk_IBUF)
-     FDP:D                     0.176          mips_cpu/keyboard/ps2_clk_r_1
+     IBUF:I->O             1   0.715   0.681  ps2_data_IBUF (ps2_data_IBUF)
+     FDCE:D                    0.176          mips_cpu/keyboard/sc_r_9
     ----------------------------------------
     Total                      1.572ns (0.891ns logic, 0.681ns route)
                                        (56.7% logic, 43.3% route)
@@ -1122,37 +1010,35 @@ Offset:              6.216ns (Levels of Logic = 1)
                                        (89.0% logic, 11.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mips_clk_input1'
-  Total number of paths / destination ports: 10 / 5
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
 -------------------------------------------------------------------------
-Offset:              9.983ns (Levels of Logic = 3)
-  Source:            mips_cpu/mips1/dp/pcreg/q_7 (FF)
-  Destination:       led<6> (PAD)
-  Source Clock:      mips_clk_input1 rising
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            mips_cpu/s_6 (FF)
+  Destination:       s<6> (PAD)
+  Source Clock:      clk rising
 
-  Data Path: mips_cpu/mips1/dp/pcreg/q_7 to led<6>
+  Data Path: mips_cpu/s_6 to s<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              5   0.626   1.078  mips_cpu/mips1/dp/pcreg/q_7 (mips_cpu/mips1/dp/pcreg/q_7)
-     LUT4_D:I0->O          5   0.479   0.842  mips_cpu/instr<21>11_1 (mips_cpu/instr<21>11)
-     LUT3:I2->O           31   0.479   1.570  led<6>1 (led_6_OBUF)
-     OBUF:I->O                 4.909          led_6_OBUF (led<6>)
+     FDE:C->Q              1   0.626   0.681  mips_cpu/s_6 (mips_cpu/s_6)
+     OBUF:I->O                 4.909          s_6_OBUF (s<6>)
     ----------------------------------------
-    Total                      9.983ns (6.493ns logic, 3.490ns route)
-                                       (65.0% logic, 35.0% route)
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.82 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.66 secs
  
 --> 
 
-Total memory usage is 373284 kilobytes
+Total memory usage is 373328 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  127 (   0 filtered)
+Number of warnings :  105 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

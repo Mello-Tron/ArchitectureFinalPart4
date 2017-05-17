@@ -417,6 +417,7 @@ architecture arch of ps2_kbd is
   signal scancode_rdy         : std_logic;  -- indicates when any scancode has been received
   signal rdy_x, rdy_r         : std_logic;  -- this flag is set when scancode for the pressed key is ready
   signal error_x, error_r     : std_logic;  -- this flag is set when an error occurs
+  signal s_x                  : std_logic_vector(6 downto 0);  -- next state of LED segment
 
 begin
 
