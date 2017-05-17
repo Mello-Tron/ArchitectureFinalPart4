@@ -1,57 +1,194 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 16 17:59:28 2017
+// Written by: Map P.20131013 on Tue May 16 23:36:13 2017
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "blue_out<0>" LOCATE = SITE "C9" LEVEL 1;
+COMP "blue_out<1>" LOCATE = SITE "E7" LEVEL 1;
+COMP "blue_out<2>" LOCATE = SITE "D5" LEVEL 1;
 COMP "s<0>" LOCATE = SITE "M6" LEVEL 1;
 COMP "s<1>" LOCATE = SITE "M11" LEVEL 1;
 COMP "s<2>" LOCATE = SITE "N6" LEVEL 1;
 COMP "s<3>" LOCATE = SITE "R7" LEVEL 1;
-COMP "clk" LOCATE = SITE "T9" LEVEL 1;
 COMP "s<4>" LOCATE = SITE "P10" LEVEL 1;
 COMP "s<5>" LOCATE = SITE "T7" LEVEL 1;
 COMP "s<6>" LOCATE = SITE "R10" LEVEL 1;
-COMP "hs_out" LOCATE = SITE "B7" LEVEL 1;
-COMP "blue_out<0>" LOCATE = SITE "C9" LEVEL 1;
-COMP "red_out<0>" LOCATE = SITE "C8" LEVEL 1;
-COMP "blue_out<1>" LOCATE = SITE "E7" LEVEL 1;
-COMP "red_out<1>" LOCATE = SITE "D6" LEVEL 1;
-COMP "blue_out<2>" LOCATE = SITE "D5" LEVEL 1;
-COMP "red_out<2>" LOCATE = SITE "B1" LEVEL 1;
-COMP "ps2_data" LOCATE = SITE "E13" LEVEL 1;
-COMP "rst_n" LOCATE = SITE "E11" LEVEL 1;
 COMP "green_out<0>" LOCATE = SITE "A8" LEVEL 1;
 COMP "green_out<1>" LOCATE = SITE "A5" LEVEL 1;
 COMP "green_out<2>" LOCATE = SITE "C3" LEVEL 1;
-COMP "clk50_in" LOCATE = SITE "P8" LEVEL 1;
 COMP "ps2_clk" LOCATE = SITE "B16" LEVEL 1;
 PIN ps2_clk_pin<0> = BEL "ps2_clk" PINNAME PAD;
 PIN "ps2_clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "rst_n" LOCATE = SITE "E11" LEVEL 1;
+COMP "clk50_in" LOCATE = SITE "P8" LEVEL 1;
+COMP "ps2_data" LOCATE = SITE "E13" LEVEL 1;
+COMP "hs_out" LOCATE = SITE "B7" LEVEL 1;
 COMP "vs_out" LOCATE = SITE "D8" LEVEL 1;
+COMP "red_out<0>" LOCATE = SITE "C8" LEVEL 1;
+COMP "red_out<1>" LOCATE = SITE "D6" LEVEL 1;
+COMP "red_out<2>" LOCATE = SITE "B1" LEVEL 1;
 NET "clk50_in_BUFGP/IBUFG" BEL "clk50_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-TIMEGRP clk = BEL "mips_cpu/keyboard/sc_r_0" BEL "mips_cpu/keyboard/sc_r_1"
-        BEL "mips_cpu/keyboard/sc_r_2" BEL "mips_cpu/keyboard/sc_r_3" BEL
-        "mips_cpu/keyboard/sc_r_4" BEL "mips_cpu/keyboard/sc_r_5" BEL
-        "mips_cpu/keyboard/sc_r_6" BEL "mips_cpu/keyboard/sc_r_7" BEL
-        "mips_cpu/keyboard/sc_r_8" BEL "mips_cpu/keyboard/sc_r_9" BEL
-        "mips_cpu/keyboard/keyrel_r" BEL "mips_cpu/keyboard/timer_r_0" BEL
-        "mips_cpu/keyboard/timer_r_1" BEL "mips_cpu/keyboard/timer_r_2" BEL
-        "mips_cpu/keyboard/timer_r_3" BEL "mips_cpu/keyboard/timer_r_4" BEL
-        "mips_cpu/keyboard/timer_r_5" BEL "mips_cpu/keyboard/timer_r_6" BEL
-        "mips_cpu/keyboard/timer_r_7" BEL "mips_cpu/keyboard/timer_r_8" BEL
-        "mips_cpu/keyboard/timer_r_9" BEL "mips_cpu/keyboard/timer_r_10" BEL
-        "mips_cpu/keyboard/timer_r_11" BEL "mips_cpu/keyboard/timer_r_12" BEL
-        "mips_cpu/keyboard/timer_r_13" BEL "mips_cpu/keyboard/error_r" BEL
-        "mips_cpu/keyboard/rdy_r" BEL "mips_cpu/keyboard/ps2_clk_r_1" BEL
-        "mips_cpu/keyboard/ps2_clk_r_2" BEL "mips_cpu/keyboard/ps2_clk_r_3"
-        BEL "mips_cpu/keyboard/ps2_clk_r_4" BEL
-        "mips_cpu/keyboard/ps2_clk_r_5" BEL "mips_cpu/keyboard/bitcnt_r_0" BEL
-        "mips_cpu/keyboard/bitcnt_r_1" BEL "mips_cpu/keyboard/bitcnt_r_2" BEL
-        "mips_cpu/keyboard/bitcnt_r_3" BEL "mips_cpu/s_6" BEL "mips_cpu/s_5"
-        BEL "mips_cpu/s_4" BEL "mips_cpu/s_3" BEL "mips_cpu/s_2" BEL
-        "mips_cpu/s_1" BEL "mips_cpu/s_0" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL
-        "clk_BUFGP/BUFG";
+TIMEGRP clk = BEL "mips_cpu/keyboard/bitcnt_r_3" BEL
+        "mips_cpu/keyboard/bitcnt_r_2" BEL "mips_cpu/keyboard/bitcnt_r_1" BEL
+        "mips_cpu/keyboard/bitcnt_r_0" BEL "mips_cpu/keyboard/ps2_clk_r_5" BEL
+        "mips_cpu/keyboard/ps2_clk_r_4" BEL "mips_cpu/keyboard/ps2_clk_r_3"
+        BEL "mips_cpu/keyboard/ps2_clk_r_2" BEL
+        "mips_cpu/keyboard/ps2_clk_r_1" BEL "mips_cpu/keyboard/error_r" BEL
+        "mips_cpu/keyboard/timer_r_13" BEL "mips_cpu/keyboard/timer_r_12" BEL
+        "mips_cpu/keyboard/timer_r_11" BEL "mips_cpu/keyboard/timer_r_10" BEL
+        "mips_cpu/keyboard/timer_r_9" BEL "mips_cpu/keyboard/timer_r_8" BEL
+        "mips_cpu/keyboard/timer_r_7" BEL "mips_cpu/keyboard/timer_r_6" BEL
+        "mips_cpu/keyboard/timer_r_5" BEL "mips_cpu/keyboard/timer_r_4" BEL
+        "mips_cpu/keyboard/timer_r_3" BEL "mips_cpu/keyboard/timer_r_2" BEL
+        "mips_cpu/keyboard/timer_r_1" BEL "mips_cpu/keyboard/timer_r_0" BEL
+        "mips_cpu/keyboard/sc_r_9" BEL "mips_cpu/keyboard/sc_r_8" BEL
+        "mips_cpu/keyboard/sc_r_7" BEL "mips_cpu/keyboard/sc_r_6" BEL
+        "mips_cpu/keyboard/sc_r_5" BEL "mips_cpu/keyboard/sc_r_4" BEL
+        "mips_cpu/keyboard/sc_r_3" BEL "mips_cpu/keyboard/sc_r_2" BEL
+        "mips_cpu/keyboard/sc_r_1" BEL "mips_cpu/keyboard/sc_r_0" BEL
+        "mips_cpu/dmem1/mem_35_7" BEL "mips_cpu/dmem1/mem_35_0" BEL
+        "mips_cpu/dmem1/mem_40_7" BEL "mips_cpu/dmem1/mem_40_0" BEL
+        "mips_cpu/dmem1/mem_3_7" BEL "mips_cpu/dmem1/mem_3_0" BEL
+        "mips_cpu/dmem1/mem_29_7" BEL "mips_cpu/dmem1/mem_29_0" BEL
+        "mips_cpu/dmem1/mem_34_7" BEL "mips_cpu/dmem1/mem_34_0" BEL
+        "mips_cpu/dmem1/mem_2_7" BEL "mips_cpu/dmem1/mem_2_0" BEL
+        "mips_cpu/dmem1/mem_28_7" BEL "mips_cpu/dmem1/mem_28_0" BEL
+        "mips_cpu/dmem1/mem_33_7" BEL "mips_cpu/dmem1/mem_33_0" BEL
+        "mips_cpu/dmem1/mem_1_7" BEL "mips_cpu/dmem1/mem_1_0" BEL
+        "mips_cpu/dmem1/mem_27_7" BEL "mips_cpu/dmem1/mem_27_0" BEL
+        "mips_cpu/dmem1/mem_32_7" BEL "mips_cpu/dmem1/mem_32_0" BEL
+        "mips_cpu/dmem1/mem_0_7" BEL "mips_cpu/dmem1/mem_0_0" BEL
+        "mips_cpu/dmem1/mem_26_7" BEL "mips_cpu/dmem1/mem_26_0" BEL
+        "mips_cpu/dmem1/mem_31_7" BEL "mips_cpu/dmem1/mem_31_0" BEL
+        "mips_cpu/dmem1/mem_25_7" BEL "mips_cpu/dmem1/mem_25_0" BEL
+        "mips_cpu/dmem1/mem_30_7" BEL "mips_cpu/dmem1/mem_30_0" BEL
+        "mips_cpu/dmem1/mem_19_7" BEL "mips_cpu/dmem1/mem_19_0" BEL
+        "mips_cpu/dmem1/mem_24_7" BEL "mips_cpu/dmem1/mem_24_0" BEL
+        "mips_cpu/dmem1/mem_18_7" BEL "mips_cpu/dmem1/mem_18_0" BEL
+        "mips_cpu/dmem1/mem_23_7" BEL "mips_cpu/dmem1/mem_23_0" BEL
+        "mips_cpu/dmem1/mem_17_7" BEL "mips_cpu/dmem1/mem_17_0" BEL
+        "mips_cpu/dmem1/mem_22_7" BEL "mips_cpu/dmem1/mem_22_0" BEL
+        "mips_cpu/dmem1/mem_16_7" BEL "mips_cpu/dmem1/mem_16_0" BEL
+        "mips_cpu/dmem1/mem_21_7" BEL "mips_cpu/dmem1/mem_21_0" BEL
+        "mips_cpu/dmem1/mem_15_7" BEL "mips_cpu/dmem1/mem_15_0" BEL
+        "mips_cpu/dmem1/mem_20_7" BEL "mips_cpu/dmem1/mem_20_0" BEL
+        "mips_cpu/dmem1/mem_14_7" BEL "mips_cpu/dmem1/mem_14_0" BEL
+        "mips_cpu/dmem1/mem_13_7" BEL "mips_cpu/dmem1/mem_13_0" BEL
+        "mips_cpu/dmem1/mem_12_7" BEL "mips_cpu/dmem1/mem_12_0" BEL
+        "mips_cpu/dmem1/mem_11_7" BEL "mips_cpu/dmem1/mem_11_0" BEL
+        "mips_cpu/dmem1/mem_10_7" BEL "mips_cpu/dmem1/mem_10_0" BEL
+        "mips_cpu/dmem1/mem_59_7" BEL "mips_cpu/dmem1/mem_59_0" BEL
+        "mips_cpu/dmem1/mem_58_7" BEL "mips_cpu/dmem1/mem_58_0" BEL
+        "mips_cpu/dmem1/mem_63_7" BEL "mips_cpu/dmem1/mem_63_0" BEL
+        "mips_cpu/dmem1/mem_57_7" BEL "mips_cpu/dmem1/mem_57_0" BEL
+        "mips_cpu/dmem1/mem_62_7" BEL "mips_cpu/dmem1/mem_62_0" BEL
+        "mips_cpu/dmem1/mem_56_7" BEL "mips_cpu/dmem1/mem_56_0" BEL
+        "mips_cpu/dmem1/mem_61_7" BEL "mips_cpu/dmem1/mem_61_0" BEL
+        "mips_cpu/dmem1/mem_55_7" BEL "mips_cpu/dmem1/mem_55_0" BEL
+        "mips_cpu/dmem1/mem_60_7" BEL "mips_cpu/dmem1/mem_60_0" BEL
+        "mips_cpu/dmem1/mem_49_7" BEL "mips_cpu/dmem1/mem_49_0" BEL
+        "mips_cpu/dmem1/mem_54_7" BEL "mips_cpu/dmem1/mem_54_0" BEL
+        "mips_cpu/dmem1/mem_48_7" BEL "mips_cpu/dmem1/mem_48_0" BEL
+        "mips_cpu/dmem1/mem_53_7" BEL "mips_cpu/dmem1/mem_53_0" BEL
+        "mips_cpu/dmem1/mem_47_7" BEL "mips_cpu/dmem1/mem_47_0" BEL
+        "mips_cpu/dmem1/mem_52_7" BEL "mips_cpu/dmem1/mem_52_0" BEL
+        "mips_cpu/dmem1/mem_46_7" BEL "mips_cpu/dmem1/mem_46_0" BEL
+        "mips_cpu/dmem1/mem_51_7" BEL "mips_cpu/dmem1/mem_51_0" BEL
+        "mips_cpu/dmem1/mem_9_7" BEL "mips_cpu/dmem1/mem_9_0" BEL
+        "mips_cpu/dmem1/mem_45_7" BEL "mips_cpu/dmem1/mem_45_0" BEL
+        "mips_cpu/dmem1/mem_50_7" BEL "mips_cpu/dmem1/mem_50_0" BEL
+        "mips_cpu/dmem1/mem_8_7" BEL "mips_cpu/dmem1/mem_8_0" BEL
+        "mips_cpu/dmem1/mem_39_7" BEL "mips_cpu/dmem1/mem_39_0" BEL
+        "mips_cpu/dmem1/mem_44_7" BEL "mips_cpu/dmem1/mem_44_0" BEL
+        "mips_cpu/dmem1/mem_7_7" BEL "mips_cpu/dmem1/mem_7_0" BEL
+        "mips_cpu/dmem1/mem_38_7" BEL "mips_cpu/dmem1/mem_38_0" BEL
+        "mips_cpu/dmem1/mem_43_7" BEL "mips_cpu/dmem1/mem_43_0" BEL
+        "mips_cpu/dmem1/mem_6_7" BEL "mips_cpu/dmem1/mem_6_0" BEL
+        "mips_cpu/dmem1/mem_37_7" BEL "mips_cpu/dmem1/mem_37_0" BEL
+        "mips_cpu/dmem1/mem_42_7" BEL "mips_cpu/dmem1/mem_42_0" BEL
+        "mips_cpu/dmem1/mem_5_7" BEL "mips_cpu/dmem1/mem_5_0" BEL
+        "mips_cpu/dmem1/mem_41_7" BEL "mips_cpu/dmem1/mem_41_0" BEL
+        "mips_cpu/dmem1/mem_4_7" BEL "mips_cpu/dmem1/mem_4_0" BEL
+        "mips_cpu/dmem1/mem_36_7" BEL "mips_cpu/dmem1/mem_36_0" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem1.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem3.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem3.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem5.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem5.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem9.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem9.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem7.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem7.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem11.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem11.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem15.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem15.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem13.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem17.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem17.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem21.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem19.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem19.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem23.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem23.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem27.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem27.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem25.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem25.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem29.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem29.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem33.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem33.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem31.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem31.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem35.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem35.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem39.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem39.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem37.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem37.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem41.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem41.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem45.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem45.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem43.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem43.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem47.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem47.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem51.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem51.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem49.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem49.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem53.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem53.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem57.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem57.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem55.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem55.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem59.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem59.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem63.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem63.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem61.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem61.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren1.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren3.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren3.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren5.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren5.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren15.SLICEM_F" BEL
+        "mips_cpu/mips1/dp/rf/Mram_mem_ren15.SLICEM_G" BEL
+        "mips_cpu/mips1/dp/pcreg/q_2" BEL "mips_cpu/mips1/dp/pcreg/q_3" BEL
+        "mips_cpu/mips1/dp/pcreg/q_4" BEL "mips_cpu/mips1/dp/pcreg/q_5" BEL
+        "mips_cpu/mips1/dp/pcreg/q_6" BEL "mips_cpu/mips1/dp/pcreg/q_7" BEL
+        "mips_cpu/mips1/dp/pcreg/q_3_1" BEL "mips_cpu/mips1/dp/pcreg/q_2_1"
+        BEL "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
 TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 SCHEMATIC END;
 

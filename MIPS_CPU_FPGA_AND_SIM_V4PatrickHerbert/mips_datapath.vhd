@@ -15,6 +15,7 @@ entity datapath is  -- MIPS datapath
        pc:                inout STD_LOGIC_VECTOR(31 downto 0);
        instr:             in  STD_LOGIC_VECTOR(31 downto 0);
        aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
+		 s:                 out STD_LOGIC_VECTOR(6 downto 0);
        readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
 end;
 
@@ -94,6 +95,9 @@ begin
   -- ALU logic
   srcbmux: mux2 generic map(32) port map(writedata, signimm, alusrc, srcb);
   mainalu:  alu port map(srca, srcb, alucontrol, instr(10 downto 6), aluout, zero); --Pat
+  
+  --s <= readdata(s'range);
+  s <= result(s'range);
 end;
 
 
