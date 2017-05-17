@@ -280,6 +280,19 @@ signal clk25              : std_logic;
 signal hcounter : integer range 0 to 800;
 signal vcounter   : integer range 0 to 521;
 signal color: std_logic_vector(2 downto 0);
+
+--scandcodes for specific keys
+constant one : std_logic_vector(7 downto 0) := "00010110";
+constant two : std_logic_vector(7 downto 0) := "00011110";
+constant three : std_logic_vector(7 downto 0) := "00100110";
+constant four : std_logic_vector(7 downto 0) := "00100101";
+constant five : std_logic_vector(7 downto 0) := "00101110";
+constant six : std_logic_vector(7 downto 0) := "00110110";
+constant seven : std_logic_vector(7 downto 0) := "00111101";
+constant eight : std_logic_vector(7 downto 0) := "00111110";
+constant nine : std_logic_vector(7 downto 0) := "01000110";
+constant zero : std_logic_vector(7 downto 0) := "01000101";
+
 begin
 
 -- generate a 25Mhz clock
@@ -306,7 +319,7 @@ end process;
 p2: process (clk25, hcounter, vcounter)
 	variable x: integer range 0 to 639;
 	variable y: integer range 0 to 479;
-	constant z : integer := 5;
+	constant z : integer := 10;
 begin
 	-- hcounter counts from 0 to 799
 	-- vcounter counts from 0 to 520
@@ -322,82 +335,142 @@ begin
 		
 		--NUMBER 1
 	 	if (x > (30+(z*2))) and (x <= (30+(z*3))) and y > 30 and y <= ((30 + (z*5))) then
-      	red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = one then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 2
 		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > 30 and y <= (30 + z)) or
 			(x > (30 + (z*6)) and x <= (30 + (z*7)) and y > 30 and y <= (30 + (z*3))) or
 			(x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*2)) and y <= (30 + (z*3))) or
 			(x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*2)) and y <= (30 + (z*5))) or
 			(x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*4)) and y <= (30 + (z*5)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = two then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 3
 		else if ((x > (30 + (z*8)) and x <= (30 + (z*11)) and y > 30 and y <= (30 + z)) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*2)) and y <= (30 + (z*3))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*4)) and y <= (30 + (z*5))) or
 				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > 30 and y <= (30 + (z*5)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = three then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 4
 		else if ( (x > 30 and x <= (30 + z) and y > (30 + (z*6)) and y <= (30 + (z*9))) or
 				  (x > (30 + (z*2)) and x <= (30 + (z*3)) and y > (30 + (z*6)) and y <= (30 + (z*11))) or
 				  (x > 30 and x <= (30 + (z*3)) and y > (30 + (z*8)) and y <= (30 + (z*9)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = four then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 5
 		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*6)) and y <= (30 + (z*7))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*6)) and y <= (30 + (z*9))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*8)) and y <= (30 + (z*9))) or
 				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*8)) and y <= (30 + (z*11))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*10)) and y <= (30 + (z*11)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = five then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 6
 		else if ( (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*6)) and y <= (30 + (z*7))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*9)) and y > (30 + (z*6)) and y <= (30 + (z*11))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*8)) and y <= (30 + (z*9))) or
 				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > (30 + (z*8)) and y <= (30 + (z*11))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*10)) and y <= (30 + (z*11)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = six then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 7
 		else if ( (x > 30 and x <= (30 + (z*3)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
 				  (x > (30 + (z*2)) and x <= (30 + (z*3)) and y > (30 + (z*12)) and y <= (30 + (z*17)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = seven then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 8
 		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*12)) and y <= (30 + (z*17))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*14)) and y <= (30 + (z*15))) or
 				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*12)) and y <= (30 + (z*17))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*16)) and y <= (30 + (z*17)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = eight then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 9
 		else if ( (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*12)) and y <= (30 + (z*13))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*9)) and y > (30 + (z*12)) and y <= (30 + (z*15))) or
 				  (x > (30 + (z*8)) and x <= (30 + (z*11)) and y > (30 + (z*14)) and y <= (30 + (z*15))) or
 				  (x > (30 + (z*10)) and x <= (30 + (z*11)) and y > (30 + (z*12)) and y <= (30 + (z*17)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = nine then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
 		--NUMBER 0
 		else if ( (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*18)) and y <= (30 + (z*19))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*5)) and y > (30 + (z*18)) and y <= (30 + (z*23))) or
 				  (x > (30 + (z*6)) and x <= (30 + (z*7)) and y > (30 + (z*18)) and y <= (30 + (z*23))) or
 				  (x > (30 + (z*4)) and x <= (30 + (z*7)) and y > (30 + (z*22)) and y <= (30 + (z*23)))) then
-			red_out <= writedata( 2 downto 0 );
-      	green_out <= "010"; 
-      	blue_out <= "000";
+			if writedata(7 downto 0) = zero then
+				red_out <= "011";
+				green_out <= "000"; 
+				blue_out <= "000";
+			else
+				red_out <= "000";
+				green_out <= "010"; 
+				blue_out <= "000";
+			end if;
     	else
 			-- if not traced, set it to "black" color
       	red_out <= "000";
