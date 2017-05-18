@@ -312,6 +312,7 @@ constant fifteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001111";
 constant sixteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00010000";
 constant seventeenInt : STD_LOGIC_VECTOR(7 downto 0) := "00010001";
 constant zeroInt : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+constant sumInt : STD_LOGIC_VECTOR(7 downto 0) := "00001100";
 
 signal oneRGB : STD_LOGIC_VECTOR(8 downto 0);
 signal twoRGB : STD_LOGIC_VECTOR(8 downto 0);
@@ -508,58 +509,58 @@ begin
 		end if;
 		
 --		--test sum numbers
---		if ( x > (90 + 15*z) and x <= (90 + 17*z) and y > 60 and  y <= (60 + 10*z) and sumInt > nineInt) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if ( sumInt < tenInt and 
+		if ( x > (90 + 15*z) and x <= (90 + 17*z) and y > 60 and  y <= (60 + 10*z) and sumInt > nineInt) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if ( sumInt < tenInt and 
                 ( ( x > (90 + 15*z) and x <= (90 + 17*z) and y > 60 and  y <= (60 + 10*z) ) or
                 ( x > (90 + 11*z) and x <= (90 + 13*z) and y > 60 and  y <= (60 + 10*z) ) or
                 ( x > (90 + 11*z) and x <= (90 + 17*z) and y > (60 + 8*z) and y <= (60 + 10*z) ) or
                 ( x > (90 + 11*z) and x <= (90 + 17*z) and y > 60 and y <= (60 + 2*z) ))) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= elevenInt ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if ( x > (90 + 21*z) and x <= (90 + 23*z) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= elevenInt and sumInt /= fourteenInt ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if ( x > (90 + 23*z) and x <= (90 + 25*z) and ( (y > 60 and y <= (60 + 2*z)) or (y > (60 + 4*z) and y <= (60 + 6*z)) or (y > (60 + 8*z) and y <= (60 + 10*z) ) ) ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and sumInt /= sevenInt and sumInt /= seventeenInt and !((sumInt > zeroInt and sumInt < fourInt ) or (sumInt > tenInt and sumInt < fourteenInt )) ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and (sumInt < fiveInt or (sumInt > sixInt and sumInt < fifteenInt ) or sumInt > sixteenInt ) ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 4*z) and y <= (60 + 6*z) and sumInt /= oneInt and sumInt /= sevenInt and sumInt /= elevenInt and sumInt /= seventeenInt ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and (sumInt = zeroInt or sumInt = twoInt or sumInt = sixInt or sumInt = eightInt or sumInt = tenInt or sumInt = twelveInt or sumInt = sixteenInt ) ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and sumInt /= twoInt and sumInt /= twelveInt ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 8*z) and y <= (60 + 10*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= sevenInt and sumInt /= 9 and sumInt /= elevenInt and sumInt /= fourteenInt and sumInt /= seventeenInt ) then
---			red_out <= "100";
---      	green_out <= "100";
---      	blue_out <= "100";
---		end if;end if;end if;
---		end if;end if;end if;
---		end if;end if;end if;
---		end if;end if;
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= elevenInt ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if ( x > (90 + 21*z) and x <= (90 + 23*z) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= elevenInt and sumInt /= fourteenInt ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if ( x > (90 + 23*z) and x <= (90 + 25*z) and ( (y > 60 and y <= (60 + 2*z)) or (y > (60 + 4*z) and y <= (60 + 6*z)) or (y > (60 + 8*z) and y <= (60 + 10*z) ) ) ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and sumInt /= sevenInt and sumInt /= seventeenInt and NOT((sumInt > zeroInt and sumInt < fourInt ) or (sumInt > tenInt and sumInt < fourteenInt )) ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and (sumInt < fiveInt or (sumInt > sixInt and sumInt < fifteenInt ) or sumInt > sixteenInt ) ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 4*z) and y <= (60 + 6*z) and sumInt /= oneInt and sumInt /= sevenInt and sumInt /= elevenInt and sumInt /= seventeenInt ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and (sumInt = zeroInt or sumInt = twoInt or sumInt = sixInt or sumInt = eightInt or sumInt = tenInt or sumInt = twelveInt or sumInt = sixteenInt ) ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and sumInt /= twoInt and sumInt /= twelveInt ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 8*z) and y <= (60 + 10*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= sevenInt and sumInt /= 9 and sumInt /= elevenInt and sumInt /= fourteenInt and sumInt /= seventeenInt ) then
+			red_out <= "100";
+      	green_out <= "100";
+      	blue_out <= "100";
+		end if;end if;end if;
+		end if;end if;end if;
+		end if;end if;end if;
+		end if;end if;
 		
 		-- Here is the timing for horizontal synchronization.
 		-- (Refer to p. 24, Xilinx, Spartan-3 Starter Kit Board User Guide)
