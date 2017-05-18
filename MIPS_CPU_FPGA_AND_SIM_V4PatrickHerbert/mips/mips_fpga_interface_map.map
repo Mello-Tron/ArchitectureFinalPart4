@@ -10,7 +10,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed May 17 17:27:01 2017
+Mapped Date    : Wed May 17 19:59:17 2017
 
 Mapping design into LUTs...
 Running directed packing...

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LAB-SCI-214-19::  Wed May 17 17:27:05 2017
+LAB-SCI-214-19::  Wed May 17 19:59:20 2017
 
 par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd
 mips_fpga_interface.ncd mips_fpga_interface.pcf 
