@@ -270,7 +270,8 @@ port(
 	green_out : out std_logic_vector(2 downto 0);
 	blue_out : out std_logic_vector(2 downto 0);
 	hs_out : out std_logic;
-	vs_out : out std_logic
+	vs_out : out std_logic;
+	currentreg : in STD_LOGIC_VECTOR(4 downto 0)
 );
 end vgatest;
 
@@ -292,6 +293,25 @@ constant seven : std_logic_vector(7 downto 0) := "00111101";
 constant eight : std_logic_vector(7 downto 0) := "00111110";
 constant nine : std_logic_vector(7 downto 0) := "01000110";
 constant zero : std_logic_vector(7 downto 0) := "01000101";
+
+constant oneInt : STD_LOGIC_VECTOR(7 downto 0) := "00000001";
+constant twoInt : STD_LOGIC_VECTOR(7 downto 0) := "00000010";
+constant threeInt : STD_LOGIC_VECTOR(7 downto 0) := "00000011";
+constant fourInt : STD_LOGIC_VECTOR(7 downto 0) := "00000100";
+constant fiveInt : STD_LOGIC_VECTOR(7 downto 0) := "00000101";
+constant sixInt : STD_LOGIC_VECTOR(7 downto 0) := "00000110";
+constant sevenInt : STD_LOGIC_VECTOR(7 downto 0) := "00000111";
+constant eightInt : STD_LOGIC_VECTOR(7 downto 0) := "00001000";
+constant nineInt : STD_LOGIC_VECTOR(7 downto 0) := "00001001";
+constant tenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001010";
+constant elevenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001011";
+constant twelveInt : STD_LOGIC_VECTOR(7 downto 0) := "00001100";
+constant thirteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001101";
+constant fourteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001110";
+constant fifteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00001111";
+constant sixteenInt : STD_LOGIC_VECTOR(7 downto 0) := "00010000";
+constant seventeenInt : STD_LOGIC_VECTOR(7 downto 0) := "00010001";
+constant zeroInt : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
 
 signal oneRGB : STD_LOGIC_VECTOR(8 downto 0);
 signal twoRGB : STD_LOGIC_VECTOR(8 downto 0);
@@ -319,61 +339,61 @@ p1: process (clk25)
 	variable cnt: integer;
 begin
 	if clk25'event and clk25='1' then
-		if writedata(7 downto 0) = one then
+		if writedata(7 downto 0) = one and (currentreg = "01101" or currentreg = "01100") then
 				oneRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				oneRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = two then
+		if writedata(7 downto 0) = two and (currentreg = "01101" or currentreg = "01100") then
 				twoRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				twoRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = three then
+		if writedata(7 downto 0) = three and (currentreg = "01101" or currentreg = "01100") then
 				threeRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				threeRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = four then
+		if writedata(7 downto 0) = four and (currentreg = "01101" or currentreg = "01100") then
 				fourRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				fourRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = five then
+		if writedata(7 downto 0) = five and (currentreg = "01101" or currentreg = "01100") then
 				fiveRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				fiveRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = six then
+		if writedata(7 downto 0) = six and (currentreg = "01101" or currentreg = "01100") then
 				sixRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				sixRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = seven then
+		if writedata(7 downto 0) = seven and (currentreg = "01101" or currentreg = "01100") then
 				sevenRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				sevenRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = eight then
+		if writedata(7 downto 0) = eight and (currentreg = "01101" or currentreg = "01100") then
 				eightRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				eightRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = nine then
+		if writedata(7 downto 0) = nine and (currentreg = "01101" or currentreg = "01100") then
 				nineRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				nineRGB <= "000010000";
 		end if;
 		end if;
-		if writedata(7 downto 0) = zero then
+		if writedata(7 downto 0) = zero and (currentreg = "01101" or currentreg = "01100") then
 				zeroRGB <= "011000000";
 		else if writedata(7 downto 0) /= "UUUUUUUU" and writedata(7 downto 0) /= "00000000" then
 				zeroRGB <= "000010000";
@@ -486,6 +506,67 @@ begin
 		end if;end if;end if;
 		end if;end if;end if;
 		end if;
+		
+--		--test sum numbers
+--		if ( x > 135 and x <= 145 and y > 60 and  y <= 110 and writedata(7 downto 0) > nineInt) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if ( writedata(7 downto 0) < tenInt and 
+--				  ( ( x > 135 and x <= 145 and y > 60 and  y <= 110 ) or
+--				  ( x > 115 and x <= 125 and y > 60 and  y <= 110 ) or
+--				  ( x > 115 and x <= 145 and y > 100 and y <= 110 ) or
+--				  ( x > 115 and x <= 145 and y > 60 and y <= 70 ))) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 155) and x <= 165) and y > 60 and y <= 70 and writedata(7 downto 0) /= oneInt and 
+--				writedata(7 downto 0) /= elevenInt ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if ( x > 165 and x <= 175 and y > 60 and y <= 70 and writedata(7 downto 0) /= oneInt and 
+--				writedata(7 downto 0) /= fourInt and writedata(7 downto 0) /= elevenInt and 
+--				writedata(7 downto 0) /= fourteenInt ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if ( x > 175 and x <= 185 and ( (y > 60 and y <= 70) or (y > 80 and y <= 90) or (y > 100 and y <= 110 ) ) ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 155) and x <= 165) and y > 70 and y <= 80 and writedata(7 downto 0) /= sevenInt and 
+--				writedata(7 downto 0) /= seventeenInt and NOT((writedata(7 downto 0) > zeroInt and 
+--				writedata(7 downto 0) < fourInt ) or (writedata(7 downto 0) > tenInt and 
+--				writedata(7 downto 0) < fourteenInt )) ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 175) and x <= 185) and y > 70 and y <= 80 and (writedata(7 downto 0) < fiveInt or (writedata(7 downto 0) > sixInt and writedata(7 downto 0) < fifteenInt ) or writedata(7 downto 0) > sixteenInt ) ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 155) and x <= 175) and y > 80 and y <= 90 and writedata(7 downto 0) /= oneInt and writedata(7 downto 0) /= sevenInt and writedata(7 downto 0) /= elevenInt and writedata(7 downto 0) /= seventeenInt ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 155) and x <= 165) and y > 90 and y <= 100 and (writedata(7 downto 0) = zeroInt or writedata(7 downto 0) = twoInt or writedata(7 downto 0) = sixInt or writedata(7 downto 0) = eightInt or writedata(7 downto 0) = tenInt or writedata(7 downto 0) = twelveInt or writedata(7 downto 0) = sixteenInt ) ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 175) and x <= 185) and y > 90 and y <= 100 and writedata(7 downto 0) /= twoInt and writedata(7 downto 0) /= twelveInt ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		else if (( (x > 155) and x <= 175) and y > 100 and y <= 110 and writedata(7 downto 0) /= oneInt and writedata(7 downto 0) /= fourInt and writedata(7 downto 0) /= sevenInt and writedata(7 downto 0) /= 9 and writedata(7 downto 0) /= elevenInt and writedata(7 downto 0) /= fourteenInt and writedata(7 downto 0) /= seventeenInt ) then
+--			red_out <= "100";
+--      	green_out <= "100";
+--      	blue_out <= "100";
+--		end if;end if;end if;
+--		end if;end if;end if;
+--		end if;end if;end if;
+--		end if;end if;
+		
 		-- Here is the timing for horizontal synchronization.
 		-- (Refer to p. 24, Xilinx, Spartan-3 Starter Kit Board User Guide)
 	 	-- Pulse width: Tpw = 96 cycles @ 25 MHz

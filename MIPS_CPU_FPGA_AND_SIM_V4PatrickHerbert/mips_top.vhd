@@ -73,7 +73,8 @@ architecture test of top is
 		green_out : out std_logic_vector(2 downto 0);
 		blue_out : out std_logic_vector(2 downto 0);
 		hs_out : out std_logic;
-		vs_out : out std_logic
+		vs_out : out std_logic;
+		currentreg : in STD_LOGIC_VECTOR(4 downto 0)
 	);
 	end component;
 
@@ -92,11 +93,11 @@ architecture test of top is
     port(clk, reset:        in  STD_LOGIC;
          pc:                inout STD_LOGIC_VECTOR(31 downto 0);
          instr:             in  STD_LOGIC_VECTOR(31 downto 0);
-         memwrite:          inout STD_LOGIC;
+         memwrite:          out STD_LOGIC;
 			wem, we1, we2:     out STD_LOGIC;
 			rdsel:             out STD_LOGIC;
          aluout, writedata: inout STD_LOGIC_VECTOR(31 downto 0);
-			s:                 out STD_LOGIC_VECTOR(6 downto 0);
+			--s:                 out STD_LOGIC_VECTOR(6 downto 0);
          readdata:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
   
@@ -138,7 +139,7 @@ architecture test of top is
 --  constant LETTER_E : std_logic_vector(6 downto 0) := "1101101";
 begin
   -- instantiate processor and memories
-  mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, s, readdata);
+  mips1: mips port map(clk, reset, pc, instr, memwrite, wem, we1, we2, rdsel, dataadr, writedata, readdata);
   --keyboard: ps2_kbd port map(clk, reset, ps2_clk, ps2_data, we1, readdata1, scancode); --need to fix ps2_clk and ps2_data
   
   keyboard : ps2_kbd     -- Make an object of type ps2_kbd
@@ -157,7 +158,7 @@ begin
       error    => kbd_error             -- indicates an error in receiving a scancode from the keyboard
       );
   
-  display: vgatest port map(clk50_in, readdata(7 downto 0), writedata, we2, red_out, green_out, blue_out, hs_out, vs_out); -- need to fix clk50_in and scancode
+  display: vgatest port map(clk50_in, readdata(7 downto 0), writedata, we2, red_out, green_out, blue_out, hs_out, vs_out, instr(20 downto 16)); -- need to fix clk50_in and scancode
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, wem, dataadr, writedata, readdatam);
   readmux: mux2 generic map(32) port map(readdata1, readdatam, rdsel, readdata);
@@ -190,6 +191,7 @@ begin
 --  end process;
   --s <= writedata(s'range); 
   --s <= "000000" & wem;
+  s <= "00" & instr(20 downto 16);
 
 
 end;
