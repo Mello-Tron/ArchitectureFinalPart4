@@ -91,7 +91,7 @@ entity ShiftRight is
 Port ( a : in STD_LOGIC_VECTOR(31 downto 0);
 shamt : in STD_LOGIC_VECTOR(4 downto 0);
 c : out STD_LOGIC_VECTOR(31 downto 0) );
-end ShiftRight;
+end ShiftRight;
 
 architecture behave of regfile is
   type ramtype is array (31 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
@@ -508,57 +508,51 @@ begin
 		end if;
 		
 --		--test sum numbers
---		if ( x > 135 and x <= 145 and y > 60 and  y <= 110 and writedata(7 downto 0) > nineInt) then
+--		if ( x > (90 + 15*z) and x <= (90 + 17*z) and y > 60 and  y <= (60 + 10*z) and sumInt > nineInt) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if ( writedata(7 downto 0) < tenInt and 
---				  ( ( x > 135 and x <= 145 and y > 60 and  y <= 110 ) or
---				  ( x > 115 and x <= 125 and y > 60 and  y <= 110 ) or
---				  ( x > 115 and x <= 145 and y > 100 and y <= 110 ) or
---				  ( x > 115 and x <= 145 and y > 60 and y <= 70 ))) then
+--		else if ( sumInt < tenInt and 
+                ( ( x > (90 + 15*z) and x <= (90 + 17*z) and y > 60 and  y <= (60 + 10*z) ) or
+                ( x > (90 + 11*z) and x <= (90 + 13*z) and y > 60 and  y <= (60 + 10*z) ) or
+                ( x > (90 + 11*z) and x <= (90 + 17*z) and y > (60 + 8*z) and y <= (60 + 10*z) ) or
+                ( x > (90 + 11*z) and x <= (90 + 17*z) and y > 60 and y <= (60 + 2*z) ))) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 155) and x <= 165) and y > 60 and y <= 70 and writedata(7 downto 0) /= oneInt and 
---				writedata(7 downto 0) /= elevenInt ) then
+--		else if if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= elevenInt ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if ( x > 165 and x <= 175 and y > 60 and y <= 70 and writedata(7 downto 0) /= oneInt and 
---				writedata(7 downto 0) /= fourInt and writedata(7 downto 0) /= elevenInt and 
---				writedata(7 downto 0) /= fourteenInt ) then
+--		else if ( x > (90 + 21*z) and x <= (90 + 23*z) and y > 60 and y <= (60 + 2*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= elevenInt and sumInt /= fourteenInt ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if ( x > 175 and x <= 185 and ( (y > 60 and y <= 70) or (y > 80 and y <= 90) or (y > 100 and y <= 110 ) ) ) then
+--		else if ( x > (90 + 23*z) and x <= (90 + 25*z) and ( (y > 60 and y <= (60 + 2*z)) or (y > (60 + 4*z) and y <= (60 + 6*z)) or (y > (60 + 8*z) and y <= (60 + 10*z) ) ) ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 155) and x <= 165) and y > 70 and y <= 80 and writedata(7 downto 0) /= sevenInt and 
---				writedata(7 downto 0) /= seventeenInt and NOT((writedata(7 downto 0) > zeroInt and 
---				writedata(7 downto 0) < fourInt ) or (writedata(7 downto 0) > tenInt and 
---				writedata(7 downto 0) < fourteenInt )) ) then
+--		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and sumInt /= sevenInt and sumInt /= seventeenInt and !((sumInt > zeroInt and sumInt < fourInt ) or (sumInt > tenInt and sumInt < fourteenInt )) ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 175) and x <= 185) and y > 70 and y <= 80 and (writedata(7 downto 0) < fiveInt or (writedata(7 downto 0) > sixInt and writedata(7 downto 0) < fifteenInt ) or writedata(7 downto 0) > sixteenInt ) ) then
+--		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 2*z) and y <= (60 + 4*z) and (sumInt < fiveInt or (sumInt > sixInt and sumInt < fifteenInt ) or sumInt > sixteenInt ) ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 155) and x <= 175) and y > 80 and y <= 90 and writedata(7 downto 0) /= oneInt and writedata(7 downto 0) /= sevenInt and writedata(7 downto 0) /= elevenInt and writedata(7 downto 0) /= seventeenInt ) then
+--		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 4*z) and y <= (60 + 6*z) and sumInt /= oneInt and sumInt /= sevenInt and sumInt /= elevenInt and sumInt /= seventeenInt ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 155) and x <= 165) and y > 90 and y <= 100 and (writedata(7 downto 0) = zeroInt or writedata(7 downto 0) = twoInt or writedata(7 downto 0) = sixInt or writedata(7 downto 0) = eightInt or writedata(7 downto 0) = tenInt or writedata(7 downto 0) = twelveInt or writedata(7 downto 0) = sixteenInt ) ) then
+--		else if (( (x > (90 + 19*z)) and x <= (90 + 21*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and (sumInt = zeroInt or sumInt = twoInt or sumInt = sixInt or sumInt = eightInt or sumInt = tenInt or sumInt = twelveInt or sumInt = sixteenInt ) ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 175) and x <= 185) and y > 90 and y <= 100 and writedata(7 downto 0) /= twoInt and writedata(7 downto 0) /= twelveInt ) then
+--		else if (( (x > (90 + 23*z)) and x <= (90 + 25*z)) and y > (60 + 6*z) and y <= (60 + 8*z) and sumInt /= twoInt and sumInt /= twelveInt ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
---		else if (( (x > 155) and x <= 175) and y > 100 and y <= 110 and writedata(7 downto 0) /= oneInt and writedata(7 downto 0) /= fourInt and writedata(7 downto 0) /= sevenInt and writedata(7 downto 0) /= 9 and writedata(7 downto 0) /= elevenInt and writedata(7 downto 0) /= fourteenInt and writedata(7 downto 0) /= seventeenInt ) then
+--		else if (( (x > (90 + 19*z)) and x <= (90 + 23*z)) and y > (60 + 8*z) and y <= (60 + 10*z) and sumInt /= oneInt and sumInt /= fourInt and sumInt /= sevenInt and sumInt /= 9 and sumInt /= elevenInt and sumInt /= fourteenInt and sumInt /= seventeenInt ) then
 --			red_out <= "100";
 --      	green_out <= "100";
 --      	blue_out <= "100";
